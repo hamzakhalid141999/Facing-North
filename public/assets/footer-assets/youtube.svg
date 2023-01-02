@@ -1,0 +1,13 @@
+<svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 22 16" width="22" height="16">
+	<title>Footer</title>
+	<defs>
+		<image  width="22" height="16" id="img1" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABYAAAAQCAMAAAAlM38UAAAAAXNSR0IB2cksfwAAANJQTFRF////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////GP/UYgAAAEZ0Uk5TACKUwNfl7vX7//348ureza5pHPacjLXKtto+0PwTbu/5F5npGVDB4f4/x9XoK5bDrWSqUzZjeomTm6GlqKmmo5+YkIR0WC1ceTUAAACXSURBVHicbc/FEsIwFIXhg1RCU9wpXtzdHd7/lcjiBjLT3NU/3yJzAoTCkahhWjYTF3O4G08kU0A6w4KXRU6jjCGvUwsFKreoMEeJykS5orBB5VWBWv3HLlWjCXEtyW3JvtBOV3KPuA8Mhv+3R1TjyVRdMpOl7uaY677jYaFjG1gG1VmJVevNdrc/HE/ny/V2fzxf74+PL+oKEyHPrPx2AAAAAElFTkSuQmCC"/>
+	</defs>
+	<style>
+	</style>
+	<g id="Footer">
+		<g id="social media icons">
+			<use id="youtube" href="#img1" x="0" y="0"/>
+		</g>
+	</g>
+</svg>

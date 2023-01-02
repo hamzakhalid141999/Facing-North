@@ -1,0 +1,34 @@
+import React from "react";
+import classes from "./secondHomePageSection.module.css";
+import second_section_bg from "../../../public/assets/homepage/second_section_bg.png";
+import second_section_pic1 from "../../../public/assets/homepage/second_section_pic1.png";
+import second_section_pic2 from "../../../public/assets/homepage/second_section_pic2.png";
+import BestPlacesCards from "../components/bestPlacesCards";
+
+import place_1 from "../../../public/assets/destination_detail_assets/card1.png";
+import place_2 from "../../../public/assets/destination_detail_assets/card2.png";
+import place_3 from "../../../public/assets/destination_detail_assets/card3.png";
+
+function SecondHomePageSection() {
+  return (
+    <div className={classes.container}>
+      <div className={classes.places_to_stay_container}>
+        <h2>Best Places to Stay</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras et
+          finibus urna. In ut justo quis metus rhoncus cursus quis vitae magna.
+          Ut nibh metus, accumsan viverra massa ac, sagittis pulvinar ipsum.
+          Aenean lacus augue, sollicitudin eu eros eleifend, luctus ultricies
+          lectus. Nam elementum tempor arcu, ut faucibus ligula pharetra eu.
+        </p>
+        <div className={classes.best_cards_container}>
+          <BestPlacesCards pic={place_1} />
+          <BestPlacesCards pic={place_2} />
+          <BestPlacesCards pic={place_3} />
+        </div>
+      </div>
+    </div>
+  );
+}
+
+export default SecondHomePageSection;

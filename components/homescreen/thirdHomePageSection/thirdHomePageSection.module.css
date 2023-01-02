@@ -21,7 +21,7 @@
   right: 0px;
   bottom: 25%;
   height: 420px;
-  background-color: rgb(4, 21, 10);
+  background-color: var(--deepGreen) !important;
 }
 .location_pic_container img {
   width: 100%;

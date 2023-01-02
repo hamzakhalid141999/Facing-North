@@ -10,6 +10,123 @@ a {
   color: inherit;
   text-decoration: none;
 }
+:root {
+  --deepGreen: #181e1e;
+  --medGreen: #176060;
+}
+.react-multi-carousel-track {
+  height: 550px !important;
+  padding-bottom: 80px !important;
+}
+.react-multi-carousel-dot-list {
+  justify-content: initial !important;
+  bottom: 35px !important;
+  left: 15% !important;
+  display: flex !important;
+  flex-direction: row !important;
+  align-items: center !important;
+}
+.react-multiple-carousel__arrow--left {
+  left: 0% !important;
+  bottom: 15px !important;
+  width: 43px !important;
+  height: 43px !important;
+  opacity: 1 !important;
+  cursor: pointer;
+}
+.react-multiple-carousel__arrow--right {
+  left: 7% !important;
+  bottom: 15px !important;
+  width: 43px !important;
+  height: 43px !important;
+  opacity: 1 !important;
+  cursor: pointer;
+}
+
+.react-multi-carousel-dot button {
+  background-color: rgb(218, 218, 218) !important;
+  border-color: transparent !important;
+  margin-right: 0px !important;
+  border-radius: 0px !important;
+  width: 160px !important;
+  height: 0.5px !important;
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+  border-top-width: 1px !important;
+  border-bottom-width: 1px !important;
+}
+.react-multi-carousel-dot--active button {
+  background-color: black !important;
+  height: 0.5px !important;
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+  border-top-width: 1px !important;
+  border-bottom-width: 1px !important;
+}
+.second_container {
+  width: 100%;
+  height: 80vh;
+  position: relative;
+  /* display: flex;
+  flex-direction: column;
+  align-items: center; */
+  margin-top: 40px;
+  /* padding-bottom: 160px; */
+}
+.second_container .react-multi-carousel-dot-list {
+  justify-content: initial !important;
+  bottom: 23px !important;
+  right: 0px !important;
+  display: flex !important;
+  flex-direction: row !important;
+  align-items: center !important;
+  width: 100% !important;
+}
+.second_container .react-multi-carousel-track {
+  height: 600px !important;
+  padding-bottom: 80px !important;
+}
+
+.second_container .react-multiple-carousel__arrow--left {
+  left: 5% !important;
+  bottom: 12px !important;
+  width: 43px !important;
+  height: 43px !important;
+  opacity: 1 !important;
+}
+.second_container .react-multiple-carousel__arrow--right {
+  left: 10% !important;
+  bottom: 12px !important;
+  width: 43px !important;
+  height: 43px !important;
+  opacity: 1 !important;
+}
+
+.second_container .react-multi-carousel-dot button {
+  background-color: black !important;
+  border-color: 2px solid transparent !important;
+  margin-right: 0px !important;
+  border-radius: 100px !important;
+  width: 14px !important;
+  height: 14px !important;
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+  border-top-width: 1px !important;
+  border-bottom-width: 1px !important;
+  margin-right: 10px !important;
+  transition: ease-in-out 200ms;
+}
+.second_container .react-multi-carousel-dot--active button {
+  background-color: transparent !important;
+  border: 2px solid black !important;
+  height: 14px !important;
+  width: 14px !important;
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+  border-top-width: 2px !important;
+  border-bottom-width: 2px !important;
+  transition: ease-in-out 200ms;
+}
 
 * {
   margin: 0px;

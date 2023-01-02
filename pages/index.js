@@ -1,5 +1,6 @@
 import Head from "next/head";
 import Image from "next/image";
+import FourthHomePageSection from "../components/homescreen/fourthHomePageSection";
 import HeroBanner from "../components/homescreen/heroBanner";
 import SecondHomePageSection from "../components/homescreen/secondHomePageSection";
 import ThirdHomePageSection from "../components/homescreen/thirdHomePageSection";
@@ -11,6 +12,7 @@ export default function Home() {
       <HeroBanner />
       <SecondHomePageSection />
       <ThirdHomePageSection />
+      <FourthHomePageSection />
     </div>
   );
 }

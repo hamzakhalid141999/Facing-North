@@ -63,9 +63,14 @@ function Navbar() {
         <p>ABOUT</p>
         <p>SERVICES</p>
         <p>TOUR PACKAGES</p>
-        <p>DESTINATIONS</p>
+        <Link href={"/destination_detail"}>
+          <p>DESTINATIONS</p>
+        </Link>
+
         <p>BLOG</p>
-        <p>CONTACT</p>
+        <Link href={"/contact"}>
+          <p>CONTACT</p>
+        </Link>
       </div>
     </div>
   );
