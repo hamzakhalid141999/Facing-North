@@ -20,11 +20,11 @@
   row-gap: 30px;
   margin-top: 80px;
 }
-.places_to_stay_container h2 {
+.title {
   font-size: 50px;
   font-weight: 200;
 }
-.places_to_stay_container p {
+.description {
   font-size: 14px;
   font-weight: 200;
   line-height: 22px;

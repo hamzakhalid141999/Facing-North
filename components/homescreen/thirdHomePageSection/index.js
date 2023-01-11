@@ -187,8 +187,8 @@ function ThirdHomePageSection() {
         </div>
       </div>
       <div className={classes.title_section}>
-        <h2>Explore our Worlds</h2>
-        <p>
+        <h2 className={classes.title}>Explore our Worlds</h2>
+        <p className={classes.description}>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras et
           finibus urna. In ut justo quis metus rhoncus cursus quis vitae magna.
           Ut nibh metus, accumsan viverra massa ac, sagittis pulvinar ipsum.
