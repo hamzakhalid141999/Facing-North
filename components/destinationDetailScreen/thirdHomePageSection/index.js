@@ -16,6 +16,9 @@ import sun from "../../../public/assets/homepage/sun.svg";
 import pin from "../../../public/assets/homepage/stroke_pin.svg";
 import BestPlacesCards from "../components/bestPlacesCards";
 
+import right_arrow from "../../../public/assets/services_details_assets/right_arrow.svg";
+import left_arrow from "../../../public/assets/services_details_assets/left_arrow.svg";
+
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 
@@ -42,6 +45,38 @@ function ThirdHomePageSection() {
     },
   };
 
+  const CustomRightArrow = ({ onClick, ...rest }) => {
+    const {
+      onMove,
+      carouselState: { currentSlide, deviceType },
+    } = rest;
+    // onMove means if dragging or swiping in progress.
+    return (
+      <img
+        src={right_arrow.src}
+        style={{ width: "60px", height: "60px", position: "absolute" }}
+        className={"react-multiple-carousel__arrow--right"}
+        onClick={() => onClick()}
+      />
+    );
+  };
+
+  const CustomLeftArrow = ({ onClick, ...rest }) => {
+    const {
+      onMove,
+      carouselState: { currentSlide, deviceType },
+    } = rest;
+    // onMove means if dragging or swiping in progress.
+    return (
+      <img
+        className={"react-multiple-carousel__arrow--left"}
+        src={left_arrow.src}
+        style={{ width: "60px", height: "60px", position: "absolute" }}
+        onClick={() => onClick()}
+      />
+    );
+  };
+
   return (
     <div className={classes.container}>
       <div className={classes.title_section}>
@@ -59,6 +94,8 @@ function ThirdHomePageSection() {
             swipeable={true}
             draggable={true}
             showDots={true}
+            customRightArrow={<CustomRightArrow />}
+            customLeftArrow={<CustomLeftArrow />}
           >
             <PlacesCards pic={explore_pic_3} />
             <PlacesCards pic={explore_pic_2} />
