@@ -152,11 +152,11 @@
   left: 13%;
   top: -30%;
 }
-.title_section h2 {
+.title {
   font-size: 50px;
   font-weight: 200;
 }
-.title_section p {
+.description {
   font-size: 14px;
   font-weight: 200;
   line-height: 22px;

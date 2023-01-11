@@ -6,7 +6,6 @@
   place-items: center;
   background-color: black;
   overflow: hidden;
-  max-height: 600px;
 }
 .single_tab {
   width: 100%;

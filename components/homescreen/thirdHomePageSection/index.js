@@ -10,17 +10,158 @@ import compass from "../../../public/assets/homepage/compass.svg";
 import wind from "../../../public/assets/homepage/wind.svg";
 import sun from "../../../public/assets/homepage/sun.svg";
 import pin from "../../../public/assets/homepage/stroke_pin.svg";
+import right_arrow from "../../../public/assets/services_details_assets/right_arrow.svg";
+import left_arrow from "../../../public/assets/services_details_assets/left_arrow.svg";
+import Carousel from "react-multi-carousel";
+import "react-multi-carousel/lib/styles.css";
 
 function ThirdHomePageSection() {
   const [location, setLocation] = useState(1);
+
+  const responsive = {
+    superLargeDesktop: {
+      // the naming can be any, depends on you.
+      breakpoint: { max: 4000, min: 3000 },
+      items: 3,
+    },
+    desktop: {
+      breakpoint: { max: 3000, min: 1024 },
+      items: 3,
+    },
+    tablet: {
+      breakpoint: { max: 1024, min: 464 },
+      items: 3,
+    },
+    mobile: {
+      breakpoint: { max: 464, min: 0 },
+      items: 1,
+    },
+  };
+
+  const responsive_location_carousel = {
+    superLargeDesktop: {
+      // the naming can be any, depends on you.
+      breakpoint: { max: 4000, min: 3000 },
+      items: 1,
+    },
+    desktop: {
+      breakpoint: { max: 3000, min: 1024 },
+      items: 1,
+    },
+    tablet: {
+      breakpoint: { max: 1024, min: 464 },
+      items: 1,
+    },
+    mobile: {
+      breakpoint: { max: 464, min: 0 },
+      items: 1,
+    },
+  };
+
+  const CustomRightArrow = ({ onClick, ...rest }) => {
+    const {
+      onMove,
+      carouselState: { currentSlide, deviceType },
+    } = rest;
+    // onMove means if dragging or swiping in progress.
+    return (
+      <img
+        src={right_arrow.src}
+        style={{ width: "60px", height: "60px", position: "absolute" }}
+        className={"react-multiple-carousel__arrow--right"}
+        onClick={() => onClick()}
+      />
+    );
+  };
+
+  const CustomLeftArrow = ({ onClick, ...rest }) => {
+    const {
+      onMove,
+      carouselState: { currentSlide, deviceType },
+    } = rest;
+    // onMove means if dragging or swiping in progress.
+    return (
+      <img
+        className={"react-multiple-carousel__arrow--left"}
+        src={left_arrow.src}
+        style={{ width: "60px", height: "60px", position: "absolute" }}
+        onClick={() => onClick()}
+      />
+    );
+  };
+
+  const CustomRightArrowLocation = ({ onClick, ...rest }) => {
+    const {
+      onMove,
+      carouselState: { currentSlide, deviceType },
+    } = rest;
+    // onMove means if dragging or swiping in progress.
+    return (
+      <div
+        style={{
+          width: "60px",
+          height: "60px",
+          position: "absolute",
+          left: "13%",
+          top: "22px",
+        }}
+        // className={classes}
+      >
+        <img
+          src={right_arrow.src}
+          style={{ position: "absolute" }}
+          className={"react-multiple-carousel__arrow--right"}
+          onClick={() => onClick()}
+        />
+      </div>
+    );
+  };
+
+  const CustomLeftArrowLocation = ({ onClick, ...rest }) => {
+    const {
+      onMove,
+      carouselState: { currentSlide, deviceType },
+    } = rest;
+    // onMove means if dragging or swiping in progress.
+    return (
+      <div
+        style={{
+          width: "60px",
+          height: "60px",
+          left: "0px",
+          top: "22px",
+          position: "absolute",
+        }}
+      >
+        <img
+          className={"react-multiple-carousel__arrow--left"}
+          src={left_arrow.src}
+          style={{ position: "absolute" }}
+          onClick={() => onClick()}
+        />
+      </div>
+    );
+  };
 
   return (
     <div className={classes.container}>
       <img src={globe.src} className={classes.globe} />
       <div className={classes.location_container}>
         <div className={classes.content_container}>
-          <div className={classes.location_pic_container}>
-            <img src={places1.src} />
+          <div className="homepage_location_pic_container">
+            <Carousel
+              responsive={responsive_location_carousel}
+              swipeable={true}
+              draggable={true}
+              showDots={false}
+              customRightArrow={<CustomRightArrowLocation />}
+              customLeftArrow={<CustomLeftArrowLocation />}
+            >
+              <img src={places1.src} />
+              <img src={places1.src} />
+              <img src={places1.src} />
+              <img src={places1.src} />
+            </Carousel>
           </div>
           <div className={classes.info_container}>
             <div className={classes.indicators}>
@@ -54,12 +195,22 @@ function ThirdHomePageSection() {
           Aenean lacus augue, sollicitudin eu eros eleifend, luctus ultricies
           lectus.
         </p>
-        <div className={classes.cards_container}>
-          <div className={classes.cards_carousel}>
+        <div className="cards_container">
+          <Carousel
+            responsive={responsive}
+            swipeable={true}
+            draggable={true}
+            showDots={true}
+            customRightArrow={<CustomRightArrow />}
+            customLeftArrow={<CustomLeftArrow />}
+          >
             <PlacesCards pic={explore_pic_3} />
             <PlacesCards pic={explore_pic_2} />
             <PlacesCards pic={explore_pic_1} />
-          </div>
+            <PlacesCards pic={explore_pic_3} />
+            <PlacesCards pic={explore_pic_2} />
+            <PlacesCards pic={explore_pic_1} />
+          </Carousel>
         </div>
 
         <h2>Lands of Discovery</h2>

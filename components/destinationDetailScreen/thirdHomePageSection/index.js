@@ -45,8 +45,8 @@ function ThirdHomePageSection() {
   return (
     <div className={classes.container}>
       <div className={classes.title_section}>
-        <h2>Tours Featuring Destination</h2>
-        <p>
+        <h2 className={classes.title}>Tours Featuring Destination</h2>
+        <p className={classes.description}>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras et
           finibus urna. In ut justo quis metus rhoncus cursus quis vitae magna.
           Ut nibh metus, accumsan viverra massa ac, sagittis pulvinar ipsum.
@@ -71,8 +71,8 @@ function ThirdHomePageSection() {
       </div>
 
       <div className={classes.places_to_stay_container}>
-        <h2>Best Places to Stay</h2>
-        <p>
+        <h2 className={classes.title}>Best Places to Stay</h2>
+        <p className={classes.description}>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras et
           finibus urna. In ut justo quis metus rhoncus cursus quis vitae magna.
           Ut nibh metus, accumsan viverra massa ac, sagittis pulvinar ipsum.

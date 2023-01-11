@@ -128,8 +128,63 @@ a {
   transition: ease-in-out 200ms;
 }
 
+/* asdsadasd */
+
+.homepage_location_pic_container .react-multiple-carousel__arrow--left {
+  left: 10% !important;
+  top: 100px !important;
+  width: 43px !important;
+  height: 100% !important;
+  opacity: 1 !important;
+  object-fit: fill;
+}
+.homepage_location_pic_container .react-multiple-carousel__arrow--right {
+  left: 10% !important;
+  top: 100px !important;
+  width: 43px !important;
+  height: 100% !important;
+  opacity: 1 !important;
+  object-fit: fill;
+}
+
 * {
   margin: 0px;
   margin-left: 0px;
   box-sizing: border-box;
+}
+.cards_container {
+  margin-top: 50px;
+  margin-bottom: 100px;
+  width: 100%;
+  max-width: 100%;
+  margin-left: 22%;
+  right: 100px;
+  margin-top: 15px;
+  position: relative;
+  /* max-width: 1250px; */
+  height: 500px;
+}
+.homepage_location_pic_container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.homepage_location_pic_container {
+  height: 440px;
+  width: 670px;
+  position: absolute;
+  right: -17%;
+  bottom: 80px;
+}
+.cards_container .react-multi-carousel-item {
+  width: 420px !important;
+}
+.homepage_location_pic_container .react-multi-carousel-item {
+  width: 670px !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.homepage_location_pic_container img {
+  width: 270px !important;
 }
