@@ -45,6 +45,7 @@
 }
 .single_btn p {
   color: white;
+  font-family: "f-l";
 }
 .single_btn:hover {
   background-color: rgba(41, 119, 126, 0.759);
@@ -72,10 +73,12 @@
   cursor: pointer;
   /* color: white; */
   transition: ease-in-out 200ms;
+  font-family: "f-l";
 }
 .navbar_body_opaque p {
   transition: ease-in-out 200ms;
   cursor: pointer;
+  font-family: "f-l";
 }
 .logo {
   width: 90px;
@@ -83,6 +86,7 @@
 .left_panel_btns p {
   color: #000000;
   font-size: 15px;
+  font-family: "f-l";
 }
 .left_panel_btns p:nth-child(1) {
   color: var(--orangeText) !important;
@@ -116,10 +120,12 @@
 .get_started_btn p {
   color: white !important;
   font-size: 15px;
+  font-family: "f-l";
 }
 .right_panel p {
   color: white;
   font-size: 15px;
+  font-family: "f-m";
 }
 .right_panel .icon:nth-child(3) {
   margin-right: 30px;

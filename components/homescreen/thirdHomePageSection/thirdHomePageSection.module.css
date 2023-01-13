@@ -11,6 +11,7 @@
 .globe {
   position: absolute;
   width: 65%;
+  max-width: 850px;
   left: 0;
   bottom: 0;
   filter: drop-shadow(5px 5px 20px rgba(0, 0, 0, 0.32));
@@ -80,6 +81,7 @@
   font-weight: lighter;
   width: 100%;
   text-align: left;
+  font-family: "b-l";
 }
 .place_name {
   font-size: 14px;
@@ -87,6 +89,7 @@
   text-align: left;
   color: white;
   font-weight: lighter;
+  font-family: "f-m";
 }
 .indicator_img {
   width: 30px;
@@ -106,18 +109,25 @@
   flex-direction: column;
   row-gap: 25px;
   position: absolute;
-  left: 13%;
+  left: 15%;
   top: -30%;
+  max-width: 1400px;
 }
 .description {
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 200;
   line-height: 22px;
   width: 35%;
+  font-family: "f-l";
 }
 .title {
   font-size: 50px;
   font-weight: 200;
+  font-family: "b-l";
+  line-height: 50px;
+}
+.title span {
+  font-family: "f-l";
 }
 
 .cards_carousel {

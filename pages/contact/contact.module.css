@@ -44,15 +44,17 @@
   font-size: 60px;
   font-weight: lighter;
   z-index: 6;
+  font-family: "b-l";
 }
 .hero_banner_container p {
   color: white;
-  font-size: 14px;
+  font-size: 18px;
   font-weight: lighter;
   width: 50%;
   text-align: center;
   z-index: 6;
   line-height: 25px;
+  font-family: "f-l";
 }
 .container {
   display: flex;

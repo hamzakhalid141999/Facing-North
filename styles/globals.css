@@ -14,6 +14,59 @@ a {
   --deepGreen: #181e1e;
   --medGreen: #176060;
 }
+
+/* FONTS */
+
+@font-face {
+  font-family: "b-bl";
+  src: url("../public/fonts/butler/Butler_Black.otf") format("opentype");
+}
+@font-face {
+  font-family: "b-b";
+  src: url("../public/fonts/butler/Butler_Bold.otf") format("opentype");
+}
+@font-face {
+  font-family: "b-eb";
+  src: url("../public/fonts/butler/Butler_ExtraBold.otf") format("opentype");
+}
+@font-face {
+  font-family: "b-l";
+  src: url("../public/fonts/butler/Butler_Light.otf") format("opentype");
+}
+@font-face {
+  font-family: "b-m";
+  src: url("../public/fonts/butler/Butler_Medium.otf") format("opentype");
+}
+@font-face {
+  font-family: "b-r";
+  src: url("../public/fonts/butler/Butler_Regular.otf") format("opentype");
+}
+@font-face {
+  font-family: "b-ul";
+  src: url("../public/fonts/butler/Butler_Ultra_Light.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "f-b";
+  src: url("../public/fonts/futura/Futura\ Bold\ font.ttf");
+}
+@font-face {
+  font-family: "f-bi";
+  src: url("../public/fonts/futura/Futura\ Bold\ Italic\ font.ttf");
+}
+@font-face {
+  font-family: "f-h";
+  src: url("../public/fonts/futura/Futura\ Heavy\ font.ttf");
+}
+@font-face {
+  font-family: "f-l";
+  src: url("../public/fonts/futura/futura\ light\ bt.ttf");
+}
+@font-face {
+  font-family: "f-m";
+  src: url("../public/fonts/futura/futura\ medium\ bt.ttf");
+}
+
 .react-multi-carousel-track {
   height: 550px !important;
   padding-bottom: 80px !important;
