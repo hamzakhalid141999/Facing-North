@@ -80,7 +80,10 @@ function ThirdHomePageSection() {
   return (
     <div className={classes.container}>
       <div className={classes.title_section}>
-        <h2 className={classes.title}>Tours Featuring Destination</h2>
+        <h2 className={classes.title}>
+          Tours Featuring <br />
+          <span>Destination</span>
+        </h2>
         <p className={classes.description}>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras et
           finibus urna. In ut justo quis metus rhoncus cursus quis vitae magna.
@@ -88,7 +91,7 @@ function ThirdHomePageSection() {
           Aenean lacus augue, sollicitudin eu eros eleifend, luctus ultricies
           lectus.
         </p>
-        <div className={classes.cards_container}>
+        <div className="cards_container">
           <Carousel
             responsive={responsive}
             swipeable={true}

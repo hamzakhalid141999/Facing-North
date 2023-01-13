@@ -96,6 +96,7 @@
   font-size: 12px;
   width: fit-content;
   font-weight: bold !important;
+  font-family: "f-l";
 }
 .place_area_name {
   font-size: 60px;
@@ -103,6 +104,7 @@
   font-weight: lighter;
   width: 100%;
   text-align: left;
+  font-family: "f-l";
 }
 .place_name {
   font-size: 20px;
@@ -110,6 +112,7 @@
   text-align: left;
   color: white;
   font-weight: lighter;
+  font-family: "f-l";
 }
 .indicator_img {
   height: 30px;
@@ -119,10 +122,12 @@
   font-weight: lighter !important;
   color: white;
   width: 100% !important;
+  font-family: "b-l";
 }
 .province_name {
   font-size: 13px !important;
   font-weight: normal !important;
   color: white;
   width: 100% !important;
+  font-family: "f-l";
 }

@@ -12,6 +12,7 @@
   flex-direction: column;
   align-items: center;
   position: relative;
+  min-height: 700px;
   /* justify-content: center; */
 }
 .overlay {
@@ -41,9 +42,11 @@
   color: white;
   font-weight: lighter;
   z-index: 10;
+  font-family: "b-l";
 }
 .owner_container {
   margin-top: 100px;
+  min-height: 700px;
 }
 .img_container {
   position: relative;
@@ -94,6 +97,7 @@
   font-size: 45px;
   font-weight: 200;
   margin-top: 50px;
+  font-family: "b-l";
 }
 .owner_container h2 {
   font-size: 45px;
@@ -118,6 +122,7 @@
   font-weight: lighter !important;
   font-size: 40px;
   margin-top: 40px;
+  font-family: "b-l";
 }
 .owner_info_content p {
   font-weight: 300 !important;
@@ -126,6 +131,7 @@
   width: 60%;
   line-height: 20px;
   text-align: right;
+  font-family: "f-l";
 }
 .review_container {
   position: absolute;
@@ -150,6 +156,7 @@
   font-weight: lighter !important;
   font-size: 40px;
   margin-top: 40px;
+  font-family: "b-l";
 }
 .stars_container {
   display: flex;
@@ -168,6 +175,7 @@
   margin-top: 20px;
   width: 350px;
   line-height: 20px;
+  font-family: "f-l";
 }
 .btn {
   height: 50px;
@@ -216,6 +224,7 @@
   margin-top: 0 !important;
   transition: ease-in-out 200ms;
   width: fit-content !important;
+  font-family: "f-l";
 }
 .btn_white:hover {
   cursor: pointer;

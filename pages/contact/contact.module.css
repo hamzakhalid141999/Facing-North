@@ -74,6 +74,7 @@
   width: 70%;
   font-weight: lighter;
   text-align: center;
+  font-family: "b-l";
 }
 .form_content {
   width: 75%;
@@ -87,6 +88,7 @@
 .form_content h2 {
   font-weight: lighter;
   font-size: 40px;
+  font-family: "b-l";
 }
 .input_field {
   width: 100%;
@@ -99,6 +101,7 @@
   font-size: 28px;
   font-weight: lighter !important;
   color: black;
+  font-family: "f-l";
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
@@ -140,6 +143,7 @@
   width: 70%;
   font-weight: 200;
   text-align: center;
+  font-family: "b-l";
 }
 .contact_us_row {
   width: 60%;
@@ -155,6 +159,7 @@
   font-weight: 300 !important;
   margin-top: 0 !important;
   line-height: 25px;
+  font-family: "f-l";
 }
 .btn {
   height: 50px;
@@ -204,4 +209,5 @@
   font-weight: 300 !important;
   margin-top: 0 !important;
   font-size: 25px;
+  font-family: "f-l";
 }

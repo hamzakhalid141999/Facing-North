@@ -50,6 +50,7 @@
   margin-top: 10px;
   width: 100%;
   text-align: left;
+  font-family: "b-l";
 }
 .description_container_inner h3 {
   font-weight: 200 !important;
@@ -58,6 +59,7 @@
   color: var(--medGreen) !important;
   width: 100%;
   text-align: left;
+  font-family: "f-l";
 }
 .description_container_inner p {
   font-weight: 300 !important;
@@ -68,4 +70,5 @@
   width: 100%;
   text-align: left;
   line-height: 20px;
+  font-family: "f-l";
 }

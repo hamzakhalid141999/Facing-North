@@ -29,7 +29,7 @@ function FourthHomePageSection() {
                 pulvinar ipsum.{" "}
               </p>
               <div className={classes.btn}>
-                <p>Contact Us</p>
+                <p>READ MORE</p>
               </div>
             </div>
           </div>
