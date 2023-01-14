@@ -21,7 +21,7 @@ function FourthHomePageSection() {
                 pulvinar ipsum.{" "}
               </p>
               <div className={classes.btn}>
-                <p>Contact Us</p>
+                <p>EXPLORE</p>
               </div>
             </div>
           </div>
@@ -42,7 +42,7 @@ function FourthHomePageSection() {
                 pulvinar ipsum.{" "}
               </p>
               <div className={classes.btn}>
-                <p>Contact Us</p>
+                <p>EXPLORE</p>
               </div>
             </div>
           </div>
@@ -63,7 +63,7 @@ function FourthHomePageSection() {
                 pulvinar ipsum.{" "}
               </p>
               <div className={classes.btn}>
-                <p>Contact Us</p>
+                <p>EXPLORE</p>
               </div>
             </div>
           </div>
