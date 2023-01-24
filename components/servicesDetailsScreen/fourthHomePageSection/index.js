@@ -93,6 +93,8 @@ function FourthHomePageSection() {
 
       <div className={"second_container"}>
         <Carousel
+          infinite={true}
+          autoPlay={true}
           responsive={responsive}
           swipeable={true}
           draggable={true}

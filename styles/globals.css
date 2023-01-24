@@ -125,6 +125,7 @@ a {
   align-items: center; */
   margin-top: 40px;
   /* padding-bottom: 160px; */
+  background-color: red;
 }
 .second_container .react-multi-carousel-dot-list {
   justify-content: initial !important;
@@ -210,7 +211,7 @@ a {
   margin-bottom: 100px;
   width: 100%;
   max-width: 100%;
-  margin-left: 22%;
+  margin-left: 7%;
   right: 100px;
   margin-top: 15px;
   position: relative;
@@ -230,7 +231,8 @@ a {
   bottom: 80px;
 }
 .cards_container .react-multi-carousel-item {
-  width: 420px !important;
+  /* width: 445px !important; */
+  /* margin-right: 10px; */
 }
 .homepage_location_pic_container .react-multi-carousel-item {
   width: 670px !important;

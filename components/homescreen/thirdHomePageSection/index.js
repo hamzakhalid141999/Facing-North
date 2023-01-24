@@ -25,12 +25,12 @@ function ThirdHomePageSection() {
       items: 3,
     },
     desktop: {
-      breakpoint: { max: 3000, min: 1024 },
+      breakpoint: { max: 3000, min: 1220 },
       items: 3,
     },
     tablet: {
-      breakpoint: { max: 1024, min: 464 },
-      items: 3,
+      breakpoint: { max: 1220, min: 464 },
+      items: 2,
     },
     mobile: {
       breakpoint: { max: 464, min: 0 },
@@ -150,6 +150,8 @@ function ThirdHomePageSection() {
         <div className={classes.content_container}>
           <div className="homepage_location_pic_container">
             <Carousel
+              infinite={true}
+              autoPlay={true}
               responsive={responsive_location_carousel}
               swipeable={true}
               draggable={true}
@@ -199,6 +201,8 @@ function ThirdHomePageSection() {
         </p>
         <div className="cards_container">
           <Carousel
+            infinite={true}
+            autoPlay={true}
             responsive={responsive}
             swipeable={true}
             draggable={true}

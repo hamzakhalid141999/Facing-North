@@ -93,6 +93,8 @@ function ThirdHomePageSection() {
         </p>
         <div className="cards_container">
           <Carousel
+            infinite={true}
+            autoPlay={true}
             responsive={responsive}
             swipeable={true}
             draggable={true}

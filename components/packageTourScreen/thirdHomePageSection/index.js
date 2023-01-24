@@ -79,7 +79,7 @@ function ThirdHomePageSection() {
 
   return (
     <div className={classes.container}>
-      <div className={classes.title_section}>
+      {/* <div className={classes.title_section}>
         <h2 className={classes.title}>
           Tours Featuring <br />
           <span>Destination</span>
@@ -110,7 +110,7 @@ function ThirdHomePageSection() {
             <PlacesCards pic={explore_pic_1} />
           </Carousel>
         </div>
-      </div>
+      </div> */}
 
       <div className={classes.places_to_stay_container}>
         <h2 className={classes.title}>Best Places to Stay</h2>
