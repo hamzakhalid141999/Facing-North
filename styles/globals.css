@@ -227,7 +227,7 @@ a {
   height: 440px;
   width: 670px;
   position: absolute;
-  right: -17%;
+  left: 17%;
   bottom: 80px;
 }
 .cards_container .react-multi-carousel-item {

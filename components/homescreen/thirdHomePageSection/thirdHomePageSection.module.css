@@ -7,6 +7,7 @@
   flex-direction: column;
   align-items: center;
   position: relative;
+  min-height: 1600px;
 }
 .globe {
   position: absolute;

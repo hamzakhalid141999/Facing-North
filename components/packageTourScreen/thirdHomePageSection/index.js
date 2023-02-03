@@ -21,6 +21,7 @@ import left_arrow from "../../../public/assets/services_details_assets/left_arro
 
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
+import itinerary from "../../../public/assets/package_tour_assets/itinerary.png";
 
 function ThirdHomePageSection() {
   const [location, setLocation] = useState(1);
@@ -79,38 +80,7 @@ function ThirdHomePageSection() {
 
   return (
     <div className={classes.container}>
-      {/* <div className={classes.title_section}>
-        <h2 className={classes.title}>
-          Tours Featuring <br />
-          <span>Destination</span>
-        </h2>
-        <p className={classes.description}>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras et
-          finibus urna. In ut justo quis metus rhoncus cursus quis vitae magna.
-          Ut nibh metus, accumsan viverra massa ac, sagittis pulvinar ipsum.
-          Aenean lacus augue, sollicitudin eu eros eleifend, luctus ultricies
-          lectus.
-        </p>
-        <div className="cards_container">
-          <Carousel
-            infinite={true}
-            autoPlay={true}
-            responsive={responsive}
-            swipeable={true}
-            draggable={true}
-            showDots={true}
-            customRightArrow={<CustomRightArrow />}
-            customLeftArrow={<CustomLeftArrow />}
-          >
-            <PlacesCards pic={explore_pic_3} />
-            <PlacesCards pic={explore_pic_2} />
-            <PlacesCards pic={explore_pic_1} />
-            <PlacesCards pic={explore_pic_3} />
-            <PlacesCards pic={explore_pic_2} />
-            <PlacesCards pic={explore_pic_1} />
-          </Carousel>
-        </div>
-      </div> */}
+      <div className={classes.itinerary_section}></div>
 
       <div className={classes.places_to_stay_container}>
         <h2 className={classes.title}>Best Places to Stay</h2>

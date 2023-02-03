@@ -2,7 +2,7 @@ import FourthHomePageSection from "../../components/packageTourScreen/fourthHome
 import HeroBanner from "../../components/packageTourScreen/heroBanner";
 import SecondHomePageSection from "../../components/packageTourScreen/secondHomePageSection";
 import ThirdHomePageSection from "../../components/packageTourScreen/thirdHomePageSection";
-import PositiveImpact from "../../components/homescreen/fourthHomePageSection";
+import PositiveImpacts from "../../components/packageTourScreen/positiveImpacts";
 import styles from "./destination_detail.module.css";
 
 export default function PackageTour() {
@@ -11,7 +11,7 @@ export default function PackageTour() {
       <HeroBanner />
       <SecondHomePageSection />
       <ThirdHomePageSection />
-      <PositiveImpact />
+      <PositiveImpacts />
       <FourthHomePageSection />
     </div>
   );

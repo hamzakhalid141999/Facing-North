@@ -46,11 +46,11 @@ function ThirdHomePageSection() {
     },
     desktop: {
       breakpoint: { max: 3000, min: 1220 },
-      items: 3,
+      items: 1,
     },
     tablet: {
       breakpoint: { max: 1220, min: 464 },
-      items: 2,
+      items: 1,
     },
     mobile: {
       breakpoint: { max: 464, min: 0 },
