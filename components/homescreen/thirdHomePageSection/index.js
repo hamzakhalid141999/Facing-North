@@ -29,7 +29,7 @@ function ThirdHomePageSection() {
       items: 3,
     },
     tablet: {
-      breakpoint: { max: 1220, min: 464 },
+      breakpoint: { max: 1220, min: 830 },
       items: 2,
     },
     mobile: {

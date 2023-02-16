@@ -1,10 +1,12 @@
 .footer_body {
   width: 100%;
-  height: 500px;
+  height: fit-content;
   background-color: var(--deepGreen) !important;
   display: flex;
   align-items: center;
   justify-content: center;
+  padding-top: 70px;
+  padding-bottom: 70px;
 }
 .footer_content {
   width: 85%;
@@ -12,6 +14,7 @@
   display: flex;
   column-gap: 40px;
   flex-direction: row;
+  flex-wrap: wrap;
 }
 .left_content p {
   cursor: pointer;
@@ -69,6 +72,7 @@
   row-gap: 30px;
   height: 100%;
   margin: 10px;
+  min-width: 280px;
   position: relative;
 }
 .col_2 {
@@ -86,6 +90,7 @@
   margin-top: 40px;
   cursor: pointer;
   padding-right: 10px;
+  min-width: 190px;
 }
 .social_media_logo:hover {
   opacity: 1;
@@ -223,111 +228,44 @@
 .footer_content_mobile {
   display: none;
 }
-@media screen and (max-width: 1000px) {
-  .footer_body {
-    border-top-left-radius: 60px;
-    border-top-right-radius: 60px;
+@media screen and (max-width: 530px) {
+  .col_1 {
+    width: 100%;
+    margin: 0;
   }
-  .search_bar {
-    height: 60px;
-    font-size: 15px;
-  }
-  .search_bar_container {
-    top: -30px;
+  .col_1 p {
+    color: white;
+    font-size: 13px;
+    cursor: pointer;
     width: 90%;
+    margin-bottom: 20px;
+    line-height: 20px;
   }
-  .search_btn {
-    top: 7px;
-    right: 7px;
+  .copyright_text {
+    color: white;
+    font-size: 10px !important;
+    cursor: pointer;
+    width: 90%;
+    margin-bottom: 20px;
+    line-height: 20px;
+    position: absolute;
+    bottom: 0;
   }
-  .footer_content {
-    display: none;
-  }
-  .footer_content_mobile {
-    width: 95%;
-    height: 500px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 80px;
-  }
-  .logo_container_mobile {
+  .col_2 {
     width: 50%;
-    max-width: 300px;
-    min-width: 250px;
-    height: fit-content;
-    margin-bottom: 0px;
   }
-  .footer_content_mobile h2 {
+  .col_2 h1 {
+    font-size: 24px;
+    cursor: pointer;
     color: white;
-    width: 100%;
-    text-align: center;
-    font-size: 25px;
-    line-height: 35px;
-    margin-bottom: 40px;
+    margin-bottom: 50px;
+    font-family: "b-l";
   }
-  .footer_content_mobile p {
-    color: white;
-    font-size: 17px;
-  }
-  .logo_mobile {
-    width: 80%;
-  }
-  .contact_us_mobile_section {
-    width: 90%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    margin-top: 30px;
-  }
-  .socials_container_mobile {
-    width: 90%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    margin-top: 60px;
-  }
-  .contact_tab {
-    display: flex;
-    flex-direction: column;
-    row-gap: 15px;
-    justify-content: center;
-    align-items: center;
-    text-transform: initial;
-  }
-  .contact_tab p {
-    color: white;
-    text-align: center;
+  .col_2 p {
     font-size: 13px;
-  }
-  .social_media_icons {
-    display: none;
-  }
-  .lower_content {
-    width: 100%;
-  }
-  .left_content {
-    width: 100%;
-  }
-  .left_content > p:nth-child(2) {
-    display: none;
-  }
-  .left_content > p:nth-child(3) {
-    display: none;
-  }
-  .left_content > p:nth-child(4) {
-    display: none;
-  }
-  .divider {
-    width: 100%;
-  }
-  .search_btn {
-    width: 45px;
-  }
-  .mobile_terms_conditions {
-    display: flex;
-    margin-bottom: 15px;
-    font-size: 13px;
+    cursor: pointer;
     color: white;
+    margin-bottom: 24px;
+    font-family: "f-l";
   }
 }
