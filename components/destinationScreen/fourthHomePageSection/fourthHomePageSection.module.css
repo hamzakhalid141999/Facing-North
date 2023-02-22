@@ -81,7 +81,7 @@
   left: 0;
   bottom: 0;
   margin: auto;
-  z-index: 5;
+  z-index: 14;
   display: flex;
   align-items: center;
   /* justify-content: center; */
@@ -230,4 +230,48 @@
 }
 .btn_white:hover p {
   color: var(--deepGreen) !important;
+}
+@media screen and (max-width: 880px) {
+  .img {
+    width: 100vw;
+  }
+  .review_container {
+    position: absolute;
+    height: fit-content;
+    width: fit-content;
+    box-shadow: 0px 23px 93px 0px rgba(11, 78, 85, 0.46);
+    background-color: white;
+    right: 0;
+    left: 0;
+    top: 0;
+    bottom: -80%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    padding-left: 16px;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 40px;
+    padding-right: 8px;
+  }
+  .owner_container {
+    height: 128vh;
+    width: 100%;
+  }
+  .owner_info_container {
+    top: 140%;
+    justify-content: center;
+    width: 100%;
+  }
+  .owner_info_content h3 {
+    width: 100%;
+    text-align: center;
+  }
+  .owner_info_content p {
+    width: 100%;
+    text-align: center;
+  }
+  .owner_info_content {
+    width: 85%;
+  }
 }

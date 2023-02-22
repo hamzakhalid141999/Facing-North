@@ -35,3 +35,12 @@
   line-height: 25px;
   font-family: "f-l";
 }
+@media screen and (max-width: 786px) {
+  .hero_banner_container h2 {
+    font-size: 32px;
+  }
+  .hero_banner_container p {
+    font-size: 14px;
+    width: 85%;
+  }
+}
