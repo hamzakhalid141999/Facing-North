@@ -276,3 +276,40 @@
 .btn_white:hover p {
   color: var(--deepGreen) !important;
 }
+@media screen and (max-width: 786px) {
+  .img_wrapper {
+    width: 85%;
+  }
+  .review_container {
+    width: 300px;
+    right: -60%;
+    top: initial;
+    left: 0;
+    bottom: 0;
+  }
+  .review_container h3 {
+    font-size: 25px;
+  }
+  .review_container p {
+    font-size: 13px;
+  }
+  .review_container_right {
+    position: absolute;
+    height: fit-content;
+    width: 310px;
+    box-shadow: 0px 23px 93px 0px rgba(11, 78, 85, 0.46);
+    background-color: white;
+    padding-bottom: 60px;
+    padding-top: 30px;
+    left: -50%;
+    right: 0;
+    top: initial;
+    bottom: 0;
+    margin: auto;
+    display: flex;
+    padding-left: 30px;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+  }
+}
