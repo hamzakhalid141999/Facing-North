@@ -125,6 +125,7 @@ a {
   align-items: center; */
   margin-top: 40px;
   /* padding-bottom: 160px; */
+  min-height: 700px;
 }
 .second_container .react-multi-carousel-dot-list {
   justify-content: initial !important;

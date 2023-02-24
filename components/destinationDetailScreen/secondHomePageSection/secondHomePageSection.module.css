@@ -137,6 +137,6 @@
   }
   .container {
     max-height: 1300px;
-    min-height: initial;
+    min-height: 1100px;
   }
 }

@@ -3,6 +3,8 @@ import classes from "./navbar.module.css";
 import { useRouter } from "next/router";
 import logo from "../../public/assets/navbar-assets/logo-white.svg";
 import Link from "next/link";
+import SlidingPanel, { PanelType } from "react-sliding-side-panel";
+import "react-sliding-side-panel/lib/index.css";
 
 function Navbar() {
   const router = useRouter();
