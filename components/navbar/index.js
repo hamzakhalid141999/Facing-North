@@ -70,12 +70,68 @@ function Navbar() {
         <div className={classes.panel_container}>
           <img src={logo.src} />
 
-          <p>ABOUT</p>
-          <p>SERVICES</p>
-          <p>TOUR PACKAGES</p>
-          <p>DESTINATIONS</p>
-          <p>BLOGS</p>
-          <p>CONTACT</p>
+          <p
+            onClick={() => {
+              router.push("/");
+              setOpenPanel(false);
+            }}
+          >
+            HOME
+          </p>
+
+          <p
+            onClick={() => {
+              router.push("/");
+              setOpenPanel(false);
+            }}
+          >
+            ABOUT
+          </p>
+
+          <p
+            onClick={() => {
+              router.push("/services");
+              setOpenPanel(false);
+            }}
+          >
+            SERVICES
+          </p>
+
+          <p
+            onClick={() => {
+              router.push("/package_tour");
+              setOpenPanel(false);
+            }}
+          >
+            TOUR PACKAGES
+          </p>
+
+          <p
+            onClick={() => {
+              router.push("/destination_detail");
+              setOpenPanel(false);
+            }}
+          >
+            DESTINATIONS
+          </p>
+
+          <p
+            onClick={() => {
+              router.push("/");
+              setOpenPanel(false);
+            }}
+          >
+            BLOG
+          </p>
+
+          <p
+            onClick={() => {
+              router.push("/contact");
+              setOpenPanel(false);
+            }}
+          >
+            CONTACT
+          </p>
         </div>
       </SlidingPanel>
       <img
@@ -90,10 +146,19 @@ function Navbar() {
         </Link>
       </div>
       <div className={classes.right_panel}>
-        <p>HOME</p>
+        <Link href={"/"}>
+          <p>HOME</p>
+        </Link>
+
         <p>ABOUT</p>
-        <p>SERVICES</p>
-        <p>TOUR PACKAGES</p>
+        <Link href={"/services"}>
+          <p>SERVICES</p>
+        </Link>
+
+        <Link href={"/package_tour"}>
+          <p>TOUR PACKAGES</p>
+        </Link>
+
         <Link href={"/destination_detail"}>
           <p>DESTINATIONS</p>
         </Link>
