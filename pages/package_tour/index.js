@@ -4,6 +4,8 @@ import SecondHomePageSection from "../../components/packageTourScreen/secondHome
 import ThirdHomePageSection from "../../components/packageTourScreen/thirdHomePageSection";
 import PositiveImpacts from "../../components/packageTourScreen/positiveImpacts";
 import styles from "./destination_detail.module.css";
+import MapSection from "../../components/packageTourScreen/mapSection";
+import TemperatureGraph from "../../components/packageTourScreen/temperatureGraph";
 
 export default function PackageTour() {
   return (
@@ -11,7 +13,9 @@ export default function PackageTour() {
       <HeroBanner />
       <SecondHomePageSection />
       <ThirdHomePageSection />
+      <MapSection />
       <PositiveImpacts />
+      <TemperatureGraph />
       <FourthHomePageSection />
     </div>
   );

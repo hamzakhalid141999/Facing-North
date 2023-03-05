@@ -18,12 +18,13 @@ function Navbar() {
 
   let listener = null;
 
-  const [currentPage, setCurrentPage] = useState();
+  const [currentPage, setCurrentPage] = useState([]);
 
   useEffect(() => {
     if (router.pathname) {
       const page = router.pathname.split("/");
-      setCurrentPage(page[1]);
+      console.log(page);
+      setCurrentPage(page);
     }
   }, [router.pathname]);
 
@@ -55,6 +56,8 @@ function Navbar() {
           ? classes.navbar_body_opaque
           : backgroundColor === "opaque"
           ? classes.navbar_body_opaque
+          : currentPage[1] === "blogs" && currentPage?.length === 3
+          ? classes.navbar_body_opaque
           : classes.navbar_body
       }
     >
@@ -72,11 +75,11 @@ function Navbar() {
 
           <p
             onClick={() => {
-              router.push("/");
+              router.push("/faq");
               setOpenPanel(false);
             }}
           >
-            HOME
+            FAQ
           </p>
 
           <p
@@ -85,8 +88,17 @@ function Navbar() {
               setOpenPanel(false);
             }}
           >
-            ABOUT
+            HOME
           </p>
+
+          {/* <p
+            onClick={() => {
+              router.push("/");
+              setOpenPanel(false);
+            }}
+          >
+            ABOUT
+          </p> */}
 
           <p
             onClick={() => {
@@ -117,7 +129,7 @@ function Navbar() {
 
           <p
             onClick={() => {
-              router.push("/");
+              router.push("/blogs");
               setOpenPanel(false);
             }}
           >
@@ -146,11 +158,15 @@ function Navbar() {
         </Link>
       </div>
       <div className={classes.right_panel}>
+        <Link href={"/faq"}>
+          <p>FAQ</p>
+        </Link>
+
         <Link href={"/"}>
           <p>HOME</p>
         </Link>
 
-        <p>ABOUT</p>
+        {/* <p>ABOUT</p> */}
         <Link href={"/services"}>
           <p>SERVICES</p>
         </Link>
@@ -163,7 +179,9 @@ function Navbar() {
           <p>DESTINATIONS</p>
         </Link>
 
-        <p>BLOG</p>
+        <Link href={"/blogs"}>
+          <p>BLOG</p>
+        </Link>
         <Link href={"/contact"}>
           <p>CONTACT</p>
         </Link>

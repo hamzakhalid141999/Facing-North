@@ -22,6 +22,7 @@ import left_arrow from "../../../public/assets/services_details_assets/left_arro
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import itinerary from "../../../public/assets/package_tour_assets/itinerary.png";
+import bg from "../../../public/assets/package_tour_assets/pic.png";
 
 function ThirdHomePageSection() {
   const [location, setLocation] = useState(1);
@@ -80,7 +81,35 @@ function ThirdHomePageSection() {
 
   return (
     <div className={classes.container}>
-      <div className={classes.itinerary_section}></div>
+      <div className={classes.itinerary_section}>
+        <div className={classes.itinerary_heading_container}>
+          <div className={classes.heading_container}>
+            <p>Itinerary Section</p>
+          </div>
+          <div className={classes.duration_container}>
+            <p>9 DAYS 8 NIGHTS</p>
+          </div>
+        </div>
+
+        <div className={classes.content_container}>
+          <h2 className={classes.day_heading}>DAY 01</h2>
+          <p className={classes.city}>Gilgit, Baltistant</p>
+          <p className={classes.city_description}>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras et
+            finibus urna. In ut justo quis metus rhoncus cursus quis vitae
+            magna. Ut nibh metus, accumsan viverra massa ac, sagittis pulvinar
+            ipsum. Aenean lacus augue, sollicitudin eu eros eleifend, luctus
+            ultricies lectus. Nam elementum tempor arcu, ut faucibus ligula
+            pharetra eu.
+          </p>
+        </div>
+        <div className={classes.pic_container}>
+          <img src={bg.src} className={classes.img} />
+          <div className={classes.next_day_container}>
+            <p>DAY 2 </p>
+          </div>
+        </div>
+      </div>
 
       <div className={classes.places_to_stay_container}>
         <h2 className={classes.title}>Best Places to Stay</h2>
