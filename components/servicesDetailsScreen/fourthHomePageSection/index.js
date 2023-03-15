@@ -12,6 +12,7 @@ import left_arrow from "../../../public/assets/services_details_assets/left_arro
 
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
+import TestimonialSection from "../../testimonialSection";
 
 function FourthHomePageSection() {
   const responsive = {
@@ -68,29 +69,6 @@ function FourthHomePageSection() {
 
   return (
     <>
-      <div className={classes.container}>
-        <div className={classes.single_row}>
-          <div className={classes.left_panel}>
-            <h2>Extraordinary finishing touches</h2>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras et
-              finibus urna. In ut justo quis metus rhoncus cursus quis vitae
-              magna. Ut nibh metus, accumsan viverra massa ac, sagittis pulvinar
-              ipsum. Aenean lacus augue, sollicitudin eu eros eleifend, luctus
-              ultricies lectus. Nam elementum tempor arcu, ut faucibus ligula
-              pharetra eu. Mauris tempus est est, non mattis massa accumsan eu.
-              Fusce nisl mauris, sollicitudin quis ullamcorper et, mollis nec
-              odio. Aenean feugiat est in vestibulum posuere.
-            </p>
-          </div>
-          <div className={classes.right_panel}>
-            <div className={classes.img_container}>
-              <img className={classes.img1} src={third_section_img.src} />
-            </div>
-          </div>
-        </div>
-      </div>
-
       <div className={"second_container"}>
         <Carousel
           infinite={true}
@@ -112,6 +90,8 @@ function FourthHomePageSection() {
           <img src={img1.src} className={classes.carousel_img} />
         </Carousel>
       </div>
+
+      <TestimonialSection />
 
       <div className={classes.blogs_section}>
         <div className={classes.overlay} />

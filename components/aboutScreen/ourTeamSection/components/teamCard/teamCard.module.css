@@ -1,0 +1,45 @@
+.card_body {
+  width: fit-content;
+  height: 400px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.img_container {
+  height: 100%;
+}
+.img_container img {
+  height: 100%;
+  width: 220px;
+  object-fit: cover;
+}
+.content_container {
+  height: 70%;
+  width: 230px;
+  background-color: var(--medGreen);
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+  align-items: center;
+  justify-content: center;
+  padding-left: 15px;
+}
+.content_container h2 {
+  font-family: "f-l";
+  color: white;
+  font-size: 35px;
+  width: 90%;
+  line-height: 35px;
+}
+.founder_text {
+  font-size: 20px;
+  font-family: "f-l";
+  color: white;
+  width: 90%;
+}
+.description {
+  font-size: 12px;
+  font-family: "f-l";
+  color: white;
+  width: 90%;
+}

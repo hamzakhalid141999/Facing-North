@@ -3,6 +3,7 @@ import classes from "./fourthHomePageSection.module.css";
 import service_1 from "../../../public/assets/services_assets/service_1.png";
 import service_2 from "../../../public/assets/services_assets/service_2.png";
 import service_3 from "../../../public/assets/services_assets/service_3.png";
+import Link from "next/link";
 
 function FourthHomePageSection() {
   return (
@@ -20,9 +21,11 @@ function FourthHomePageSection() {
                 magna. Ut nibh metus, accumsan viverra massa ac, sagittis
                 pulvinar ipsum.{" "}
               </p>
-              <div className={classes.btn}>
-                <p>EXPLORE</p>
-              </div>
+              <Link href="/services_details">
+                <div className={classes.btn}>
+                  <p>EXPLORE</p>
+                </div>
+              </Link>
             </div>
           </div>
         </div>
@@ -41,9 +44,11 @@ function FourthHomePageSection() {
                 magna. Ut nibh metus, accumsan viverra massa ac, sagittis
                 pulvinar ipsum.{" "}
               </p>
-              <div className={classes.btn}>
-                <p>EXPLORE</p>
-              </div>
+              <Link href="/services_details">
+                <div className={classes.btn}>
+                  <p>EXPLORE</p>
+                </div>
+              </Link>
             </div>
           </div>
         </div>
@@ -62,19 +67,13 @@ function FourthHomePageSection() {
                 magna. Ut nibh metus, accumsan viverra massa ac, sagittis
                 pulvinar ipsum.{" "}
               </p>
-              <div className={classes.btn}>
-                <p>EXPLORE</p>
-              </div>
+              <Link href="/services_details">
+                <div className={classes.btn}>
+                  <p>EXPLORE</p>
+                </div>
+              </Link>
             </div>
           </div>
-        </div>
-      </div>
-
-      <div className={classes.blogs_section}>
-        <div className={classes.overlay} />
-        <h3>Our Pakistan</h3>
-        <div className={classes.btn_white}>
-          <p>EXPLORE</p>
         </div>
       </div>
     </div>

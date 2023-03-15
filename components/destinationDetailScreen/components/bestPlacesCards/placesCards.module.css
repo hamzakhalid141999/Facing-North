@@ -8,7 +8,20 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  border-bottom: 3px solid var(--medGreen) !important;
+  border-bottom: 3px solid var(--medGreen);
+  transition: ease-in-out 200ms;
+}
+.card_body_non_hover {
+  width: 390px;
+  min-width: 350px;
+  height: 440px;
+  transition: ease-out 200ms;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-bottom: 3px solid var(--medGreen);
   transition: ease-in-out 200ms;
 }
 .card_body:hover {
@@ -29,11 +42,6 @@
 .description_container {
   height: 39%;
   width: 100%;
-  /* background-color: red; */
-  background-image: linear-gradient(
-    rgba(128, 128, 128, 0),
-    rgba(128, 128, 128, 0.375)
-  );
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -41,7 +49,6 @@
 .description_container_inner {
   height: 100%;
   width: 99%;
-  background-color: rgb(240, 240, 240);
   display: flex;
   flex-direction: column;
   row-gap: 0px;
@@ -86,7 +93,20 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    border-bottom: 3px solid var(--medGreen) !important;
+    border-bottom: 3px solid var(--medGreen);
+    transition: ease-in-out 200ms;
+  }
+  .card_body_non_hover {
+    width: 300px;
+    min-width: 260px;
+    height: 440px;
+    transition: ease-out 200ms;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-bottom: 3px solid var(--medGreen);
     transition: ease-in-out 200ms;
   }
 }

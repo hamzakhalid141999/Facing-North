@@ -4,6 +4,7 @@ import FourthHomePageSection from "../components/homescreen/fourthHomePageSectio
 import HeroBanner from "../components/homescreen/heroBanner";
 import SecondHomePageSection from "../components/homescreen/secondHomePageSection";
 import ThirdHomePageSection from "../components/homescreen/thirdHomePageSection";
+import TestimonialSection from "../components/testimonialSection";
 import Tooltip from "../components/tooltip";
 import styles from "../styles/Home.module.css";
 
@@ -15,6 +16,7 @@ export default function Home() {
       <SecondHomePageSection />
       <ThirdHomePageSection />
       <FourthHomePageSection />
+      <TestimonialSection isOnlyFirstSection={true} />
     </div>
   );
 }

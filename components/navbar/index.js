@@ -56,7 +56,8 @@ function Navbar() {
           ? classes.navbar_body_opaque
           : backgroundColor === "opaque"
           ? classes.navbar_body_opaque
-          : currentPage[1] === "blogs" && currentPage?.length === 3
+          : (currentPage[1] === "blogs" && currentPage?.length === 3) ||
+            currentPage[1] === "destinations"
           ? classes.navbar_body_opaque
           : classes.navbar_body
       }
@@ -91,14 +92,14 @@ function Navbar() {
             HOME
           </p>
 
-          {/* <p
+          <p
             onClick={() => {
-              router.push("/");
+              router.push("/about");
               setOpenPanel(false);
             }}
           >
             ABOUT
-          </p> */}
+          </p>
 
           <p
             onClick={() => {
@@ -120,7 +121,7 @@ function Navbar() {
 
           <p
             onClick={() => {
-              router.push("/destination_detail");
+              router.push("/destinations");
               setOpenPanel(false);
             }}
           >
@@ -158,12 +159,11 @@ function Navbar() {
         </Link>
       </div>
       <div className={classes.right_panel}>
+        <Link href={"/about"}>
+          <p>ABOUT</p>
+        </Link>
         <Link href={"/faq"}>
           <p>FAQ</p>
-        </Link>
-
-        <Link href={"/"}>
-          <p>HOME</p>
         </Link>
 
         {/* <p>ABOUT</p> */}
@@ -175,7 +175,7 @@ function Navbar() {
           <p>TOUR PACKAGES</p>
         </Link>
 
-        <Link href={"/destination_detail"}>
+        <Link href={"/destinations"}>
           <p>DESTINATIONS</p>
         </Link>
 

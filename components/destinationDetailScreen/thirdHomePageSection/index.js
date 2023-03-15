@@ -22,7 +22,7 @@ import left_arrow from "../../../public/assets/services_details_assets/left_arro
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 
-function ThirdHomePageSection() {
+function TopPlacesToVisit() {
   const [location, setLocation] = useState(1);
 
   const responsive = {
@@ -34,6 +34,26 @@ function ThirdHomePageSection() {
     desktop: {
       breakpoint: { max: 3000, min: 1220 },
       items: 3,
+    },
+    tablet: {
+      breakpoint: { max: 1220, min: 830 },
+      items: 2,
+    },
+    mobile: {
+      breakpoint: { max: 464, min: 0 },
+      items: 1,
+    },
+  };
+
+  const responsiveBestPlaceCards = {
+    superLargeDesktop: {
+      // the naming can be any, depends on you.
+      breakpoint: { max: 4000, min: 3000 },
+      items: 3,
+    },
+    desktop: {
+      breakpoint: { max: 3000, min: 1220 },
+      items: 2,
     },
     tablet: {
       breakpoint: { max: 1220, min: 830 },
@@ -79,7 +99,64 @@ function ThirdHomePageSection() {
 
   return (
     <div className={classes.container}>
-      <div className={classes.title_section}>
+      <div className={classes.places_to_stay_container}>
+        <h2 className={classes.title}>Top places to visit</h2>
+        <p className={classes.description}>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras et
+          finibus urna. In ut justo quis metus rhoncus cursus quis vitae magna.
+          Ut nibh metus, accumsan viverra massa ac, sagittis pulvinar ipsum.
+          Aenean lacus augue, sollicitudin eu eros eleifend, luctus ultricies
+          lectus. Nam elementum tempor arcu, ut faucibus ligula pharetra eu.
+        </p>
+        <div className={classes.best_cards_container}>
+          <BestPlacesCards pic={place_1} />
+          <BestPlacesCards pic={place_2} />
+          <BestPlacesCards pic={place_3} />
+        </div>
+      </div>
+
+      <div className={classes.best_places_container}>
+        <div className={classes.best_places_text_container}>
+          <h2 className={classes.best_places_title}>Best places to Stay</h2>
+          <p className={classes.best_places_description}>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras et
+            finibus urna. In ut justo quis metus rhoncus cursus quis vitae
+            magna. Ut nibh metus, accumsan viverra massa ac, sagittis pulvinar
+            ipsum. Aenean lacus augue, sollicitudin eu eros eleifend, luctus
+            ultricies lectus. Nam elementum tempor arcu, ut faucibus ligula
+            pharetra eu.
+          </p>
+        </div>
+
+        <div className={classes.best_places_cards_container}>
+          <Carousel
+            infinite={true}
+            autoPlay={true}
+            responsive={responsiveBestPlaceCards}
+            swipeable={true}
+            draggable={true}
+            showDots={false}
+          >
+            <BestPlacesCards
+              isNotHoverable={true}
+              isLeftAligned={true}
+              pic={place_1}
+            />
+            <BestPlacesCards
+              isNotHoverable={true}
+              isLeftAligned={true}
+              pic={place_2}
+            />
+            <BestPlacesCards
+              isNotHoverable={true}
+              isLeftAligned={true}
+              pic={place_2}
+            />
+          </Carousel>
+        </div>
+      </div>
+
+      <div className={classes.sliding_cards_container}>
         <h2 className={classes.title}>
           Tours Featuring <br />
           <span>Destination</span>
@@ -111,24 +188,8 @@ function ThirdHomePageSection() {
           </Carousel>
         </div>
       </div>
-
-      <div className={classes.places_to_stay_container}>
-        <h2 className={classes.title}>Best Places to Stay</h2>
-        <p className={classes.description}>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras et
-          finibus urna. In ut justo quis metus rhoncus cursus quis vitae magna.
-          Ut nibh metus, accumsan viverra massa ac, sagittis pulvinar ipsum.
-          Aenean lacus augue, sollicitudin eu eros eleifend, luctus ultricies
-          lectus. Nam elementum tempor arcu, ut faucibus ligula pharetra eu.
-        </p>
-        <div className={classes.best_cards_container}>
-          <BestPlacesCards pic={place_1} />
-          <BestPlacesCards pic={place_2} />
-          <BestPlacesCards pic={place_3} />
-        </div>
-      </div>
     </div>
   );
 }
 
-export default ThirdHomePageSection;
+export default TopPlacesToVisit;

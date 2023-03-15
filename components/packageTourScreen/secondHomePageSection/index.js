@@ -12,48 +12,18 @@ import recommendation from "../../../public/assets/package_tour_assets/recommend
 function SecondHomePageSection() {
   return (
     <div className={classes.container}>
-      <img src={second_section_bg.src} className={classes.bg} />
-      <h2 className={classes.heading}>Overview of the location</h2>
-
       <div className={classes.single_row}>
         <div className={classes.left_panel}>
-          <h2>Hunza Introduction</h2>
-          <div className={classes.single_row_feature}>
-            <img src={location.src} />
-            <p>Location</p>
-          </div>
+          <h2>Overview of Pakistan</h2>
 
-          <div className={classes.single_row_feature}>
-            <img src={user.src} />
-            <p>People</p>
-          </div>
-
-          <div className={classes.single_row_feature}>
-            <img src={weather.src} />
-            <p>Weather</p>
-          </div>
-
-          <div className={classes.single_row_feature}>
-            <img src={best_place.src} />
-            <p>Best Time to Visit</p>
-          </div>
-
-          <div className={classes.single_row_feature}>
-            <img src={recommendation.src} />
-            <p>Recommendation</p>
-          </div>
-
-          <div className={classes.img_container_2}>
-            {/* <img className={classes.img2} src={second_section_pic2.src} /> */}
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras et
-              finibus urna. In ut justo quis metus rhoncus cursus quis vitae
-              magna. Ut nibh metus, accumsan viverra massa ac, sagittis pulvinar
-              ipsum. Aenean lacus augue, sollicitudin eu eros eleifend, luctus
-              ultricies lectus. Nam elementum tempor arcu, ut faucibus ligula
-              pharetra eu.
-            </p>
-          </div>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras et
+            finibus urna. In ut justo quis metus rhoncus cursus quis vitae
+            magna. Ut nibh metus, accumsan viverra massa ac, sagittis pulvinar
+            ipsum. Aenean lacus augue, sollicitudin eu eros eleifend, luctus
+            ultricies lectus. Nam elementum tempor arcu, ut faucibus ligula
+            pharetra eu.
+          </p>
         </div>
         <div className={classes.right_panel}>
           <div className={classes.img_container}>

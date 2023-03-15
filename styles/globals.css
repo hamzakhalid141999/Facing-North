@@ -15,6 +15,18 @@ a {
   --medGreen: #176060;
 }
 
+.carousel .slider-wrapper.axis-horizontal .slider {
+  column-gap: 0;
+}
+.carousel .control-dots {
+  display: none;
+}
+.carousel-root {
+  width: 100%;
+}
+.large_banner_container .react-multi-carousel-list {
+  background-color: #eaeeef;
+}
 /* FONTS */
 
 @font-face {
@@ -116,39 +128,45 @@ a {
   border-top-width: 1px !important;
   border-bottom-width: 1px !important;
 }
-.second_container {
+.second_container,
+.second_container_white {
   width: 100%;
   height: 80vh;
   position: relative;
-  /* display: flex;
-  flex-direction: column;
-  align-items: center; */
   margin-top: 40px;
-  /* padding-bottom: 160px; */
   min-height: 700px;
+  background-color: #eaeeef;
 }
-.second_container .react-multi-carousel-dot-list {
-  justify-content: initial !important;
+.second_container_white {
+  background-color: white;
+}
+
+.second_container .react-multi-carousel-dot-list,
+.second_container_white .react-multi-carousel-dot-list {
+  justify-content: flex-end !important;
   bottom: 23px !important;
   right: 0px !important;
   display: flex !important;
   flex-direction: row !important;
   align-items: center !important;
-  width: 100% !important;
+  width: 80% !important;
 }
-.second_container .react-multi-carousel-track {
+.second_container .react-multi-carousel-track,
+.second_container_white .react-multi-carousel-track {
   height: 700px !important;
   padding-bottom: 80px !important;
 }
 
-.second_container .react-multiple-carousel__arrow--left {
+.second_container .react-multiple-carousel__arrow--left,
+.second_container_white .react-multiple-carousel__arrow--left {
   left: 5% !important;
   bottom: 12px !important;
   width: 43px !important;
   height: 43px !important;
   opacity: 1 !important;
 }
-.second_container .react-multiple-carousel__arrow--right {
+.second_container .react-multiple-carousel__arrow--right,
+.second_container_white .react-multiple-carousel__arrow--right {
   left: 10% !important;
   bottom: 12px !important;
   width: 43px !important;
@@ -156,7 +174,8 @@ a {
   opacity: 1 !important;
 }
 
-.second_container .react-multi-carousel-dot button {
+.second_container .react-multi-carousel-dot button,
+.second_container_white .react-multi-carousel-dot button {
   background-color: black !important;
   border-color: 2px solid transparent !important;
   margin-right: 0px !important;
@@ -170,7 +189,8 @@ a {
   margin-right: 10px !important;
   transition: ease-in-out 200ms;
 }
-.second_container .react-multi-carousel-dot--active button {
+.second_container .react-multi-carousel-dot--active button,
+.second_container_white .react-multi-carousel-dot--active button {
   background-color: transparent !important;
   border: 2px solid black !important;
   height: 14px !important;
@@ -213,7 +233,6 @@ a {
   right: 100px;
   margin-top: 15px;
   position: relative;
-  /* max-width: 1250px; */
   height: 500px;
 }
 .homepage_location_pic_container img {

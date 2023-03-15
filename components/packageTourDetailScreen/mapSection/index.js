@@ -1,7 +1,8 @@
 import React from "react";
-import classes from "./temperatureGraph.module.css";
+import classes from "./mapSection.module.css";
+import map from "../../../public/assets/package_tour_assets/map.png";
 
-function TemperatureGraph() {
+function MapSection() {
   return (
     <div className={classes.container}>
       <h1 className={classes.title}>Map and Itinerary</h1>
@@ -13,8 +14,9 @@ function TemperatureGraph() {
         dolor sit amet, consectetur adipiscing elit. Cras et finibus urna. In ut
         justo quis metus rhoncus cursus quis vitae magna
       </p>
+      <img src={map.src} />
     </div>
   );
 }
 
-export default TemperatureGraph;
+export default MapSection;

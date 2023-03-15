@@ -4,37 +4,12 @@ import girl_pic from "../../../public/assets/destination_detail_assets/girl_plac
 import boy_pic from "../../../public/assets/destination_detail_assets/boy_placeholder.png";
 import blog_bg from "../../../public/assets/destination_detail_assets/blog_bg.svg";
 import star_filled from "../../../public/assets/destination_detail_assets/star_filled.svg";
+import TestimonialSection from "../../testimonialSection";
 
 function FourthHomePageSection() {
   return (
     <div className={classes.container}>
-      <div className={classes.feedback_section}>
-        <h2>Reviews</h2>
-        <div className={classes.img_container}>
-          <div className={classes.img_wrapper}>
-            <img src={girl_pic.src} className={classes.img} />
-            <div className={classes.review_container}>
-              <h3>Bella Morgan</h3>
-              <div className={classes.stars_container}>
-                <img src={star_filled.src} className={classes.star} />
-                <img src={star_filled.src} className={classes.star} />
-                <img src={star_filled.src} className={classes.star} />
-                <img src={star_filled.src} className={classes.star} />
-                <img src={star_filled.src} className={classes.star} />
-              </div>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras et
-                finibus urna. In ut justo quis metus rhoncus cursus quis vitae
-                magna. Ut nibh metus, accumsan viverra massa ac, sagittis
-                pulvinar ipsum.{" "}
-              </p>
-              <div className={classes.btn}>
-                <p>Contact Us</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+      <TestimonialSection />
       <div className={classes.owner_container}>
         <div className={classes.img_container_2}>
           <div className={classes.img_wrapper_2}>

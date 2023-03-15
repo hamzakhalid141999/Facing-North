@@ -4,6 +4,9 @@ import FourthHomePageSection from "../../components/servicesDetailsScreen/fourth
 import HeroBanner from "../../components/servicesDetailsScreen/heroBanner";
 import SecondHomePageSection from "../../components/servicesDetailsScreen/secondHomePageSection";
 import ThirdHomePageSection from "../../components/servicesDetailsScreen/thirdHomePageSection";
+import TopDestinations from "../../components/servicesDetailsScreen/topDestinations";
+import TopItineraries from "../../components/servicesDetailsScreen/topItineraries";
+import TestimonialSection from "../../components/testimonialSection";
 import styles from "./services_details.module.css";
 
 export default function ServicesDetails() {
@@ -11,7 +14,9 @@ export default function ServicesDetails() {
     <div className={styles.container}>
       <HeroBanner />
       <SecondHomePageSection />
-      <ThirdHomePageSection />
+      <TopDestinations />
+      <TopItineraries />
+      {/* <ThirdHomePageSection /> */}
       <FourthHomePageSection />
     </div>
   );
