@@ -1,9 +1,6 @@
 import React from "react";
 import classes from "./fourthHomePageSection.module.css";
-import girl_pic from "../../../public/assets/destination_detail_assets/girl_placeholder.png";
 import boy_pic from "../../../public/assets/destination_detail_assets/boy_placeholder.png";
-import blog_bg from "../../../public/assets/destination_detail_assets/blog_bg.svg";
-import star_filled from "../../../public/assets/destination_detail_assets/star_filled.svg";
 import TestimonialSection from "../../testimonialSection";
 
 function FourthHomePageSection() {
@@ -25,7 +22,6 @@ function FourthHomePageSection() {
                 pulvinar ipsum. Aenean lacus augue, sollicitudin eu eros
                 eleifend, luctus ultricies lectus. Nam elementum tempor arcu, ut
                 faucibus ligula pharetra eu. Mauris tempus est est, non mattis
-                massa accumsan eu. Fusce nisl mauris, sollicitudin quis
                 ullamcorper et, mollis nec odio. Aenean feugiat est in
                 vestibulum posuere. Sed commodo elit neque, sed rutrum risus
                 semper in. Vestibulum eu lorem condimentum, semper neque
