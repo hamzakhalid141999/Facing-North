@@ -21,4 +21,5 @@
   height: 100%;
   position: absolute;
   background-color: #176060be;
+  z-index: 1;
 }
