@@ -16,9 +16,7 @@
   line-height: 45px;
   margin-bottom: 25px;
 }
-.card_section {
-  width: 70%;
-  height: fit-content;
-  flex-direction: row;
-  column-gap: 40px;
+
+@media screen and (max-width: 1341px) {
+
 }

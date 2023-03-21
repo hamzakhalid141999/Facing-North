@@ -13,15 +13,26 @@ function OurTeamSection() {
     infinite: true,
     slidesToShow: 2,
     slidesToScroll: 1,
-    autoplay: true,
+    autoplay: false,
     autoplaySpeed: 2000,
     nextArrow: <Next />,
     prevArrow: <Prev />,
+    responsive: [
+      {
+        breakpoint: 1341,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          infinite: true,
+          centerMode: true,
+        },
+      },
+    ],
   };
   return (
     <div className={classes.container}>
       <p className={classes.title}>Our Team</p>
-      <div className={classes.card_section}>
+      <div className="our_team_slider">
         <Slider arrows={true} {...settings}>
           <TeamCard />
           <TeamCard />

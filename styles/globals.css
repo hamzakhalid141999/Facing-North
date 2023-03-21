@@ -366,3 +366,19 @@ textarea {
     width: 40px !important;
   }
 }
+.our_team_slider {
+  width: 70%;
+  height: fit-content;
+  flex-direction: row;
+  column-gap: 40px;
+}
+@media screen and (max-width: 1341px) {
+  .our_team_slider .slick-initialized .slick-slide {
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+  }
+  .our_team_slider {
+    width: 100% !important;
+  }
+}
