@@ -6,6 +6,7 @@ import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a lo
 import { Carousel } from "react-responsive-carousel";
 import right_arrow from "../../../public/assets/services_details_assets/right_arrow.svg";
 import left_arrow from "../../../public/assets/services_details_assets/left_arrow.svg";
+import { HOMEPAGE_FIRST_SLIDER } from "../../../data/homepage";
 
 function SecondHomePageSection() {
   return (
@@ -26,7 +27,10 @@ function SecondHomePageSection() {
                     zIndex: "1000000",
                   }}
                   className={"react-multiple-carousel__arrow--left"}
-                  onClick={onClickHandler}
+                  onClick={() => {
+                    console.log("CLICKEDDDDDD!!!!!");
+                    onClickHandler();
+                  }}
                 />
               )
             }
@@ -48,55 +52,24 @@ function SecondHomePageSection() {
             autoPlay
             infiniteLoop
             showStatus={false}
-            showThumbs={true}
+            showThumbs={false}
           >
-            <div className={classes.single_row}>
-              <div className={classes.left_panel}>
-                <h2>Welcome to our World</h2>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras
-                  et finibus urna. In ut justo quis metus rhoncus cursus quis
-                  vitae magna. Ut nibh metus, accumsan viverra massa ac,
-                  sagittis pulvinar ipsum. Aenean lacus augue, sollicitudin eu
-                  eros eleifend, luctus ultricies lectus. Nam elementum tempor
-                  arcu, ut faucibus ligula pharetra eu. Mauris tempus est est,
-                  non mattis massa accumsan eu. Fusce nisl mauris, sollicitudin
-                  quis ullamcorper et, mollis nec odio. Aenean feugiat est in
-                  vestibulum posuere. Sed commodo elit neque, sed rutrum risus
-                  semper in. Vestibulum eu lorem condimentum, semper neque
-                  fringilla, elementum velit.
-                </p>
-              </div>
-              <div className={classes.right_panel}>
-                <div className={classes.img_container}>
-                  <img className={classes.img1} src={second_section_pic1.src} />
+            {HOMEPAGE_FIRST_SLIDER?.map((slide, index) => (
+              <div key={index} className={classes.single_row}>
+                <div className={classes.left_panel}>
+                  <h2>{slide.title}</h2>
+                  <p>{slide.detailed_description}</p>
+                </div>
+                <div className={classes.right_panel}>
+                  <div className={classes.img_container}>
+                    <img
+                      className={classes.img1}
+                      src={second_section_pic1.src}
+                    />
+                  </div>
                 </div>
               </div>
-            </div>
-
-            <div className={classes.single_row}>
-              <div className={classes.left_panel}>
-                <h2>Welcome to our World</h2>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras
-                  et finibus urna. In ut justo quis metus rhoncus cursus quis
-                  vitae magna. Ut nibh metus, accumsan viverra massa ac,
-                  sagittis pulvinar ipsum. Aenean lacus augue, sollicitudin eu
-                  eros eleifend, luctus ultricies lectus. Nam elementum tempor
-                  arcu, ut faucibus ligula pharetra eu. Mauris tempus est est,
-                  non mattis massa accumsan eu. Fusce nisl mauris, sollicitudin
-                  quis ullamcorper et, mollis nec odio. Aenean feugiat est in
-                  vestibulum posuere. Sed commodo elit neque, sed rutrum risus
-                  semper in. Vestibulum eu lorem condimentum, semper neque
-                  fringilla, elementum velit.
-                </p>
-              </div>
-              <div className={classes.right_panel}>
-                <div className={classes.img_container}>
-                  <img className={classes.img1} src={second_section_pic1.src} />
-                </div>
-              </div>
-            </div>
+            ))}
           </Carousel>
         </div>
       </div>

@@ -5,11 +5,15 @@ function HeroBanner() {
   return (
     <div className={classes.hero_banner_container}>
       <div className={classes.overlay} />
-      <h2>Discover your world</h2>
+      <h2>Discover Pakistan</h2>
       <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean nisl
-        libero, ornare non libero vitae, vestibulum egestas tellus. Curabitur
-        sodales eleifend sem laoreet varius.{" "}
+        Discover Pakistan's Cultural and Natural Wonders in Style with Our
+        Exclusive Tours
+      </p>
+
+      <p>
+        Indulge in the Marvels of Pakistan's Culture and Nature with Our
+        Magnificent Excursions{" "}
       </p>
     </div>
   );

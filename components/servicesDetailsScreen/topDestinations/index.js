@@ -10,7 +10,7 @@ import left_arrow from "../../../public/assets/services_details_assets/left_arro
 
 import "react-multi-carousel/lib/styles.css";
 
-function TopDestinations() {
+function TopDestinations({ places }) {
   const [location, setLocation] = useState(1);
 
   const responsive = {
@@ -77,9 +77,9 @@ function TopDestinations() {
           lectus. Nam elementum tempor arcu, ut faucibus ligula pharetra eu.
         </p>
         <div className={classes.best_cards_container}>
-          <BestPlacesCards pic={place_1} />
-          <BestPlacesCards pic={place_2} />
-          <BestPlacesCards pic={place_3} />
+          {places?.map((place, index) => (
+            <BestPlacesCards title={place.title} pic={place_1} />
+          ))}
         </div>
       </div>
     </div>

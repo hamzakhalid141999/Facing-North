@@ -17,14 +17,14 @@ function Footer() {
             <img src={logo_text.src} className={classes.logo_text} alt="logo" />
           </div>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras et
-            finibus urna. In ut justo quis metus rhoncus cursus quis vitae
-            magna. Ut nibh metus, accumsan viverra massa ac, sagittis pulvinar
-            ipsum.
+            Join us on an unforgettable journey of discovery as we explore the
+            beauty and culture of Pakistan's northern regions. Let us take you
+            to Gilgit, Hunza, Chitral, and Swat, and experience the best of this
+            region with Facing North.
           </p>
-          <p className={classes.copyright_text}>
+          {/* <p className={classes.copyright_text}>
             FACING NORTH . 2022 . ALL RIGHTS RESERVED
-          </p>
+          </p> */}
         </div>
 
         <div className={classes.col_2}>
