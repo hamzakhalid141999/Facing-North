@@ -221,7 +221,7 @@ function ThirdHomePageSection() {
 
         <h2 className={classes.title}>
           Lands of <br />
-          <span>Discovery</span>
+          Discovery
         </h2>
         <p className={classes.description}>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras et

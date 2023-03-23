@@ -23,3 +23,8 @@
   background-color: #176060be;
   z-index: 1;
 }
+@media screen and (max-width: 700px) {
+  .arrow_container {
+    width: 60px;
+  }
+}

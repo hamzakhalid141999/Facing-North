@@ -21,8 +21,8 @@ function prev(props) {
         <div className={classes.overlay} />
         <Image
           src={arrow}
-          height={"25"}
-          width={"50"}
+          height={"17"}
+          width={"42"}
           style={{ cursor: "pointer", zIndex: "100000" }}
         />
       </div>

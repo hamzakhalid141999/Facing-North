@@ -43,3 +43,23 @@
   color: white;
   width: 90%;
 }
+@media screen and (max-width: 585px) {
+  .card_body {
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .img_container img {
+    height: 40%;
+  }
+  .content_container {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    row-gap: 10px;
+  }
+  .content_container h2 {
+    font-size: 25px;
+  }
+}

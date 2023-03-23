@@ -7,15 +7,7 @@ function next(props) {
   const { className, style, onClick } = props;
 
   return (
-    <div
-      onClick={onClick}
-      style={{
-        position: "absolute",
-        right: "42%",
-        bottom: "-20%",
-        display: "block",
-      }}
-    >
+    <div onClick={onClick} className={classes.right_btn}>
       <Image
         src={arrow}
         height={"50"}

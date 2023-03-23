@@ -6,16 +6,7 @@ import arrow from "../../public/assets/services_details_assets/left_arrow.svg";
 function prev(props) {
   const { className, style, onClick } = props;
   return (
-    <div
-      onClick={onClick}
-      style={{
-        position: "absolute",
-        left: "42%",
-        bottom: "-20%",
-        display: "block",
-        zIndex: "+10",
-      }}
-    >
+    <div onClick={onClick} className={classes.left_btn}>
       <Image
         src={arrow}
         height={"50"}

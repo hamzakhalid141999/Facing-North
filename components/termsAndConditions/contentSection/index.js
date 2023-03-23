@@ -226,7 +226,7 @@ function ContentSection() {
 
           <h2 className={classes.heading}>Personal Information</h2>
 
-          <div style={{ width: "70%" }} className="input_row_single">
+          <div style={{ width: "70%" }} className={`input_row_single`}>
             <input placeholder="Your Name" className="input_field" />
             <input placeholder="Last Name" className="input_field" />
           </div>
