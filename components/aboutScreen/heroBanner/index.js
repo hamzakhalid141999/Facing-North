@@ -5,12 +5,7 @@ function HeroBanner() {
   return (
     <div className={classes.hero_banner_container}>
       <div className={classes.overlay} />
-      <h2>Unforgettable Experiences</h2>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean nisl
-        libero, ornare non libero vitae, vestibulum egestas tellus. Curabitur
-        sodales eleifend sem laoreet varius.{" "}
-      </p>
+      <h2>About Us</h2>
     </div>
   );
 }

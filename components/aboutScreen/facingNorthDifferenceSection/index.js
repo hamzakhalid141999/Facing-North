@@ -12,8 +12,10 @@ import left_arrow from "../../../public/assets/services_details_assets/left_arro
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 
-function FacingNorthDifference() {
+function FacingNorthDifference({ info }) {
   const [location, setLocation] = useState(1);
+
+  console.log("ARR: ", info);
 
   const responsive = {
     superLargeDesktop: {
@@ -103,12 +105,13 @@ function FacingNorthDifference() {
             customRightArrow={<CustomRightArrow />}
             customLeftArrow={<CustomLeftArrow />}
           >
-            <PlacesCards pic={explore_pic_3} />
-            <PlacesCards pic={explore_pic_2} />
-            <PlacesCards pic={explore_pic_1} />
-            <PlacesCards pic={explore_pic_3} />
-            <PlacesCards pic={explore_pic_2} />
-            <PlacesCards pic={explore_pic_1} />
+            {info?.map((info, index) => (
+              <PlacesCards
+                title={info.title}
+                description={info.description}
+                pic={explore_pic_3}
+              />
+            ))}
           </Carousel>
         </div>
       </div>
