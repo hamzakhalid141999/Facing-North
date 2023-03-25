@@ -78,7 +78,7 @@ function TopDestinations({ places }) {
         </p>
         <div className={classes.best_cards_container}>
           {places?.map((place, index) => (
-            <BestPlacesCards title={place.title} pic={place_1} />
+            <BestPlacesCards title={place?.title} pic={place_1} />
           ))}
         </div>
       </div>

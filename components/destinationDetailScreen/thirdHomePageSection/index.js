@@ -23,6 +23,8 @@ import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 
 function TopPlacesToVisit({ places, places_stay }) {
+  console.log(places, places_stay);
+
   const [location, setLocation] = useState(1);
 
   const responsive = {
@@ -128,26 +130,28 @@ function TopPlacesToVisit({ places, places_stay }) {
           </p>
         </div>
 
-        <div className={classes.best_places_cards_container}>
-          <Carousel
-            infinite={true}
-            autoPlay={true}
-            responsive={responsiveBestPlaceCards}
-            swipeable={true}
-            draggable={true}
-            showDots={false}
-          >
-            {places_stay?.map((place, index) => (
-              <BestPlacesCards
-                key={index}
-                title={place.title}
-                isNotHoverable={true}
-                isLeftAligned={true}
-                pic={place_1}
-              />
-            ))}
-          </Carousel>
-        </div>
+        {places_stay?.length > 0 && places_stay && (
+          <div className={classes.best_places_cards_container}>
+            <Carousel
+              infinite={true}
+              autoPlay={true}
+              responsive={responsiveBestPlaceCards}
+              swipeable={true}
+              draggable={true}
+              showDots={false}
+            >
+              {places_stay?.map((place, index) => (
+                <BestPlacesCards
+                  key={index}
+                  title={place.title}
+                  isNotHoverable={true}
+                  isLeftAligned={true}
+                  pic={place_1}
+                />
+              ))}
+            </Carousel>
+          </div>
+        )}
       </div>
 
       <div className={classes.sliding_cards_container}>

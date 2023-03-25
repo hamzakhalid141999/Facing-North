@@ -29,6 +29,8 @@ export default function Home() {
     }
   }, [id]);
 
+  console.log(destinationData);
+
   return (
     <div className={styles.container}>
       <HeroBanner
