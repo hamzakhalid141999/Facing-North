@@ -20,8 +20,6 @@ export default function ServicesDetails() {
     setId(parseInt(routerId?.split("-")[0]));
   }, [router]);
 
-  console.log(id);
-
   useEffect(() => {
     if (id) {
       SERVICE_DETAILS?.map((service, index) => {
@@ -32,8 +30,6 @@ export default function ServicesDetails() {
     }
   }, [id]);
 
-  console.log(serviceDetailData);
-
   return (
     <div className={styles.container}>
       <HeroBanner
@@ -41,7 +37,7 @@ export default function ServicesDetails() {
         h2={serviceDetailData?.h2}
         title={serviceDetailData?.title}
       />
-      <SecondHomePageSection />
+      <SecondHomePageSection data={serviceDetailData} />
       <TopDestinations places={serviceDetailData?.top_places} />
       <TopItineraries />
       {/* <ThirdHomePageSection /> */}

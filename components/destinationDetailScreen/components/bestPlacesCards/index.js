@@ -1,7 +1,7 @@
 import React from "react";
 import classes from "./placesCards.module.css";
 
-function BestPlacesCards({ isNotHoverable, isLeftAligned, pic }) {
+function BestPlacesCards({ isNotHoverable, isLeftAligned, pic, title }) {
   return (
     <div
       style={{ borderBottom: isLeftAligned && "none" }}
@@ -17,7 +17,7 @@ function BestPlacesCards({ isNotHoverable, isLeftAligned, pic }) {
           style={{ alignItems: isLeftAligned && "flex-start" }}
           className={classes.description_container_inner}
         >
-          <h2 style={{ textAlign: isLeftAligned && "left" }}>Altit Fort</h2>
+          <h2 style={{ textAlign: isLeftAligned && "left" }}>{title}</h2>
           <h3 style={{ textAlign: isLeftAligned && "left" }}>
             Gilgit, Baltistan
           </h3>

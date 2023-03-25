@@ -23,7 +23,6 @@ function Navbar() {
   useEffect(() => {
     if (router.pathname) {
       const page = router.pathname.split("/");
-      console.log(page);
       setCurrentPage(page);
     }
   }, [router.pathname]);

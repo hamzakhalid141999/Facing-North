@@ -2,9 +2,9 @@ import Link from "next/link";
 import React from "react";
 import classes from "./destinationCard.module.css";
 
-function DestinationCard({ title, pic }) {
+function DestinationCard({ id, title, pic }) {
   return (
-    <Link href="/destination_detail" passHref>
+    <Link href={`/destinations/${id}-${title}`}>
       <div className={classes.card_body}>
         <div className={classes.img_container}>
           <img src={pic.src} className={classes.img} />

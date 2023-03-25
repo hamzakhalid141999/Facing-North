@@ -5,17 +5,21 @@ import DestinationCard from "../../components/destinationsScreen/components/dest
 import classes from "./destinations.module.css";
 import bg from "../../public/assets/blog_card_assets/bg.png";
 import { DESTIATIONS } from "../../data/destinations";
+import Link from "next/link";
 
 function Destinations() {
-  console.log(DESTIATIONS);
-
   return (
     <div className={classes.container}>
       <div className={classes.content_container}>
         {" "}
         <div className={classes.cards_container}>
           {DESTIATIONS?.map((destination, index) => (
-            <DestinationCard key={index} title={destination?.title} pic={bg} />
+            <DestinationCard
+              key={index}
+              id={destination?.id}
+              title={destination?.title}
+              pic={bg}
+            />
           ))}
         </div>
       </div>

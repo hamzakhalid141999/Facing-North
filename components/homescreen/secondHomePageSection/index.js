@@ -28,7 +28,6 @@ function SecondHomePageSection() {
                   }}
                   className={"react-multiple-carousel__arrow--left"}
                   onClick={() => {
-                    console.log("CLICKEDDDDDD!!!!!");
                     onClickHandler();
                   }}
                 />

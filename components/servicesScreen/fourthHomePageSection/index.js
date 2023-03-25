@@ -29,7 +29,9 @@ function FourthHomePageSection() {
               >
                 <h3>{service.title}</h3>
 
-                <p>{service?.statement[0]}</p>
+                {service?.statement?.map((statement, index) => (
+                  <p key={index}>{statement}</p>
+                ))}
                 <Link href={`/services/${service.id}-${service.title}`}>
                   <div className={classes.btn}>
                     <p>EXPLORE</p>

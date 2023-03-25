@@ -11,7 +11,6 @@
 .img_container {
   width: 50%;
   height: 100%;
-  background-color: blue;
 }
 .content_container {
   width: 50%;
@@ -25,6 +24,8 @@
   font-size: 50px;
   font-weight: 200;
   font-family: "b-l";
+  text-align: left;
+  width: 68%;
   text-align: left;
 }
 .description {

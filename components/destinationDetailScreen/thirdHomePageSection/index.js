@@ -22,7 +22,7 @@ import left_arrow from "../../../public/assets/services_details_assets/left_arro
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 
-function TopPlacesToVisit() {
+function TopPlacesToVisit({ places, places_stay }) {
   const [location, setLocation] = useState(1);
 
   const responsive = {
@@ -109,9 +109,9 @@ function TopPlacesToVisit() {
           lectus. Nam elementum tempor arcu, ut faucibus ligula pharetra eu.
         </p>
         <div className={classes.best_cards_container}>
-          <BestPlacesCards pic={place_1} />
-          <BestPlacesCards pic={place_2} />
-          <BestPlacesCards pic={place_3} />
+          {places?.map((place, index) => (
+            <BestPlacesCards key={index} title={place.title} pic={place_1} />
+          ))}
         </div>
       </div>
 
@@ -137,21 +137,15 @@ function TopPlacesToVisit() {
             draggable={true}
             showDots={false}
           >
-            <BestPlacesCards
-              isNotHoverable={true}
-              isLeftAligned={true}
-              pic={place_1}
-            />
-            <BestPlacesCards
-              isNotHoverable={true}
-              isLeftAligned={true}
-              pic={place_2}
-            />
-            <BestPlacesCards
-              isNotHoverable={true}
-              isLeftAligned={true}
-              pic={place_2}
-            />
+            {places_stay?.map((place, index) => (
+              <BestPlacesCards
+                key={index}
+                title={place.title}
+                isNotHoverable={true}
+                isLeftAligned={true}
+                pic={place_1}
+              />
+            ))}
           </Carousel>
         </div>
       </div>
