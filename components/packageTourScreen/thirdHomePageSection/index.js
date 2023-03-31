@@ -4,17 +4,7 @@ import explore_pic_1 from "../../../public/assets/homepage/explore_pic_1.png";
 import explore_pic_2 from "../../../public/assets/homepage/explore_pic_2.png";
 import explore_pic_3 from "../../../public/assets/homepage/explore_pic_3.png";
 
-import place_1 from "../../../public/assets/destination_detail_assets/card1.png";
-import place_2 from "../../../public/assets/destination_detail_assets/card2.png";
-import place_3 from "../../../public/assets/destination_detail_assets/card3.png";
-
-import places1 from "../../../public/assets/homepage/places1.png";
 import PlacesCards from "../components/placesCards";
-import compass from "../../../public/assets/homepage/compass.svg";
-import wind from "../../../public/assets/homepage/wind.svg";
-import sun from "../../../public/assets/homepage/sun.svg";
-import pin from "../../../public/assets/homepage/stroke_pin.svg";
-import BestPlacesCards from "../components/bestPlacesCards";
 
 import right_arrow from "../../../public/assets/services_details_assets/right_arrow.svg";
 import left_arrow from "../../../public/assets/services_details_assets/left_arrow.svg";

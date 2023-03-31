@@ -91,7 +91,7 @@ function FourthHomePageSection() {
         </Carousel>
       </div>
 
-      <TestimonialSection />
+      <TestimonialSection isOnlyFirstSection={true} />
 
       <div className={classes.blogs_section}>
         <div className={classes.overlay} />

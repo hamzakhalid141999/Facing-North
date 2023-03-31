@@ -53,6 +53,10 @@
   }
   .img_container img {
     height: 40%;
+    width: 100%;
+  }
+  .img_container {
+    width: 230px;
   }
   .content_container {
     padding-top: 20px;

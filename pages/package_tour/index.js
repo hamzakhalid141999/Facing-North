@@ -6,6 +6,7 @@ import PositiveImpacts from "../../components/packageTourScreen/positiveImpacts"
 import styles from "./destination_detail.module.css";
 import MapSection from "../../components/packageTourScreen/mapSection";
 import StartYourJourneySection from "../../components/packageTourScreen/thirdHomePageSection";
+import TestimonialSection from "../../components/testimonialSection/index";
 
 export default function PackageTour() {
   return (
@@ -14,6 +15,7 @@ export default function PackageTour() {
       <SecondHomePageSection />
       <BestPlacesSection />
       <StartYourJourneySection />
+      <TestimonialSection isOnlyFirstSection={true} />
       <FourthHomePageSection />
     </div>
   );

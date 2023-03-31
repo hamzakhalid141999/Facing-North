@@ -7,9 +7,11 @@ import ThirdHomePageSection from "../components/homescreen/thirdHomePageSection"
 import TestimonialSection from "../components/testimonialSection";
 import Tooltip from "../components/tooltip";
 import styles from "../styles/Home.module.css";
+import ScrollbarWrapper from "../smooth-scrollbar";
 
 export default function Home() {
   return (
+    // <ScrollbarWrapper options={{ damping: 0.1 }}>
     <div className={styles.container}>
       <HeroBanner />
       <Tooltip />
@@ -18,5 +20,6 @@ export default function Home() {
       <FourthHomePageSection />
       <TestimonialSection isOnlyFirstSection={true} />
     </div>
+    // </ScrollbarWrapper>
   );
 }

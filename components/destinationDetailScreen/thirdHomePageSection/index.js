@@ -58,7 +58,7 @@ function TopPlacesToVisit({ places, places_stay }) {
       items: 2,
     },
     tablet: {
-      breakpoint: { max: 1220, min: 830 },
+      breakpoint: { max: 769, min: 769 },
       items: 2,
     },
     mobile: {
@@ -112,7 +112,12 @@ function TopPlacesToVisit({ places, places_stay }) {
         </p>
         <div className={classes.best_cards_container}>
           {places?.map((place, index) => (
-            <BestPlacesCards key={index} title={place.title} pic={place_1} />
+            <BestPlacesCards
+              description={place.description}
+              key={index}
+              title={place.title}
+              pic={place_1}
+            />
           ))}
         </div>
       </div>
@@ -142,6 +147,7 @@ function TopPlacesToVisit({ places, places_stay }) {
             >
               {places_stay?.map((place, index) => (
                 <BestPlacesCards
+                  description={place.description}
                   key={index}
                   title={place.title}
                   isNotHoverable={true}

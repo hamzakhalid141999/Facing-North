@@ -314,3 +314,20 @@
     /* justify-content: center; */
   }
 }
+@media screen and (max-width: 454px) {
+  .review_container {
+    right: 0;
+    left: 0;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .review_container_right {
+    right: 0;
+    left: 0;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .img_wrapper {
+    width: 100%;
+  }
+}

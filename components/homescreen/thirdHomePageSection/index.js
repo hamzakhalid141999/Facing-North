@@ -111,7 +111,10 @@ function ThirdHomePageSection() {
           src={right_arrow.src}
           style={{ position: "absolute" }}
           className={"react-multiple-carousel__arrow--right"}
-          onClick={() => onClick()}
+          onClick={() => {
+            console.log("right arrow clicked");
+            onClick();
+          }}
         />
       </div>
     );
@@ -137,7 +140,10 @@ function ThirdHomePageSection() {
           className={"react-multiple-carousel__arrow--left"}
           src={left_arrow.src}
           style={{ position: "absolute" }}
-          onClick={() => onClick()}
+          onClick={() => {
+            console.log("left arrow clicked");
+            onClick();
+          }}
         />
       </div>
     );
@@ -151,7 +157,7 @@ function ThirdHomePageSection() {
           <div className="homepage_location_pic_container">
             <Carousel
               infinite={true}
-              autoPlay={true}
+              autoPlay={false}
               responsive={responsive_location_carousel}
               swipeable={true}
               draggable={true}
@@ -190,7 +196,8 @@ function ThirdHomePageSection() {
       </div>
       <div className={classes.title_section}>
         <h2 className={classes.title}>
-          Explore <br /> <span>our Worlds</span>
+          Explore <br />
+          our Worlds
         </h2>
         <p className={classes.description}>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras et

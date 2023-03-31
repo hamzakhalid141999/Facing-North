@@ -12,7 +12,7 @@ import "slick-carousel/slick/slick.css";
 import Next from "../testimonialArrows/next";
 import Prev from "../testimonialArrows/prev";
 
-function TestimonialSection({ isOnlyFirstSection }) {
+function TestimonialSection({ isWhite, isOnlyFirstSection }) {
   const settings = {
     dots: false,
     infinite: true,
@@ -26,14 +26,20 @@ function TestimonialSection({ isOnlyFirstSection }) {
   };
 
   return (
-    <div className={classes.container}>
+    <div
+      style={{ backgroundColor: isWhite && "white" }}
+      className={classes.container}
+    >
       <div className={classes.top_section}>
         <h1 className={classes.title}>Client Testimonial</h1>
-
         <div className={classes.card_section}>
           <Slider arrows={true} {...settings}>
             {TESTIMONIALS?.map((testimonial, index) => (
-              <div key={index} className={classes.single_slide}>
+              <div
+                style={{ backgroundColor: isWhite && "#eaeeef" }}
+                key={index}
+                className={classes.single_slide}
+              >
                 <img src={bg.src} />
                 <div className={classes.slide_content_container}>
                   <img

@@ -295,15 +295,12 @@
   }
   .container {
     width: 100%;
-    height: 170vh;
-    background-color: rgb(240, 240, 240);
     position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
     position: relative;
     min-height: initial;
-    min-height: 1300px;
   }
   .location_container {
     width: 100%;

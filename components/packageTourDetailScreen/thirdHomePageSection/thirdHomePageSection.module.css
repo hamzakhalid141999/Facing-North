@@ -6,9 +6,9 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   position: relative;
   padding-bottom: 60px;
-
   /* min-height: 1200px; */
 }
 .itinerary_section {
@@ -75,21 +75,28 @@
   bottom: 30px;
 }
 .day_heading {
-  font-size: 60px;
+  font-size: 40px;
   font-family: "b-l";
   opacity: 0.2;
   margin-bottom: 30px;
+  width: 100%;
+  text-align: left;
 }
+
 .city {
   font-size: 17px;
   color: var(--medGreen);
   font-weight: "f-l";
   margin-bottom: 20px;
+  width: 100%;
+  text-align: left;
 }
 .city_description {
   font-size: 14px;
   font-weight: "f-l";
   line-height: 20px;
+  width: 100%;
+  text-align: left;
 }
 .heading_container {
   width: 100%;
@@ -274,6 +281,8 @@
   line-height: 22px;
   width: 35%;
   font-family: "f-l";
+  width: 60%;
+  text-align: center;
 }
 .cards_container {
   margin-top: 50px;
@@ -314,4 +323,117 @@
 }
 .row p:hover {
   border-bottom: 2px solid black;
+}
+@media screen and (max-width: 1256px) {
+  .itinerary_section {
+    font-size: 25px;
+    width: 85%;
+    margin-right: 50px;
+    text-align: center;
+  }
+}
+@media screen and (max-width: 925px) {
+  .heading_container {
+    width: 85%;
+    height: 60px;
+  }
+  .heading_container p {
+    font-size: 25px;
+  }
+  .day_heading {
+    font-size: 33px;
+  }
+  .city {
+    font-size: 13px;
+  }
+  .city_description {
+    font-size: 11px;
+    line-height: 18px;
+  }
+  .title {
+    font-size: 25px;
+    width: 90%;
+    text-align: center;
+  }
+  .description {
+    font-size: 13px;
+    width: 90%;
+    text-align: center;
+    line-height: 20px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .places_to_stay_container h2 {
+    font-size: 25px;
+    width: 100%;
+    text-align: center;
+  }
+  .places_to_stay_container p {
+    font-size: 14px;
+    width: 100%;
+    text-align: center;
+  }
+  .best_cards_container {
+    justify-content: flex-start;
+    overflow-x: scroll;
+  }
+  .day_heading {
+    margin-bottom: 7px;
+  }
+  .city {
+    margin-bottom: 7px;
+    font-size: 11px;
+  }
+  .content_container {
+    position: absolute;
+    width: 90%;
+    height: 60%;
+    left: 20px;
+    top: 23%;
+  }
+  .pic_container {
+    position: absolute;
+    right: 0%;
+    width: 35%;
+    height: 45%;
+    bottom: -5%;
+    min-width: 160px;
+  }
+  .itinerary_section {
+    font-size: 25px;
+    width: 85%;
+    margin-right: 0px;
+    text-align: center;
+  }
+}
+@media screen and (max-width: 685px) {
+  .itinerary_heading_container {
+    top: 0;
+    width: 70%;
+    margin-left: 0;
+    align-items: flex-start;
+  }
+  .itinerary_section {
+    width: 90%;
+  }
+  .heading_container {
+    padding-right: 0;
+    margin-left: 0px;
+    width: 100%;
+    justify-content: flex-start;
+  }
+  .heading_container p {
+    font-size: 20px;
+    margin-left: 20px;
+  }
+  .day_heading {
+    font-size: 33px;
+  }
+  .city {
+    font-size: 13px;
+  }
+  .city_description {
+    font-size: 11px;
+    line-height: 18px;
+  }
 }

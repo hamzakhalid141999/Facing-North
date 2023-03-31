@@ -6,7 +6,7 @@ import TestimonialSection from "../../testimonialSection";
 function FourthHomePageSection() {
   return (
     <div className={classes.container}>
-      <TestimonialSection />
+      <TestimonialSection isOnlyFirstSection={true} />
       <div className={classes.owner_container}>
         <div className={classes.img_container_2}>
           <div className={classes.img_wrapper_2}>

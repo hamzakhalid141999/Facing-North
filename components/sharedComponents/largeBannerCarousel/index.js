@@ -1,11 +1,5 @@
 import React from "react";
 import classes from "./largeBannerCarousel.module.css";
-import girl_pic from "../../../public/assets/destination_detail_assets/girl_placeholder.png";
-import boy_pic from "../../../public/assets/destination_detail_assets/boy_placeholder.png";
-import blog_bg from "../../../public/assets/destination_detail_assets/blog_bg.svg";
-import star_filled from "../../../public/assets/destination_detail_assets/star_filled.svg";
-import second_section_bg from "../../../public/assets/homepage/second_section_bg.png";
-import third_section_img from "../../../public/assets/services_details_assets/third_section_img.png";
 import img1 from "../../../public/assets/services_details_assets/img1.png";
 import right_arrow from "../../../public/assets/services_details_assets/right_arrow.svg";
 import left_arrow from "../../../public/assets/services_details_assets/left_arrow.svg";
@@ -74,7 +68,7 @@ function LargeBannerCarousel({ isWhite }) {
           responsive={responsive}
           swipeable={true}
           draggable={true}
-          showDots={true}
+          showDots={false}
           customRightArrow={<CustomRightArrow />}
           customLeftArrow={<CustomLeftArrow />}
         >

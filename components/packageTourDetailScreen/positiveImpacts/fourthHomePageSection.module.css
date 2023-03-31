@@ -91,3 +91,21 @@
   height: 80px;
   width: 80px;
 }
+@media screen and (max-width: 768px) {
+  .container {
+    margin-bottom: 30px;
+  }
+  .title {
+    font-size: 25px;
+    width: 90%;
+    text-align: center;
+  }
+  .description {
+    font-size: 14px;
+    width: 90%;
+    text-align: center;
+  }
+  .container img {
+    width: 90%;
+  }
+}

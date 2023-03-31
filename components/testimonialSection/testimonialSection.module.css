@@ -44,6 +44,7 @@
   align-items: center;
   position: relative;
   width: 100%;
+  background-color: white;
 }
 .single_slide img {
   width: 30%;
@@ -95,6 +96,9 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+  }
+  .title {
+    font-size: 25px;
   }
   .img_container img {
     height: 40%;

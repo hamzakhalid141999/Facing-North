@@ -7,6 +7,7 @@ import styles from "./destination_detail.module.css";
 import MapSection from "../../components/packageTourDetailScreen/mapSection";
 import TemperatureGraph from "../../components/packageTourDetailScreen/temperatureGraph";
 import LargeBannerCarousel from "../../components/sharedComponents/largeBannerCarousel";
+import TestimonialSection from "../../components/testimonialSection";
 
 export default function PackageTour() {
   return (
@@ -18,6 +19,7 @@ export default function PackageTour() {
       <PositiveImpacts />
       <TemperatureGraph />
       <LargeBannerCarousel isWhite={true} />
+      <TestimonialSection isWhite={true} isOnlyFirstSection={true} />
       <FourthHomePageSection />
     </div>
   );

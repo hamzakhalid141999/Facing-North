@@ -47,7 +47,7 @@ export default function Home() {
         places={destinationData?.places_to_visit}
       />
       <LargeBannerCarousel />
-      <TestimonialSection />
+      <TestimonialSection isOnlyFirstSection={true} />
     </div>
   );
 }

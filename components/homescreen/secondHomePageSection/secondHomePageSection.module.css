@@ -1,6 +1,6 @@
 .container {
   width: 100%;
-  height: 135vh;
+  /* height: 135vh; */
   background-color: white;
   position: relative;
   display: flex;
@@ -13,6 +13,7 @@
   flex-direction: column;
   align-items: center;
   max-width: 1500px;
+  width: 90%;
 }
 .bg {
   position: absolute;
@@ -24,14 +25,16 @@
   z-index: 2;
 }
 .carousel_container {
-  width: 85%;
-  height: 100%;
+  width: 95%;
+  height: 300px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  max-width: 1500px;
 }
 .single_row {
   width: 100%;
+  height: 100%;
   height: fit-content;
   z-index: 10;
   margin-top: 100px;
@@ -59,7 +62,7 @@
   font-family: "f-l";
 }
 .right_panel {
-  width: 50%;
+  /* width: 50%; */
   display: flex;
   flex-direction: row;
   /* align-items: center; */
@@ -69,11 +72,7 @@
   width: 420px;
   height: 650px;
 }
-.img_container_2 {
-  height: 250px;
-  width: 400px;
-  margin-top: 60px;
-}
+
 .img1 {
   width: 100%;
   height: 100%;
@@ -85,66 +84,37 @@
   object-fit: cover;
 }
 @media screen and (max-width: 1250px) {
-  .left_panel h2 {
-    font-size: 25px;
-    font-weight: 200;
-    font-family: "b-l";
-    width: 70%;
-  }
-  .left_panel p {
-    font-size: 13px;
-    font-weight: 200;
-    line-height: 22px;
-    font-family: "f-l";
-  }
   .inner_container {
     max-width: initial;
   }
-  .single_row {
-    width: 90%;
+  .left_panel h2 {
+    font-size: 25px;
   }
-  .left_panel {
-    width: 75%;
+  .left_panel p {
+    font-size: 13px;
   }
-  .right_panel {
-    width: 35%;
-    display: flex;
-    flex-direction: row;
-    /* align-items: center; */
-    justify-content: center;
-  }
-  .img_container {
-    width: 300px;
-    height: initial;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  .img1 {
-    width: 90%;
-    height: 70%;
-    object-fit: cover;
-  }
+
   .container {
     height: 120vh;
+    min-height: 1200px;
+    max-height: 1250px;
   }
   .single_row {
     column-gap: 25px;
   }
+  .img_container {
+    width: 220px;
+    height: 350px;
+  }
 }
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 605px) {
   .single_row {
     flex-direction: column;
-  }
-  .right_panel {
-    display: none;
+    row-gap: 30px;
   }
   .left_panel {
     width: 100%;
   }
-  .img_container_2 {
-    height: 250px;
-    width: 100%;
-    margin-top: 30px;
-  }
+}
+@media screen and (max-width: 700px) {
 }

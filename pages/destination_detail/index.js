@@ -15,7 +15,7 @@ export default function Home() {
       <SecondHomePageSection />
       <TopPlacesToVisit />
       <LargeBannerCarousel />
-      <TestimonialSection />
+      <TestimonialSection isOnlyFirstSection={true} />
     </div>
   );
 }
