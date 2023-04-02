@@ -330,6 +330,26 @@ textarea {
     object-fit: fill;
   }
 }
+@media screen and (max-width: 900px) {
+  .second_container .react-multiple-carousel__arrow--right,
+  .second_container_white .react-multiple-carousel__arrow--right {
+    left: 20% !important;
+    bottom: 12px !important;
+    width: 43px !important;
+    height: 43px !important;
+    opacity: 1 !important;
+  }
+}
+@media screen and (max-width: 600px) {
+  .second_container .react-multiple-carousel__arrow--right,
+  .second_container_white .react-multiple-carousel__arrow--right {
+    left: 25% !important;
+    bottom: 12px !important;
+    width: 43px !important;
+    height: 43px !important;
+    opacity: 1 !important;
+  }
+}
 @media screen and (max-width: 700px) {
   .slick-list {
     width: 137% !important;
