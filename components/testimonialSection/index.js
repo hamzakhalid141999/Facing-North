@@ -11,8 +11,11 @@ import "slick-carousel/slick/slick-theme.css";
 import "slick-carousel/slick/slick.css";
 import Next from "../testimonialArrows/next";
 import Prev from "../testimonialArrows/prev";
+import { useWindowSize } from "../../utils";
 
 function TestimonialSection({ isWhite, isOnlyFirstSection }) {
+  const { width } = useWindowSize();
+
   const settings = {
     dots: false,
     infinite: true,
@@ -47,7 +50,9 @@ function TestimonialSection({ isWhite, isOnlyFirstSection }) {
                       height: "fit-content",
                       objectFit: "contain",
                       width: "12%",
+                      display: width < 700 ? "none" : "block",
                     }}
+                    className={classes.comma}
                     src={comma.src}
                   />
                   <p className={classes.testimonial}>{testimonial.text}</p>

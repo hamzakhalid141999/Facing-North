@@ -330,7 +330,12 @@ textarea {
     object-fit: fill;
   }
 }
-
+@media screen and (max-width: 700px) {
+  .slick-list {
+    width: 137% !important;
+    left: -18% !important;
+  }
+}
 @media screen and (max-width: 600px) {
   .carousel.carousel-slider {
     height: 855px !important;
