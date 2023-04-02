@@ -44,7 +44,7 @@
 }
 .next_day_container {
   color: white;
-  font-family: "b-l";
+  font-family: "b-ul";
 }
 .itinerary_heading_container {
   position: absolute;
@@ -76,7 +76,7 @@
 }
 .day_heading {
   font-size: 40px;
-  font-family: "b-l";
+  font-family: "b-ul";
   opacity: 0.2;
   margin-bottom: 30px;
   width: 100%;
@@ -111,7 +111,7 @@
 }
 .heading_container p {
   color: white;
-  font-family: "b-l";
+  font-family: "b-ul";
   font-size: 45px;
 }
 .duration_container {
@@ -126,7 +126,7 @@
 }
 .duration_container p {
   color: black;
-  font-family: "b-l";
+  font-family: "b-ul";
   font-size: 15px;
 }
 .places_to_stay_container {
@@ -269,7 +269,7 @@
 .title {
   font-size: 50px;
   font-weight: 200;
-  font-family: "b-l";
+  font-family: "b-ul";
   line-height: 45px;
 }
 .title span {

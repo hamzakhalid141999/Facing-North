@@ -64,7 +64,7 @@ textarea {
   src: url("../public/fonts/butler/Butler_ExtraBold.otf") format("opentype");
 }
 @font-face {
-  font-family: "b-l";
+  font-family: "b-ul";
   src: url("../public/fonts/butler/Butler_Light.otf") format("opentype");
 }
 @font-face {

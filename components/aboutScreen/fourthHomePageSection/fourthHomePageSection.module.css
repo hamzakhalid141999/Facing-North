@@ -19,7 +19,7 @@
   width: 70%;
   font-weight: lighter;
   text-align: center;
-  font-family: "b-l";
+  font-family: "b-ul";
 }
 .feedback_section,
 .owner_container {
@@ -64,7 +64,7 @@
   color: white;
   font-weight: lighter;
   z-index: 10;
-  font-family: "b-l";
+  font-family: "b-ul";
 }
 .owner_container {
   margin-top: 100px;
@@ -155,7 +155,7 @@
 }
 .owner_info_content h3 {
   font-weight: lighter !important;
-  font-size: 40px;
+  font-size: 30px;
   margin-top: 40px;
 }
 .owner_info_content p {
@@ -169,7 +169,7 @@
 .review_container_centered {
   position: absolute;
   height: fit-content;
-  width: 600px;
+  width: 500px;
   background-color: rgb(225, 225, 225);
   right: -100%;
   top: 0;
@@ -178,8 +178,8 @@
   margin: auto;
   display: flex;
   padding-left: 45px;
-  padding-bottom: 60px;
-  padding-top: 20px;
+  padding-bottom: 30px;
+  padding-top: 30px;
   display: flex;
   flex-direction: column;
   /* justify-content: center; */
@@ -187,7 +187,7 @@
 .review_container {
   position: absolute;
   height: fit-content;
-  width: 600px;
+  width: 500px;
   background-color: var(--medGreen);
   right: -100%;
   left: 0;
@@ -195,7 +195,7 @@
   margin: auto;
   display: flex;
   padding-left: 25px;
-  padding-bottom: 60px;
+  padding-bottom: 30px;
   padding-top: 30px;
   display: flex;
   flex-direction: column;
@@ -204,9 +204,9 @@
 .review_container_right {
   position: absolute;
   height: fit-content;
-  width: 600px;
+  width: 500px;
   background-color: var(--medGreen);
-  padding-bottom: 60px;
+  padding-bottom: 30px;
   padding-top: 30px;
   left: -90%;
   right: 0;
@@ -220,9 +220,9 @@
 }
 .review_container_right h3 {
   font-weight: lighter !important;
-  font-size: 40px;
-  margin-top: 40px;
-  font-family: "b-l";
+  font-size: 30px;
+  /* margin-top: 40px; */
+  font-family: "b-ul";
   color: white;
 }
 .review_container_right p {
@@ -237,9 +237,9 @@
 .review_container h3,
 .review_container_centered h3 {
   font-weight: lighter !important;
-  font-size: 40px;
-  margin-top: 40px;
-  font-family: "b-l";
+  font-size: 30px;
+  /* margin-top: 40px; */
+  font-family: "b-ul";
 }
 .review_container h3 {
   color: white;
@@ -338,7 +338,8 @@
     margin-right: auto;
     margin-left: auto;
     display: flex;
-    padding-left: 25px;
+    padding-left: 20px;
+    padding-right: 20px;
     padding-bottom: 20px;
     display: flex;
     flex-direction: column;
@@ -352,7 +353,7 @@
     font-family: "f-l";
   }
   .review_container_centered h3 {
-    margin-top: 10px;
+    /* margin-top: 10px; */
   }
   .review_container,
   .review_container_right {
@@ -364,7 +365,8 @@
     margin-right: auto;
     margin-left: auto;
     display: flex;
-    padding-left: 25px;
+    padding-left: 20px;
+    padding-right: 20px;
     padding-bottom: 20px;
     display: flex;
     flex-direction: column;
@@ -380,7 +382,8 @@
   }
   .review_container h3,
   .review_container_right h3 {
-    margin-top: 10px;
+    /* margin-top: 10px; */
+    font-size: 30px;
   }
   .img {
     width: 100%;

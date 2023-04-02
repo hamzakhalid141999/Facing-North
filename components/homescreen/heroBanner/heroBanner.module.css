@@ -20,10 +20,10 @@
 }
 .hero_banner_container h2 {
   color: white;
-  font-size: 60px;
+  font-size: 80px;
   font-weight: lighter;
   z-index: 6;
-  font-family: "b-l";
+  font-family: "b-ul";
 }
 .hero_banner_container p {
   color: white;

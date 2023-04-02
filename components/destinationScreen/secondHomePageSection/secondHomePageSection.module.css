@@ -24,15 +24,16 @@
 .title {
   font-size: 50px;
   font-weight: 200;
-  font-family: "b-l";
+  font-family: "b-ul";
 }
 .description {
   font-size: 14px;
   font-weight: 200;
-  line-height: 22px;
+  line-height: 23px;
   width: 67%;
   text-align: center;
   font-family: "f-l";
+  opacity: 0.6;
 }
 .best_cards_container {
   width: 95%;

@@ -49,7 +49,7 @@
   color: white;
   font-weight: lighter;
   z-index: 10;
-  font-family: "b-l";
+  font-family: "b-ul";
 }
 .owner_container {
   margin-top: 100px;
@@ -187,7 +187,7 @@
   font-weight: lighter !important;
   font-size: 30px;
   margin-top: 40px;
-  font-family: "b-l";
+  font-family: "b-ul";
 }
 .review_container_right p {
   font-weight: 300 !important;
@@ -201,7 +201,7 @@
   font-weight: lighter !important;
   font-size: 30px;
   margin-top: 40px;
-  font-family: "b-l";
+  font-family: "b-ul";
 }
 .stars_container {
   display: flex;

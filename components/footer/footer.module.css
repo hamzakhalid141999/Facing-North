@@ -132,7 +132,7 @@
   cursor: pointer;
   color: white;
   margin-bottom: 50px;
-  font-family: "b-l";
+  font-family: "b-ul";
 }
 .col_2 p {
   font-size: 14px;
@@ -259,7 +259,7 @@
     cursor: pointer;
     color: white;
     margin-bottom: 50px;
-    font-family: "b-l";
+    font-family: "b-ul";
   }
   .col_2 p {
     font-size: 13px;

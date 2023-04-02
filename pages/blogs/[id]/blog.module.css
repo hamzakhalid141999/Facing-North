@@ -44,7 +44,7 @@
 .banner_content_container h2 {
   color: white;
   font-size: 40px;
-  font-family: "b-l";
+  font-family: "b-ul";
 }
 .banner_content_container p {
   color: white;
@@ -68,7 +68,7 @@
 }
 .other_blogs_heading {
   font-size: 30px;
-  font-family: "b-l";
+  font-family: "b-ul";
   width: 100%;
   text-align: center;
 }

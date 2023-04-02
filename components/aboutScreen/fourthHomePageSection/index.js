@@ -40,7 +40,11 @@ function FourthHomePageSection({ info }) {
       <div className={classes.feedback_section}>
         <div className={classes.img_container}>
           <div className={classes.img_wrapper}>
-            <img src={vision_bg.src} className={classes.img} />
+            <img
+              style={{ marginBottom: "-3px" }}
+              src={vision_bg.src}
+              className={classes.img}
+            />
             <div className={classes.review_container}>
               <h3>Our Vision</h3>
 

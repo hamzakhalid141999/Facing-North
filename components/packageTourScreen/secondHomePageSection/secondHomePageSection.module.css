@@ -38,7 +38,7 @@
 .heading {
   font-size: 50px;
   font-weight: 200;
-  font-family: "b-l";
+  font-family: "b-ul";
   width: 100%;
   text-align: center;
   margin-top: 70px;
@@ -55,7 +55,7 @@
 .left_panel h2 {
   font-size: 42px;
   font-weight: 200;
-  font-family: "b-l";
+  font-family: "b-ul";
   width: 70%;
 }
 .left_panel p {

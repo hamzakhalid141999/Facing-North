@@ -63,7 +63,7 @@
 .best_places_title {
   font-size: 50px;
   font-weight: 200;
-  font-family: "b-l";
+  font-family: "b-ul";
   line-height: 55px;
 }
 .best_places_description {
@@ -210,7 +210,7 @@
 .title {
   font-size: 50px;
   font-weight: 200;
-  font-family: "b-l";
+  font-family: "b-ul";
   line-height: 45px;
 }
 .title span {
@@ -219,9 +219,10 @@
 .description {
   font-size: 14px;
   font-weight: 200;
-  line-height: 22px;
+  line-height: 23px;
   width: 35%;
   font-family: "f-l";
+  opacity: 0.6;
 }
 .cards_container {
   margin-top: 50px;
