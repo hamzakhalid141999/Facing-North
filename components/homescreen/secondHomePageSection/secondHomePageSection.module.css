@@ -33,7 +33,7 @@
   max-width: 1500px;
 }
 .single_row {
-  width: 100%;
+  width: 99%;
   height: 100%;
   height: fit-content;
   z-index: 10;

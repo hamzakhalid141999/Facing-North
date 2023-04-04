@@ -24,6 +24,7 @@
   font-weight: lighter;
   z-index: 6;
   font-family: "b-ul";
+  text-align: center;
 }
 .hero_banner_container p {
   color: white;
@@ -38,9 +39,12 @@
 @media screen and (max-width: 786px) {
   .hero_banner_container h2 {
     font-size: 32px;
+    width: 100%;
+    text-align: center;
   }
   .hero_banner_container p {
     font-size: 14px;
     width: 85%;
+    text-align: center;
   }
 }

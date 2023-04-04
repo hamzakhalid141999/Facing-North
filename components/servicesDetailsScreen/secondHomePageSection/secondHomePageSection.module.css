@@ -40,7 +40,7 @@
   justify-content: center;
 }
 .second_section h3 {
-  font-size: 23px;
+  font-size: 28px;
   line-height: 35px;
   width: 70%;
   font-weight: lighter;
@@ -113,7 +113,7 @@
     width: 85%;
   }
   .second_section h3 {
-    font-size: 15px;
+    font-size: 19px;
     line-height: 25px;
     width: 90%;
   }
@@ -129,7 +129,7 @@
   }
   .left_panel p {
     width: 90%;
-    font-size: 13px;
+    font-size: 15px;
   }
   .single_row {
     width: 100% !important;

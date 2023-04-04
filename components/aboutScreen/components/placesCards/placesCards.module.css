@@ -56,24 +56,19 @@
   transition: ease-out 200ms;
 }
 .description {
-  font-size: 11px !important;
+  font-size: 13px !important;
   width: 76% !important;
   color: white !important;
-  position: absolute;
-  bottom: -10px;
+  bottom: 40px;
   left: 35px;
-  line-height: 17px !important;
+  line-height: 18px !important;
   transition: ease-out 200ms;
-  opacity: 0;
+  font-family: "f-l";
 }
 .card_body:hover .indicators {
   margin-bottom: 70px;
 }
-.card_body:hover .description {
-  bottom: 40px;
-  opacity: 1;
-  z-index: 30;
-}
+
 .location_container_row {
   display: flex;
   flex-direction: row;

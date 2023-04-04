@@ -10,10 +10,10 @@ function PlacesCards({ title, description, pic }) {
       <div className={classes.overlay} />
       <div className={classes.info_container}>
         <p className={classes.city_name}>{title}</p>
+        <p className={classes.description}>{description}</p>
       </div>
       <div className={classes.info_section}></div>
       <img className={classes.bg_img} src={pic.src} />
-      <p className={classes.description}>{description}</p>
     </div>
   );
 }

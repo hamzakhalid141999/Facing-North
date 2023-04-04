@@ -76,7 +76,7 @@ function FourthHomePageSection() {
           responsive={responsive}
           swipeable={true}
           draggable={true}
-          showDots={true}
+          showDots={false}
           customRightArrow={<CustomRightArrow />}
           customLeftArrow={<CustomLeftArrow />}
         >

@@ -227,10 +227,10 @@
 }
 .review_container_right p {
   font-weight: 300 !important;
-  font-size: 13px;
+  font-size: 15px;
   margin-top: 20px;
   width: 80%;
-  line-height: 20px;
+  line-height: 21px;
   font-family: "f-l";
   color: white;
 }
@@ -258,10 +258,11 @@
 .review_container p,
 .review_container_centered p {
   font-weight: 300 !important;
-  font-size: 13px;
+  font-size: 15px;
+  line-height: 24px;
+
   margin-top: 20px;
   width: 80%;
-  line-height: 20px;
   font-family: "f-l";
 }
 .review_container p {
