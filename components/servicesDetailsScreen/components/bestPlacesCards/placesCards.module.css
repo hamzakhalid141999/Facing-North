@@ -1,6 +1,6 @@
 .card_body {
   width: 100%;
-  min-width: 320px;
+  min-width: 280px;
   height: 440px;
   transition: ease-out 200ms;
   overflow: hidden;

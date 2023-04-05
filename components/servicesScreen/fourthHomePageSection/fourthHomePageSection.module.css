@@ -139,10 +139,10 @@
 }
 .owner_info_content p {
   font-weight: 300 !important;
-  font-size: 13px;
+  font-size: 15px;
   margin-top: 20px;
   width: 60%;
-  line-height: 20px;
+  line-height: 23px;
   text-align: right;
 }
 .review_container {
@@ -191,10 +191,10 @@
 }
 .review_container_right p {
   font-weight: 300 !important;
-  font-size: 13px;
+  font-size: 15px;
   margin-top: 20px;
   width: 80%;
-  line-height: 20px;
+  line-height: 23px;
   font-family: "f-l";
 }
 .review_container h3 {
@@ -216,10 +216,10 @@
 }
 .review_container p {
   font-weight: 300 !important;
-  font-size: 13px;
+  font-size: 15px;
   margin-top: 20px;
   width: 80%;
-  line-height: 20px;
+  line-height: 23px;
   font-family: "f-l";
 }
 .btn {
