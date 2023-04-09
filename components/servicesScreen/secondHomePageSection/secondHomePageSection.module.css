@@ -71,14 +71,15 @@
 .left_panel h2 {
   font-size: 60px;
   font-weight: 200;
+  line-height: 60px;
   font-family: "b-ul";
   width: 70%;
   color: white;
 }
 .left_panel p {
-  font-size: 16px;
+  font-size: 17px;
   font-weight: 200;
-  line-height: 22px;
+  line-height: 28px;
   font-family: "f-l";
   color: white;
 }

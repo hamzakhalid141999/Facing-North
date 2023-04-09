@@ -14,17 +14,17 @@ export const SERVICE_DETAILS = [
       {
         title: "Nanga Parbat base camp",
         description:
-          "Base camp for the 9th highest mountain in the world, offering challenging treks and breathtaking views.",
+          "Nanga Parbat base camp in Pakistan offers breathtaking views and a challenging trek for adventurous tourists. Explore the majestic beauty of the world's ninth highest mountain.",
       },
       {
         title: "Rakaposhi base camp",
         description:
-          "Scenic base camp situated in the Karakoram range, offering stunning views of Rakaposhi peak.",
+          "Rakaposhi Base Camp, also known as Tagaphari, is a hidden gem in Pakistan that offers stunning mountain views and a memorable trekking experience for tourists seeking adventure.",
       },
       {
         title: "Patundas trek",
         description:
-          "A popular trek in the Hunza valley, offering breathtaking views of glaciers, mountains, and valleys",
+          "Embark on the Patundas Trek in Pakistan for an exhilarating and unforgettable experience. This trek offers breathtaking views of the mountains and picturesque landscapes.",
       },
     ],
   },
@@ -85,22 +85,22 @@ export const SERVICE_DETAILS = [
       {
         title: "Hunza Valley",
         description:
-          "Serene mountain destination with fresh air, mineral-rich water, and organic food for a rejuvenating wellness retreat.",
+          "Experience the ultimate relaxation at a yoga retreat in Hunza Valley, Pakistan. Enjoy stunning mountain views and rejuvenate your mind, body, and soul in this serene paradise.",
       },
       {
         title: "Deosai Plains",
         description:
-          "Vast alpine plateau with fresh air, breathtaking views, and wildlife for a peaceful wellness escape.",
+          "Escape the hustle and bustle of city life and find serenity at Deosai Plains in Pakistan. Experience the vast expanse of the world's second-highest plateau and connect with nature like never before.",
       },
       {
         title: "Skardu Valley",
         description:
-          "Picturesque valley with mineral-rich hot springs, stunning landscapes, and peaceful atmosphere for a revitalizing wellness retreat.",
+          "Nestled in the heart of the Karakoram mountain range, Skardu Valley in Pakistan offers a unique blend of adventure and tranquility. Explore its stunning natural beauty and immerse yourself in the rich culture of the region.",
       },
       {
         title: "Chitral",
         description:
-          "Scenic mountain valley with fresh air, natural beauty, and cultural immersion opportunities for a relaxing wellness getaway.",
+          "Experience the vibrant culture of Chitral, Pakistan, known for its unique traditions and hospitality. Immerse yourself in the local way of life and explore the breathtaking natural beauty of the region.",
       },
     ],
   },
@@ -124,27 +124,27 @@ export const SERVICE_DETAILS = [
       {
         title: "Lahore",
         description:
-          "A cultural hub famous for Mughal architecture and street food, with a rich arts and crafts scene.",
+          "Experience the best of Pakistani cuisine in Lahore, a food lover's paradise. From street food to fine dining, Lahore offers a culinary adventure like no other.",
       },
       {
         title: "Islamabad",
         description:
-          "A modern city with a mix of traditional and contemporary arts, and a diverse culinary scene.",
+          "Discover the culinary delights of Islamabad, where traditional Pakistani dishes meet international flavors. From mouth-watering street food to upscale dining options, Islamabad has something to satisfy every palate.",
       },
       {
         title: "Hunza Valley",
         description:
-          "Known for its stunning mountain views and traditional cuisine, including apricots and walnut-based dishes.",
+          "Experience the unique flavors of Hunza Valley, where traditional Pakistani cuisine is infused with Central Asian influences. From hearty soups and stews to sweet treats made with local fruits and nuts, Hunza Valley offers a culinary adventure that is sure to delight your taste buds.",
       },
       {
         title: "Skardu valley",
         description:
-          "An idyllic mountain town with rich cultural heritage and a variety of traditional dishes to savor.",
+          "Skardu Valley's cuisine is a reflection of its mountainous terrain and diverse cultural influences. Savor the flavors of yak meat, locally grown apricots, and other regional delicacies, and immerse yourself in the unique culinary traditions of this stunning region in Pakistan.",
       },
       {
         title: "Chitral valley",
         description:
-          "A picturesque valley with a unique culture, offering traditional food like Khoresh and Chitrali chai.",
+          "Chitral's cuisine is a delightful mix of Pakistani, Central Asian, and Middle Eastern influences, offering a unique culinary experience. From aromatic biryanis and kebabs to refreshing fruit salads and herbal teas, Chitral's cuisine is sure to please any food lover's palate.",
       },
     ],
   },

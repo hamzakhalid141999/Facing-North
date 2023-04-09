@@ -104,7 +104,7 @@ function TopItineraries() {
         <h2 className={classes.title}>
           Top Itineraries
           <br />
-          For Outdoor Persuits
+          For Outdoor Pursuits
         </h2>
         <p className={classes.description}>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras et

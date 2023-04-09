@@ -9,20 +9,19 @@ function Contact() {
     <div className={classes.container}>
       <div className={classes.hero_banner_container}>
         <div className={classes.overlay} />
-        <h2>Find your own World</h2>
+        <h2>Find an unforgettable experience in Pakistan</h2>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean nisl
-          libero, ornare non libero vitae, vestibulum egestas tellus. Curabitur
-          sodales eleifend sem laoreet varius.{" "}
+          Looking for a memorable travel experience? Let us help you plan your
+          next adventure in Pakistan. Contact us for personalized travel
+          recommendations and itinerary planning.
         </p>
       </div>
       <div className={classes.second_section}>
         <h3>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras et
-          finibus urna. In ut justo quis metus rhoncus cursus quis vitae magna.
-          Ut nibh metus, accumsan viverra massa ac, sagittis pulvinar ipsum.
-          Aenean lacus augue, sollicitudin eu eros eleifend, luctus ultricies
-          lectus.{" "}
+          Don't miss out on your dream trip to Pakistan! Provide us with your
+          information today, and one of our representatives will be in touch
+          with personalized travel recommendations and itinerary planning to
+          make your dream a reality.
         </h3>
       </div>
       <div className={classes.third_section}>
@@ -85,9 +84,9 @@ function Contact() {
         <h3>Discover our Homeland</h3>
         <div className={classes.contact_us_row}>
           <p className={classes.contact_us_text}>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean nisl
-            libero, ornare non libero vitae, vestibulum egestas tellus.
-            Curabitur sodales eleifend sem laoreet varius.
+            Ready to explore Pakistan? Let us help you plan the perfect trip.
+            Contact us now for personalized travel recommendations and itinerary
+            planning.
           </p>
           <div className={classes.btn}>
             <p>Contact Us</p>
@@ -96,7 +95,7 @@ function Contact() {
         <div className={classes.contact_info_row}>
           <div className={classes.single_info_row}>
             <img src={phone.src} />
-            <p className={classes.contact_text}>+92 333 4444</p>
+            <p className={classes.contact_text}>03115596785</p>
           </div>
           <div className={classes.single_info_row}>
             <img src={email.src} />

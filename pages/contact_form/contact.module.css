@@ -184,7 +184,8 @@
   font-family: "f-l";
 }
 .btn {
-  height: 90px;
+  max-height: 40px;
+  min-height: 40px;
   width: 120px;
   display: flex;
   align-items: center;
@@ -257,10 +258,10 @@
     font-family: "b-ul";
   }
   .form_container {
-    width: 95%;
+    width: 90%;
   }
   .form_content {
-    width: 100%;
+    width: 90%;
   }
   .heading {
     font-size: 25px;
@@ -303,5 +304,25 @@
   }
   .contact_info_row {
     width: 90%;
+  }
+}
+@media screen and (max-width: 570px) {
+  .form_content {
+    flex-direction: column;
+    row-gap: 50px;
+    padding-top: 30px;
+  }
+  .left_panel {
+    width: 100%;
+  }
+  .right_panel {
+    width: 100%;
+  }
+  .input_field::placeholder {
+    font-size: 14px !important;
+    font-weight: lighter !important;
+    color: black;
+    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+      Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   }
 }

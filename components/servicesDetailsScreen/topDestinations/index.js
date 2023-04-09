@@ -10,8 +10,24 @@ import left_arrow from "../../../public/assets/services_details_assets/left_arro
 
 import "react-multi-carousel/lib/styles.css";
 
+import { useRouter } from "next/router";
+
 function TopDestinations({ places }) {
+  const router = useRouter();
   const [location, setLocation] = useState(1);
+  const [isPilgrim, setIsPilgrim] = useState(false);
+  const [isCulinary, setIsCulinary] = useState(false);
+
+  useEffect(() => {
+    if (router.query.id) {
+      console.log(router.query.id);
+      if (router.query.id.includes("Pilgrims")) {
+        setIsPilgrim(true);
+      } else if (router.query.id.includes("Culinary")) {
+        setIsCulinary(true);
+      }
+    }
+  }, [router.query.id]);
 
   const responsive = {
     superLargeDesktop: {
@@ -68,17 +84,27 @@ function TopDestinations({ places }) {
   return (
     <div className={classes.container}>
       <div className={classes.places_to_stay_container}>
-        <h2 className={classes.title}>Top destinations for Outdoor Persuits</h2>
+        <h2 className={classes.title}>
+          {isPilgrim
+            ? "Top Destinations for Religious Pilgrims"
+            : isCulinary
+            ? "Top Culinary Destinations in Pakistan"
+            : "Top destinations for Outdoor Pursuits"}
+        </h2>
         <p className={classes.description}>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras et
-          finibus urna. In ut justo quis metus rhoncus cursus quis vitae magna.
-          Ut nibh metus, accumsan viverra massa ac, sagittis pulvinar ipsum.
-          Aenean lacus augue, sollicitudin eu eros eleifend, luctus ultricies
-          lectus. Nam elementum tempor arcu, ut faucibus ligula pharetra eu.
+          {isPilgrim
+            ? "Pakistan is home to some of the most important religious sites in the world, attracting pilgrims from all over. From Nankana Sahib, the birthplace of Guru Nanak, to the historic city of Lahore and the holy shrine of Kartarpur, these destinations offer a unique spiritual experience."
+            : isCulinary
+            ? "Discover the flavors of Pakistan, a top culinary destination that boasts a vibrant and diverse cuisine. Indulge in delicious kebabs, curries, desserts, and more, and savor the country's unique blend of flavors and spices."
+            : "Looking for an adventure in Pakistan? Look no further than the country's stunning trekking and camping destinations. From Nanga Parbat Base Camp to the picturesque Patundas Trek, there's something for every nature enthusiast."}
         </p>
         <div className={classes.best_cards_container}>
           {places?.map((place, index) => (
-            <BestPlacesCards title={place?.title} pic={place_1} />
+            <BestPlacesCards
+              description={place?.description}
+              title={place?.title}
+              pic={place_1}
+            />
           ))}
         </div>
       </div>

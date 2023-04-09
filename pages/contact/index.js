@@ -3,26 +3,26 @@ import classes from "./contact.module.css";
 import right_arrow from "../../public/assets/contact_us_assets/right_arrow.svg";
 import email from "../../public/assets/contact_us_assets/email.svg";
 import phone from "../../public/assets/contact_us_assets/phone.svg";
+import Link from "next/link";
 
 function Contact() {
   return (
     <div className={classes.container}>
       <div className={classes.hero_banner_container}>
         <div className={classes.overlay} />
-        <h2>Find your own World</h2>
+        <h2>Find an unforgettable experience in Pakistan</h2>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean nisl
-          libero, ornare non libero vitae, vestibulum egestas tellus. Curabitur
-          sodales eleifend sem laoreet varius.{" "}
+          Looking for a memorable travel experience? Let us help you plan your
+          next adventure in Pakistan. Contact us for personalized travel
+          recommendations and itinerary planning.
         </p>
       </div>
       <div className={classes.second_section}>
         <h3>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras et
-          finibus urna. In ut justo quis metus rhoncus cursus quis vitae magna.
-          Ut nibh metus, accumsan viverra massa ac, sagittis pulvinar ipsum.
-          Aenean lacus augue, sollicitudin eu eros eleifend, luctus ultricies
-          lectus.{" "}
+          Don't miss out on your dream trip to Pakistan! Provide us with your
+          information today, and one of our representatives will be in touch
+          with personalized travel recommendations and itinerary planning to
+          make your dream a reality.
         </h3>
       </div>
       <div className={classes.third_section}>
@@ -39,7 +39,9 @@ function Contact() {
                 placeholder={"Enter"}
                 className={classes.input_field}
               />
-              <img src={right_arrow.src} />
+              <Link href={"/contact_form"}>
+                <img src={right_arrow.src} />
+              </Link>
             </div>
           </div>
         </div>

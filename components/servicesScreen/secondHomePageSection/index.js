@@ -26,14 +26,12 @@ function SecondHomePageSection() {
         <div className={classes.left_panel}>
           <h2>Exclusive to your world</h2>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras et
-            finibus urna. In ut justo quis metus rhoncus cursus quis vitae
-            magna. Ut nibh metus, accumsan viverra massa ac, sagittis pulvinar
-            ipsum. Aenean lacus augue, sollicitudin eu eros eleifend, luctus
-            ultricies lectus. Nam elementum tempor arcu, ut faucibus ligula
-            pharetra eu. Mauris tempus est est, non mattis massa accumsan eu.
-            Fusce nisl mauris, sollicitudin quis ullamcorper et, mollis nec
-            odio. Aenean feugiat est in vestibulum posuere.
+            Experience the ultimate adventure in Pakistan with our custom
+            itineraries that combine trekking, yoga, and outdoor adventures.
+            From the Karakoram mountain range to the Neelum River, Pakistan has
+            something for every traveler. Let us craft an unforgettable journey.
+            Don't miss out on this opportunity to explore the very best that
+            Pakistan has to offer.
           </p>
         </div>
         <div className={classes.right_panel}>

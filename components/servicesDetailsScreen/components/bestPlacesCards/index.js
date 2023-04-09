@@ -1,7 +1,7 @@
 import React from "react";
 import classes from "./placesCards.module.css";
 
-function BestPlacesCards({ title, pic }) {
+function BestPlacesCards({ description, title, pic }) {
   return (
     <div className={classes.card_body}>
       <div className={classes.img_container}>
@@ -12,8 +12,9 @@ function BestPlacesCards({ title, pic }) {
           <h2>{title}</h2>
           <h3>Gilgit, Baltistan</h3>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras et
-            finibus urna. In ut justo quis metus rhoncus cursus quis vitae magna
+            {description.split(" ").length > 20
+              ? description.split(" ").slice(0, 20).join(" ") + "..."
+              : description}
           </p>
         </div>
       </div>

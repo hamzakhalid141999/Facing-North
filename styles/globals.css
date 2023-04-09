@@ -357,6 +357,13 @@ textarea {
   }
 }
 @media screen and (max-width: 600px) {
+  .input_field::placeholder {
+    color: var(--medGreen) !important;
+    font-size: 11px;
+  }
+  .input_field {
+    padding-left: 10px;
+  }
   .carousel.carousel-slider {
     height: 855px !important;
   }
