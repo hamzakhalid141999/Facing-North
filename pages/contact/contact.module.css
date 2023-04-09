@@ -215,10 +215,12 @@
 @media screen and (max-width: 786px) {
   .hero_banner_container h2 {
     font-size: 32px;
+    text-align: center;
   }
   .hero_banner_container p {
     font-size: 14px;
     width: 85%;
+    text-align: center;
   }
   .second_section {
     width: 100%;

@@ -32,7 +32,7 @@ a {
   height: fit-content;
   display: flex;
   flex-direction: row;
-  column-gap: 20px;
+  column-gap: 14px;
 }
 textarea {
   padding-top: 20px;

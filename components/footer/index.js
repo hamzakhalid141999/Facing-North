@@ -6,6 +6,7 @@ import facebook from "../../public/assets/footer-assets/facebook.svg";
 import youtube from "../../public/assets/footer-assets/youtube.svg";
 import linkedin from "../../public/assets/footer-assets/linkedin.svg";
 import instagram from "../../public/assets/footer-assets/instagram.svg";
+import Link from "next/link";
 
 function Footer() {
   return (
@@ -31,7 +32,9 @@ function Footer() {
           <h1>Links</h1>
           <p>About Us</p>
           <p>FAQ</p>
-          <p>Useful Info</p>
+          <Link href={"/terms_and_conditions"}>
+            <p>Terms & Conditions</p>
+          </Link>
         </div>
 
         <div className={classes.col_2}>

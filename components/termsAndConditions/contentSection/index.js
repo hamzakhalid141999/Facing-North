@@ -1,7 +1,12 @@
 import React from "react";
 import classes from "./contentSection.module.css";
+import { useWindowSize } from "../../../utils";
 
 function ContentSection() {
+  const { width } = useWindowSize();
+
+  console.log(width);
+
   return (
     <div className={classes.wrapper}>
       <div className={classes.container}>
@@ -199,7 +204,10 @@ function ContentSection() {
             </p>
           </div>
 
-          <div style={{ width: "70%" }} className="input_row_single">
+          <div
+            style={{ width: width < 925 ? "100%" : "70%" }}
+            className="input_row_single"
+          >
             <input placeholder="Your Name" className="input_field" />
             <input placeholder="Date" className="input_field" />
           </div>
@@ -226,32 +234,50 @@ function ContentSection() {
 
           <h2 className={classes.heading}>Personal Information</h2>
 
-          <div style={{ width: "70%" }} className={`input_row_single`}>
+          <div
+            style={{ width: width < 925 ? "100%" : "70%" }}
+            className={`input_row_single`}
+          >
             <input placeholder="Your Name" className="input_field" />
             <input placeholder="Last Name" className="input_field" />
           </div>
 
-          <div style={{ width: "70%" }} className="input_row_single">
+          <div
+            style={{ width: width < 925 ? "100%" : "70%" }}
+            className="input_row_single"
+          >
             <input placeholder="Gender" className="input_field" />
             <input placeholder="Passport or ID Card" className="input_field" />
           </div>
 
-          <div style={{ width: "70%" }} className="input_row_single">
+          <div
+            style={{ width: width < 925 ? "100%" : "70%" }}
+            className="input_row_single"
+          >
             <input placeholder="Nationality" className="input_field" />
             <input placeholder="Date of Birth" className="input_field" />
           </div>
 
-          <div style={{ width: "70%" }} className="input_row_single">
+          <div
+            style={{ width: width < 925 ? "100%" : "70%" }}
+            className="input_row_single"
+          >
             <input placeholder="Phone" className="input_field" />
             <input placeholder="Email" className="input_field" />
           </div>
 
-          <div style={{ width: "70%" }} className="input_row_single">
+          <div
+            style={{ width: width < 925 ? "100%" : "70%" }}
+            className="input_row_single"
+          >
             <input placeholder="Address" className="input_field" />
             <input placeholder="Blood Group" className="input_field" />
           </div>
 
-          <div style={{ width: "70%" }} className="input_row_single">
+          <div
+            style={{ width: width < 925 ? "100%" : "70%" }}
+            className="input_row_single"
+          >
             <input
               placeholder="Emergency Contact Name"
               className="input_field"

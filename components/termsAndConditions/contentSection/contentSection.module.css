@@ -103,3 +103,36 @@
 .btn:hover p {
   color: white !important;
 }
+@media screen and (max-width: 925px) {
+  .heading {
+    font-size: 25px;
+  }
+  .form {
+    width: 95%;
+    height: 100%;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    padding-right: 18px;
+    padding-left: 18px;
+    background-color: white;
+    box-shadow: 0px 0px 20px rgb(170, 170, 170);
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+  }
+  .section {
+    width: 100%;
+  }
+  .content_container {
+    width: 90%;
+  }
+  .input_para {
+    font-size: 13px;
+    font-family: "f-l";
+  }
+  .para {
+    font-size: 13px;
+    font-family: "f-l";
+    line-height: 18px;
+  }
+}

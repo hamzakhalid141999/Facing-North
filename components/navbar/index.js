@@ -79,7 +79,7 @@ function Navbar() {
               setOpenPanel(false);
             }}
           >
-            FAQ
+            Faq
           </p>
 
           <p
@@ -88,7 +88,7 @@ function Navbar() {
               setOpenPanel(false);
             }}
           >
-            HOME
+            Home
           </p>
 
           <p
@@ -97,7 +97,7 @@ function Navbar() {
               setOpenPanel(false);
             }}
           >
-            ABOUT
+            About
           </p>
 
           <p
@@ -106,7 +106,7 @@ function Navbar() {
               setOpenPanel(false);
             }}
           >
-            SERVICES
+            Services
           </p>
 
           <p
@@ -115,7 +115,7 @@ function Navbar() {
               setOpenPanel(false);
             }}
           >
-            TOUR PACKAGES
+            Tour Packages
           </p>
 
           <p
@@ -124,7 +124,7 @@ function Navbar() {
               setOpenPanel(false);
             }}
           >
-            DESTINATIONS
+            Destinations
           </p>
 
           <p
@@ -133,7 +133,7 @@ function Navbar() {
               setOpenPanel(false);
             }}
           >
-            BLOG
+            Blog
           </p>
 
           <p
@@ -142,7 +142,7 @@ function Navbar() {
               setOpenPanel(false);
             }}
           >
-            CONTACT
+            Contact
           </p>
         </div>
       </SlidingPanel>
@@ -159,30 +159,30 @@ function Navbar() {
       </div>
       <div className={classes.right_panel}>
         <Link href={"/about"}>
-          <p>ABOUT</p>
+          <p>About</p>
         </Link>
         <Link href={"/faq"}>
-          <p>FAQ</p>
+          <p>Faq</p>
         </Link>
 
         {/* <p>ABOUT</p> */}
         <Link href={"/services"}>
-          <p>SERVICES</p>
+          <p>Services</p>
         </Link>
 
         <Link href={"/package_tour"}>
-          <p>TOUR PACKAGES</p>
+          <p>Tour Packages</p>
         </Link>
 
         <Link href={"/destinations"}>
-          <p>DESTINATIONS</p>
+          <p>Destinations</p>
         </Link>
 
         <Link href={"/blogs"}>
-          <p>BLOG</p>
+          <p>Blog</p>
         </Link>
         <Link href={"/contact"}>
-          <p>CONTACT</p>
+          <p>Contact</p>
         </Link>
       </div>
     </div>
