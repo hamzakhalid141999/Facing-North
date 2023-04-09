@@ -52,11 +52,19 @@ function Footer() {
               className={classes.social_media_logo}
               alt="logo"
             />
-            <img
-              src={linkedin.src}
-              className={classes.social_media_logo}
-              alt="logo"
-            />
+            <Link
+              target={"_blank"}
+              href={
+                "https://www.linkedin.com/company/facing-north-travel-tours/"
+              }
+            >
+              <img
+                src={linkedin.src}
+                className={classes.social_media_logo}
+                alt="logo"
+              />
+            </Link>
+
             <img
               src={youtube.src}
               className={classes.social_media_logo}

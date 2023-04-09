@@ -13,9 +13,9 @@
   position: fixed;
 }
 .navbar_body_opaque {
-  background-color: rgba(0, 0, 0, 0.508) !important;
-  backdrop-filter: blur(8px);
-  /* box-shadow: 0px 0px 30px rgba(127, 127, 127, 0.334); */
+  background-color: white !important;
+  /* backdrop-filter: blur(8px); */
+  box-shadow: 0px 0px 30px rgba(127, 127, 127, 0.334);
 }
 .profile_menu {
   opacity: 1;
@@ -89,7 +89,7 @@
   font-family: "f-l";
 }
 .logo {
-  width: 90px;
+  width: 70px;
 }
 .left_panel_btns p {
   color: #000000;
@@ -132,6 +132,11 @@
 }
 .right_panel p {
   color: white;
+  font-size: 17px;
+  font-family: "f-l";
+}
+.navbar_body_opaque .right_panel p {
+  color: var(--medGreen);
   font-size: 17px;
   font-family: "f-l";
 }

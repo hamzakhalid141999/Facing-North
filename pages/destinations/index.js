@@ -18,6 +18,7 @@ function Destinations() {
               key={index}
               id={destination?.id}
               title={destination?.title}
+              location={destination?.location}
               pic={bg}
             />
           ))}
