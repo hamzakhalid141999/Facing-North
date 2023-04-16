@@ -292,7 +292,7 @@ textarea {
   overflow: hidden;
 }
 .facilities_container .react-multi-carousel-track {
-  height: 100vh !important;
+  height: 114vh !important;
 }
 .facilities_container .react-multi-carousel-list {
   width: 100vw !important;
@@ -441,6 +441,11 @@ textarea {
   height: fit-content;
   flex-direction: row;
   column-gap: 40px;
+}
+.our_team_slider .slick-initialized .slick-slide {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
 }
 @media screen and (max-width: 1341px) {
   .our_team_slider .slick-initialized .slick-slide {

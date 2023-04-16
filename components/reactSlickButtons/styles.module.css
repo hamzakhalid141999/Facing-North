@@ -7,13 +7,13 @@
 .right_btn {
   position: absolute;
   right: 42%;
-  bottom: -19%;
+  bottom: -23%;
   display: block;
 }
 .left_btn {
   position: absolute;
   left: 42%;
-  bottom: -19%;
+  bottom: -23%;
   display: block;
 }
 @media screen and (max-width: 750px) {

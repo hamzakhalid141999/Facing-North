@@ -22,9 +22,9 @@ import left_arrow from "../../../public/assets/services_details_assets/left_arro
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 
-function TopPlacesToVisit({ places, places_stay }) {
-  console.log(places, places_stay);
+import { useAnimation, useAnimationFrame, motion } from "framer-motion";
 
+function TopPlacesToVisit({ places, places_stay }) {
   const [location, setLocation] = useState(1);
 
   const responsive = {
@@ -99,6 +99,38 @@ function TopPlacesToVisit({ places, places_stay }) {
     );
   };
 
+  const CustomBestPlacesRightArrow = ({ onClick, ...rest }) => {
+    const {
+      onMove,
+      carouselState: { currentSlide, deviceType },
+    } = rest;
+    // onMove means if dragging or swiping in progress.
+    return (
+      <img
+        src={right_arrow.src}
+        style={{ width: "60px", height: "60px", position: "absolute" }}
+        className={"react-multiple-carousel__arrow--right"}
+        onClick={() => onClick()}
+      />
+    );
+  };
+
+  const CustomBestPlacesLeftArrow = ({ onClick, ...rest }) => {
+    const {
+      onMove,
+      carouselState: { currentSlide, deviceType },
+    } = rest;
+    // onMove means if dragging or swiping in progress.
+    return (
+      <img
+        className={"react-multiple-carousel__arrow--left"}
+        src={left_arrow.src}
+        style={{ width: "60px", height: "60px", position: "absolute" }}
+        onClick={() => onClick()}
+      />
+    );
+  };
+
   return (
     <div className={classes.container}>
       <div className={classes.places_to_stay_container}>
@@ -144,6 +176,8 @@ function TopPlacesToVisit({ places, places_stay }) {
               swipeable={true}
               draggable={true}
               showDots={false}
+              customRightArrow={<CustomRightArrow />}
+              customLeftArrow={<CustomLeftArrow />}
             >
               {places_stay?.map((place, index) => (
                 <BestPlacesCards
@@ -163,7 +197,7 @@ function TopPlacesToVisit({ places, places_stay }) {
       <div className={classes.sliding_cards_container}>
         <h2 className={classes.title}>
           Tours Featuring <br />
-          <span>Destination</span>
+          Destination
         </h2>
         <p className={classes.description}>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras et

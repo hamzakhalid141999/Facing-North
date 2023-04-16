@@ -24,8 +24,122 @@ import "react-multi-carousel/lib/styles.css";
 import itinerary from "../../../public/assets/package_tour_assets/itinerary.png";
 import bg from "../../../public/assets/package_tour_assets/pic.png";
 
+import { useAnimation, useAnimationFrame, motion } from "framer-motion";
+
 function ThirdHomePageSection() {
   const [location, setLocation] = useState(1);
+
+  const delay = (ms) => new Promise((res) => setTimeout(res, ms));
+
+  const imageAnimation = useAnimation();
+  const paraAnimation = useAnimation();
+  const dayAnimation = useAnimation();
+
+  const handleTrigglePictureAnimation = async () => {
+    console.log("adsasdasasdas");
+    imageAnimation.start({
+      x: "6vw",
+      opacity: 0,
+      transition: {
+        type: "spring",
+        duration: 0.5,
+      },
+    });
+    await delay(250);
+
+    imageAnimation.start({
+      x: "-6vw",
+      opacity: 0,
+      transition: {
+        type: "spring",
+        duration: 0.5,
+      },
+    });
+    await delay(250);
+
+    imageAnimation.start({
+      x: 0,
+      opacity: 1,
+      transition: {
+        type: "spring",
+        duration: 0.5,
+      },
+    });
+  };
+
+  const handleToggleHeadingAnimation = async () => {
+    paraAnimation.start({
+      y: "10vh",
+      opacity: 0,
+      transition: {
+        type: "spring",
+        duration: 0.5,
+      },
+    });
+
+    paraAnimation.start({
+      opacity: 0,
+      transition: {
+        type: "spring",
+        duration: 0.5,
+      },
+    });
+
+    await delay(500);
+    paraAnimation.start({
+      y: 0,
+      opacity: 1,
+      transition: {
+        type: "spring",
+        duration: 0.5,
+      },
+    });
+
+    paraAnimation.start({
+      opacity: 1,
+      transition: {
+        type: "spring",
+        duration: 0.5,
+      },
+    });
+  };
+
+  const handleToggleDaysAnimation = async () => {
+    dayAnimation.start({
+      x: "-4vw",
+      opacity: 0,
+      transition: {
+        type: "spring",
+        duration: 0.5,
+      },
+    });
+
+    dayAnimation.start({
+      opacity: 0,
+      transition: {
+        type: "spring",
+        duration: 0.5,
+      },
+    });
+
+    await delay(500);
+    dayAnimation.start({
+      x: 0,
+      opacity: 1,
+      transition: {
+        type: "spring",
+        duration: 0.5,
+      },
+    });
+
+    dayAnimation.start({
+      opacity: 1,
+      transition: {
+        type: "spring",
+        duration: 0.5,
+      },
+    });
+  };
 
   const responsive = {
     superLargeDesktop: {
@@ -91,24 +205,40 @@ function ThirdHomePageSection() {
           </div>
         </div>
 
-        <div className={classes.content_container}>
-          <h2 className={classes.day_heading}>DAY 01</h2>
-          <p className={classes.city}>Gilgit, Baltistant</p>
-          <p className={classes.city_description}>
+        <div animate={paraAnimation} className={classes.content_container}>
+          <motion.div animate={dayAnimation} className={classes.day_heading}>
+            DAY 01
+          </motion.div>
+          <motion.div animate={paraAnimation} className={classes.city}>
+            Gilgit, Baltistant
+          </motion.div>
+          <motion.div
+            animate={paraAnimation}
+            className={classes.city_description}
+          >
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras et
             finibus urna. In ut justo quis metus rhoncus cursus quis vitae
             magna. Ut nibh metus, accumsan viverra massa ac, sagittis pulvinar
             ipsum. Aenean lacus augue, sollicitudin eu eros eleifend, luctus
             ultricies lectus. Nam elementum tempor arcu, ut faucibus ligula
             pharetra eu.
-          </p>
+          </motion.div>
         </div>
-        <div className={classes.pic_container}>
+        <motion.div animate={imageAnimation} className={classes.pic_container}>
           <img src={bg.src} className={classes.img} />
-          <div className={classes.next_day_container}>
+          <div
+            onClick={async () => {
+              handleTrigglePictureAnimation();
+              await delay(100);
+              handleToggleHeadingAnimation();
+              await delay(100);
+              handleToggleDaysAnimation();
+            }}
+            className={classes.next_day_container}
+          >
             <p>DAY 2 </p>
           </div>
-        </div>
+        </motion.div>
       </div>
 
       <div className={classes.whats_included_section}>

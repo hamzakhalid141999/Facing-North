@@ -1,11 +1,13 @@
 import React, { useEffect, useState } from "react";
 import classes from "./navbar.module.css";
 import { useRouter } from "next/router";
-import logo from "../../public/assets/navbar-assets/logo-white.svg";
+import logo from "../../public/assets/navbar-assets/logo-white.png";
+import logo_green from "../../public/assets/navbar-assets/logo-green.png";
 import Link from "next/link";
 import SlidingPanel, { PanelType } from "react-sliding-side-panel";
 import "react-sliding-side-panel/lib/index.css";
 import menu from "../../public/assets/navbar-assets/menu.svg";
+import menu_green from "../../public/assets/navbar-assets/menu_green.svg";
 
 function Navbar() {
   const router = useRouter();
@@ -48,6 +50,8 @@ function Navbar() {
     };
   }, [backgroundColor]);
 
+  console.log("backgroundColor: ", backgroundColor);
+
   return (
     <div
       className={
@@ -72,16 +76,6 @@ function Navbar() {
       >
         <div className={classes.panel_container}>
           <img src={logo.src} />
-
-          <p
-            onClick={() => {
-              router.push("/faq");
-              setOpenPanel(false);
-            }}
-          >
-            Faq
-          </p>
-
           <p
             onClick={() => {
               router.push("/");
@@ -90,7 +84,6 @@ function Navbar() {
           >
             Home
           </p>
-
           <p
             onClick={() => {
               router.push("/about");
@@ -99,7 +92,14 @@ function Navbar() {
           >
             About
           </p>
-
+          <p
+            onClick={() => {
+              router.push("/faq");
+              setOpenPanel(false);
+            }}
+          >
+            Faq
+          </p>
           <p
             onClick={() => {
               router.push("/services");
@@ -108,7 +108,6 @@ function Navbar() {
           >
             Services
           </p>
-
           <p
             onClick={() => {
               router.push("/package_tour");
@@ -117,7 +116,6 @@ function Navbar() {
           >
             Tour Packages
           </p>
-
           <p
             onClick={() => {
               router.push("/destinations");
@@ -126,7 +124,6 @@ function Navbar() {
           >
             Destinations
           </p>
-
           <p
             onClick={() => {
               router.push("/blogs");
@@ -135,7 +132,6 @@ function Navbar() {
           >
             Blog
           </p>
-
           <p
             onClick={() => {
               router.push("/contact");
@@ -148,13 +144,16 @@ function Navbar() {
       </SlidingPanel>
       <img
         onClick={() => setOpenPanel(true)}
-        src={menu.src}
+        src={backgroundColor === "opaque" ? menu_green.src : menu.src}
         className={classes.menu_icon}
       />
 
       <div className={classes.left_panel}>
         <Link href={"/"}>
-          <img className={classes.logo} src={logo.src} />
+          <img
+            className={classes.logo}
+            src={backgroundColor === "opaque" ? logo_green.src : logo.src}
+          />
         </Link>
       </div>
       <div className={classes.right_panel}>

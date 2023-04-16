@@ -253,6 +253,7 @@
   }
   .col_2 {
     width: 50%;
+    margin-left: 0;
   }
   .col_2 h1 {
     font-size: 24px;

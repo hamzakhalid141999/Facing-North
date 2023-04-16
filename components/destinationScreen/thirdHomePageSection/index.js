@@ -82,7 +82,7 @@ function ThirdHomePageSection() {
       <div className={classes.title_section}>
         <h2 className={classes.title}>
           Tours Featuring <br />
-          <span>destination</span>{" "}
+          destination
         </h2>
         <p className={classes.description}>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras et
