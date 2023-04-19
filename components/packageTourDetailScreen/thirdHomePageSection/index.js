@@ -26,14 +26,30 @@ import bg from "../../../public/assets/package_tour_assets/pic.png";
 
 import { useAnimation, useAnimationFrame, motion } from "framer-motion";
 
-function ThirdHomePageSection() {
+function ThirdHomePageSection({ itineraryData }) {
   const [location, setLocation] = useState(1);
-
+  const [dayInfo, setDayInfo] = useState();
+  const [selectedDay, setSelectedDay] = useState(0);
+  const [selectedDayInfo, setSelectedDayInfo] = useState();
   const delay = (ms) => new Promise((res) => setTimeout(res, ms));
 
   const imageAnimation = useAnimation();
   const paraAnimation = useAnimation();
   const dayAnimation = useAnimation();
+
+  useEffect(() => {
+    if (itineraryData) {
+      setDayInfo(itineraryData?.itinerary);
+    }
+  }, [itineraryData]);
+
+  useEffect(() => {
+    if (dayInfo && typeof selectedDay === "number") {
+      setSelectedDayInfo(dayInfo[selectedDay]);
+    }
+  }, [dayInfo, selectedDay]);
+
+  console.log(selectedDay);
 
   const handleTrigglePictureAnimation = async () => {
     console.log("adsasdasasdas");
@@ -55,6 +71,8 @@ function ThirdHomePageSection() {
         duration: 0.5,
       },
     });
+
+    setSelectedDay(selectedDay + 1);
     await delay(250);
 
     imageAnimation.start({
@@ -207,21 +225,16 @@ function ThirdHomePageSection() {
 
         <div animate={paraAnimation} className={classes.content_container}>
           <motion.div animate={dayAnimation} className={classes.day_heading}>
-            DAY 01
+            DAY 0{selectedDay + 1}
           </motion.div>
           <motion.div animate={paraAnimation} className={classes.city}>
-            Gilgit, Baltistant
+            {selectedDayInfo?.title}
           </motion.div>
           <motion.div
             animate={paraAnimation}
             className={classes.city_description}
           >
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras et
-            finibus urna. In ut justo quis metus rhoncus cursus quis vitae
-            magna. Ut nibh metus, accumsan viverra massa ac, sagittis pulvinar
-            ipsum. Aenean lacus augue, sollicitudin eu eros eleifend, luctus
-            ultricies lectus. Nam elementum tempor arcu, ut faucibus ligula
-            pharetra eu.
+            {selectedDayInfo?.description}
           </motion.div>
         </div>
         <motion.div animate={imageAnimation} className={classes.pic_container}>

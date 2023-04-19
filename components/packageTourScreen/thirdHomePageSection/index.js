@@ -9,6 +9,8 @@ import PlacesCards from "../components/placesCards";
 import right_arrow from "../../../public/assets/services_details_assets/right_arrow.svg";
 import left_arrow from "../../../public/assets/services_details_assets/left_arrow.svg";
 
+import { ITINERARIES } from "../../../data/itienraries";
+
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 
@@ -110,12 +112,9 @@ function TopPlacesToVisit() {
             customRightArrow={<CustomRightArrow />}
             customLeftArrow={<CustomLeftArrow />}
           >
-            <PlacesCards pic={explore_pic_3} />
-            <PlacesCards pic={explore_pic_2} />
-            <PlacesCards pic={explore_pic_1} />
-            <PlacesCards pic={explore_pic_3} />
-            <PlacesCards pic={explore_pic_2} />
-            <PlacesCards pic={explore_pic_1} />
+            {ITINERARIES?.map((itinerary, index) => (
+              <PlacesCards itineraryDetails={itinerary} pic={explore_pic_3} />
+            ))}
           </Carousel>
         </div>
       </div>
