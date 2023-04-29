@@ -9,7 +9,6 @@
   top: 15%;
   z-index: 100000;
   box-shadow: 0px 10px 43px 0px rgba(11, 78, 85, 0.503);
-  transition: ease-out 250ms;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -18,21 +17,34 @@
   border-left: 2px solid white;
   border-bottom: 2px solid white;
   border-right: 2px solid rgb(240, 240, 240);
+  overflow: hidden;
+  transition: height 0.3s ease-out;
 }
+
 .tooltip_container:hover {
-  height: fit-content;
-  transition: ease-out 250ms;
+  height: auto;
 }
+
+.icons_body {
+  height: fit-content;
+  width: 90%;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 80px;
+}
+
 .tooltip_body {
   min-width: 79px;
   min-height: 79px;
   background-color: #286675;
   border-radius: 14px;
-  transition: ease-out 250ms;
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
 }
+
 .single_icon_container {
   min-width: 69px;
   min-height: 69px;
@@ -44,6 +56,7 @@
   border-radius: 8px;
   padding: 4px;
   transition: ease-in-out 200ms;
+  z-index: 2;
 }
 .single_icon_container:hover {
   background-color: #3697af2b;
