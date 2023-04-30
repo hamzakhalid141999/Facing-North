@@ -5,13 +5,19 @@ import story_bg from "../../../public/assets/about-page-assets/story_bg.png";
 import vision_bg from "../../../public/assets/about-page-assets/vision_bg.png";
 import Link from "next/link";
 
-function FourthHomePageSection({ info }) {
+function FourthHomePageSection({
+  introRef,
+  storyRef,
+  missionRef,
+  visionRef,
+  info,
+}) {
   return (
     <div className={classes.container}>
-      <div className={classes.second_section}>
+      <div ref={introRef} className={classes.second_section}>
         <h3>{info.statement}</h3>
       </div>
-      <div className={classes.feedback_section}>
+      <div ref={storyRef} className={classes.feedback_section}>
         <div className={classes.img_container}>
           <div className={classes.img_wrapper}>
             <img src={story_bg.src} className={classes.img} />
@@ -24,7 +30,7 @@ function FourthHomePageSection({ info }) {
         </div>
       </div>
 
-      <div className={classes.feedback_section}>
+      <div ref={missionRef} className={classes.feedback_section}>
         <div className={classes.img_container_right}>
           <div className={classes.img_wrapper_right}>
             <img src={mission_bg.src} className={classes.img} />
@@ -37,7 +43,7 @@ function FourthHomePageSection({ info }) {
         </div>
       </div>
 
-      <div className={classes.feedback_section}>
+      <div ref={visionRef} className={classes.feedback_section}>
         <div className={classes.img_container}>
           <div className={classes.img_wrapper}>
             <img

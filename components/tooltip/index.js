@@ -4,7 +4,7 @@ import logo from "../../public/assets/toolbar/logo_white.svg";
 import consultant from "../../public/assets/toolbar/consultant.svg";
 import expert from "../../public/assets/toolbar/expert.svg";
 
-function Tooltip() {
+function Tooltip({ refArray }) {
   const [height, setHeight] = useState("82px");
   const tooltipRef = useRef(null);
 
@@ -33,34 +33,17 @@ function Tooltip() {
         <img src={logo.src} />
       </div>
       <div className={classes.icons_body}>
-        <div className={classes.single_icon_container}>
-          <img src={consultant.src} />
-          <p>Heading 1</p>
-        </div>
-        <div className={classes.single_icon_container}>
-          <img src={consultant.src} />
-          <p>Heading 2</p>
-        </div>
-        <div className={classes.single_icon_container}>
-          <img src={consultant.src} />
-          <p>Heading 3</p>
-        </div>
-        <div className={classes.single_icon_container}>
-          <img src={consultant.src} />
-          <p>Heading 3</p>
-        </div>
-        <div className={classes.single_icon_container}>
-          <img src={consultant.src} />
-          <p>Heading 3</p>
-        </div>
-        <div className={classes.single_icon_container}>
-          <img src={consultant.src} />
-          <p>Heading 3</p>
-        </div>
-        <div className={classes.single_icon_container}>
-          <img src={consultant.src} />
-          <p>Heading 3</p>
-        </div>
+        {refArray?.map((singleRef, index) => (
+          <div
+            onClick={() => {
+              singleRef.ref.current.scrollIntoView({ behavior: "smooth" });
+            }}
+            className={classes.single_icon_container}
+          >
+            <img src={consultant.src} />
+            <p>{singleRef.title}</p>
+          </div>
+        ))}
       </div>
     </div>
   );
