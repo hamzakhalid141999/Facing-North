@@ -23,7 +23,7 @@ import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import itinerary from "../../../public/assets/package_tour_assets/itinerary.png";
 import bg from "../../../public/assets/package_tour_assets/pic.png";
-
+import right_arrow_btn from "../../../public/assets/homepage/right-arrow.svg";
 import { useAnimation, useAnimationFrame, motion } from "framer-motion";
 
 function ThirdHomePageSection({ itineraryData }) {
@@ -31,11 +31,14 @@ function ThirdHomePageSection({ itineraryData }) {
   const [dayInfo, setDayInfo] = useState();
   const [selectedDay, setSelectedDay] = useState(0);
   const [selectedDayInfo, setSelectedDayInfo] = useState();
+  const [selectedDayIndex, setSelectedDayIndex] = useState(0);
   const delay = (ms) => new Promise((res) => setTimeout(res, ms));
 
   const imageAnimation = useAnimation();
   const paraAnimation = useAnimation();
   const dayAnimation = useAnimation();
+
+  console.log("LENGTH: ", dayInfo?.length, "SELECTED: ", selectedDay);
 
   useEffect(() => {
     if (itineraryData) {
@@ -72,7 +75,12 @@ function ThirdHomePageSection({ itineraryData }) {
       },
     });
 
-    setSelectedDay(selectedDay + 1);
+    if (selectedDay === dayInfo?.length - 1) {
+      setSelectedDay(0);
+      console.log("IN SELECTED CONDITION");
+    } else {
+      setSelectedDay(selectedDay + 1);
+    }
     await delay(250);
 
     imageAnimation.start({
@@ -249,7 +257,8 @@ function ThirdHomePageSection({ itineraryData }) {
             }}
             className={classes.next_day_container}
           >
-            <p>DAY 2 </p>
+            <img src={right_arrow_btn.src} />
+            <p>DAY 0{selectedDay + 1}</p>
           </div>
         </motion.div>
       </div>

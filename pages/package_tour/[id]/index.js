@@ -1,6 +1,5 @@
 import react, { useState, useEffect } from "react";
 import FourthHomePageSection from "../../../components/packageTourDetailScreen/fourthHomePageSection";
-import HeroBanner from "../../../components/packageTourDetailScreen/heroBanner";
 import SecondHomePageSection from "../../../components/packageTourDetailScreen/secondHomePageSection";
 import ThirdHomePageSection from "../../../components/packageTourDetailScreen/thirdHomePageSection";
 import PositiveImpacts from "../../../components/packageTourDetailScreen/positiveImpacts";
@@ -9,8 +8,9 @@ import MapSection from "../../../components/packageTourDetailScreen/mapSection";
 import TemperatureGraph from "../../../components/packageTourDetailScreen/temperatureGraph";
 import LargeBannerCarousel from "../../../components/sharedComponents/largeBannerCarousel";
 import TestimonialSection from "../../../components/testimonialSection";
-import { ITINERARIES } from "../../../data/itienraries";
+import { ITINERARIES } from "../../../data/itineraries";
 import { useRouter } from "next/router";
+import HeroBanner from "../../../components/sharedComponents/heroBanner";
 
 export default function PackageTour() {
   const router = useRouter();
@@ -35,7 +35,14 @@ export default function PackageTour() {
 
   return (
     <div className={styles.container}>
-      <HeroBanner />
+      <HeroBanner
+        backgroundImg={"/assets/package_tour_assets/banner.png"}
+        heading={"Extraordinary Vision"}
+        heading2={"unparallel results"}
+        subheading1={
+          " Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean nisl libero, ornare non libero vitae, vestibulum egestas tellus. Curabitur sodales eleifend sem laoreet varius."
+        }
+      />
       <SecondHomePageSection />
       <ThirdHomePageSection itineraryData={itinerary} />
       <MapSection />

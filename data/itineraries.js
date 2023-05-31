@@ -327,12 +327,183 @@ export const ITINERARIES = [
   },
   {
     id: 5,
-
     title: "Hunza & Lahore Springs",
+    product_code: "PK-01",
+    title2: "Diversity of nature & culture Journey to through the Silk Route",
+    dates_to_travel: "March → May",
+    overview:
+      "Pakistan is a country full of diversity in every means whether you talk about landscape, food, culture or our traditions. Islamabad is the capital of Pakistan where our journey starts. Islamabad is surrounded by beautiful Margalla Hills which are the start of our mountain ranges. In the North-East of Pakistan, at an altitude of 8200 ftHunza District is in Gilgit-Baltistan and is the center of trekking, trailing and climbing journeys. An epitome of beauty are its lakes, rivers and waterfalls, serenity of valleys and wilderness of the mountains",
+    itinerary: [
+      {
+        title: "Arrival at Islamabad",
+        description:
+          "KhushAamdeed, Welcome to the capital of Pakistan. Upon arrival, once you clear the customs and collect your luggage, you will be met and greeted by Facing North on Location representatives and will be transferred to your hotel. The drive to your hotel will be approximately 30 minutes. Time to settle in and relax after your international flight. You may wish to take a quick half day city tour.  Dinner will be served at the renowned Monal Restaurant with a stunning panoramic view of Islamabad and Rawalpindi. Situated on the hill of Potohar, nestled against the pristine Margala, Monal Restaurant is voted one of the most romantic restaurants in Islamabad and is considered the best restaurant in Islamabad. Your dinner experience tonight at Monal will be a great introduction to Pakistani cuisine.A brief introduction will also be given to give you pointers of the upcoming tour",
+        activities: "Quick Tour Islamabad ",
+      },
+      {
+        title: "Gilgit & Naltar valley",
+        description:
+          "After breakfast, depart early in the morning for Gilgit. You will be transferred to the Airport in time for your flight to Gilgit. The flight will take approximately 45 minutes and will cross some of the high-altitude peaks and highest mountain ranges in the world. Upon arrival, we will depart to Nomal village. The drive takes about 30 minutes and we will switch vehicles to 4x4 Jeep for some off-road driving to Naltar valley. This scenic drive will take approximately 2 hours and will bring you to a stunning valley of lakes and lush green forest. Naltar Valley has 7 lakes and we will cover one or two of them. return to Nomal, drive back to Gilgit. Dinner will be served at the hotel. overnight stay",
+        activities:
+          "Short Gilgit city tour, Jeep ride to Naltar, Visit lakes and Skiing resort of Naltar",
+      },
+      {
+        title: "Karimabad & Rakaposhi viewpoint",
+        description:
+          "This morning, you will wake up to a view surrounded by the mighty Karakoram. You will have plenty of time to enjoy your breakfast with the view and after breakfast and a break; we will check out of the hotel at around noon and leave for Karimabad. The drive will take approximately 2.5 hours and on the way in, we will stop at various viewpoint locations for you to rest and take some really nice pictures. You will go through one of the original silk roads and you will be able to see the remains of the old silk road which was constructed by cutting stones manually back in the days. Another viewpoint stop will be Rakaposhi where we will have a buffet lunch and will spend time by the water stream coming From Rakaposhi which has an elevation of 7,788m. We will do a short excursion to Karimabad then transfer to a hotel. The rest of the afternoon will be at leisure in Karimabad. Explore the main market and try out some local organic walnut cake from Café De Hunza. In the late afternoon, we will leave for Eagles Nest, a short 30 minutes’ drive from the hotel. At Eagles Nest, you will witness a stunning sunset projecting over the Hunza Valley",
+        activities:
+          "Remains of Old silk route, Rakaposhi viewpoint, café De Hunza & sunset at Duiker (Eagles Nest)",
+      },
+      {
+        title: "Baltit and Altit Fort",
+        description:
+          "After breakfast, we will explore the culture and traditions of Hunza valley, it has so much to offer. We will start a short heritage walk from Karimabad bazar to Baltit fort, which is located on the top of Karimabad bazar. We will take a tour of Baltit Fort to learn about the history, culture, traditions of Hunza Valley. After the visit to Baltit Fort, we will walk back to Karimabad bazaar to take another excursion to Altit Fort, another stunning piece of architecture and history. After the tour to Altit Fort, we will stop at a small hidden café in Altit called Khabasi Café. Khabasi Café is operated by an All-Female team as a result of an amazing initiative taken by Prince Agha Khan to uplift women empowerment. Evening walk in Altit royal gardens, return to Karimabad bazaar where you will have some free shopping time. Transfer to hotel, dinner will be served at the hotel with traditional dance and music.",
+        activities:
+          "Karimabad heritage walk, Baltit and Altit fort tour, Altit royal gardens, khabasi Café and traditional music and dances",
+      },
+      {
+        title: "Hoper Valley & small-scale factories",
+        description:
+          "This morning, we will head to Hoper valley. The drive will be approximately 1.5 hours from the hotel. Hoper Valley is well known for its high-altitude mountain peaks and one of a kind glaciers which lies below the valley. We will take a short trek to the glacier and you will have a chance to get close and personal with the thousand’s year-old glacier ice. After the visit to Hoper Valley, we will return to Karimabad for a short tour of a local craft art studio where wooden cutlery and other handicrafts are made. We will also visit several carpet factories to see how this ancient carpet making technique is preserved and how handmade carpets are made",
+        activities:
+          "Hopper valley, Hopper glacier, small scale factories of handicrafts and carpet",
+      },
+      {
+        title: "Atabad Lake, Gulmit & Borit Lake",
+        description:
+          "After breakfast, we will leave for Atabad lake, crossing some mind-blowing tunnels leading us to one of the largest lakes of Pakistan. At Atabad Lake, you have options to participate in different kinds of water sports or do some sightseeing at Gulmit village. After Atabad Lake, we will head to Borit lake where lunch will be served at a lake viewing restaurant. We will leave for a glacier hike which is approx. 2 hours of trekking with an amazing view of Passu cones and Passu peak Relax at the most scenic and beautiful place in upper Hunza valley. Return to Atabad lake, transfer to resort. Dinner will be arranged at the Moksha Resort with music",
+        activities:
+          "Atabad lake, Passu cones, Gulmit village walk, Passu Glacier Walk and Borit lake",
+      },
+      {
+        title: "Sost, Passu & Khunjerab Pass",
+        description:
+          "Our day will start with a majestic view of Atabad Lake and Passu Cones in the background, breakfast will be served with the lake view. Excursion to Sost with stopovers at different villages for photography. We will take a tour of the famous Hussaini suspension bridge. Lunch will be served in Sost. We will visit Sost Dry port. Excursion to Khunjerab pass which is situated at an elevation of 4,693m. Return to Atabad Lake, in between stop over at Glacier Breeze café for scrumptious organic Apricot cake and tea. Free time at Atabad. Dinner will be served. overnight stay",
+        activities: "Sost dry port, Khunjerab pass, Bonfire & musical night.",
+      },
+      {
+        title: "Rakaposhi Viewpoint Minapin & Bikchum Ghutum",
+        description:
+          "Today we will be heading to Gilgit via Minapin. Minapin is one of the oldest villages of Nagar valley. The drive to Minapin will be approximately one hour and upon arrival, we will have time to do a garden walk in Minapin. You may wish to pick some fresh fruits from the orchards. Tea will be served next to the water stream during the break. After the tea break, we will change to 4x4 Jeep for an exciting off-road drive to Bikchum Ghutum. The ride to Bikchum Ghutum will take approximately 45 minutes and it will lead us to a hidden pearl, a ground situated right on the footsteps of the mighty Rakaposhi known as the Mother of Mist. In Bikchum, you can take a short trek towards a glacier where you will have the opportunity to taste organic ice which is thousands of years old. Lunch is served at Bikchum Ghutum. After lunch, we will return to Minapin where we change our vehicle again to a coaster bus and continue our journey to Gilgit. At leisure for the rest of the day in Gilgit",
+        activities:
+          "Minapin garden walk, 4x4 ride, Bikchum Ghutum and glacier walk.",
+      },
+      {
+        title: "GLT-LHR",
+        description:
+          "Breakfast will be served at the hotel. Morning flight to Lahore. Transfer to Airport, depart to Lahore via flight. An hour air safari, flying over the mighty Karakorum and Kaghan region. Arrival at Lahore, transfer to hotel. Excursion to Wagah Border which is at a 45 minutes’ drive to witness the Border ritual/ceremony between India Pakistan. Return to hotel, buffet dinner at Bukhara restaurant. Overnight stay.",
+        activities: "Air Safari",
+      },
+      {
+        title: " Lahore city tour",
+        description:
+          "Breakfast will be served at the hotel. We will head towards the Walled city of Lahore. We will start our tour from Delhi gate Lahore, we will mostly walk through the ancient walled city, our first sight will be Shahi Hammam where we will take the tour of ancient royal baths. Excursion to the next sight which is Wazir Khan Mosque where beautiful paintings have been carved and engraved on walls, a true marvel of art which makes the mosque so unique. After the mosque we will direct ourselves to some local street food like smoked corn, Falooda and other unique food stalls which is a must try. We will move towards the beautiful ancient mosque,  Badshah-e-Masjid, Red Fort, Lahore Fort and Sheesh Mahal which is coated with beautiful glass which reflects making is one of a kind mahal in the world, ancient art can be explored in the Mahals Dinner will be served at the Haveli or Andaaz. Restaurant with a great view of Badshah-e-Masjid. Overnight stay in Lahore",
+        activities:
+          "Badshah-e-Masjid tour, Minar-e-Pakistan, Red fort and Lahore Food Street",
+      },
+      {
+        title: "Shopping and food Experiences",
+        description:
+          "Start your day with a healthy breakfast at the hotel. Day visit to shopping areas and some art galleries. For lunch we will visit a handpicked Lahore famous restaurant. visit the Pakistan army Museum. leisure for the evening. dinner at a fine restaurant or at the hotel. overnight stay",
+        activities: " shopping, art galleries visit and museum",
+      },
+      {
+        title: "Day of Departure",
+        description:
+          "Breakfast will be served at the hotel. Free time for leisure till your flight departure. transfer to the airport with lots of memories to cherish forever. departure to your respective country",
+        activities: "Departure to your country ",
+      },
+    ],
   },
   {
     id: 6,
     title: "Hunza Photography Excursion",
+    product_code: "PK23-04",
+    title2: "The Ultimate Photography Heaven Hunza & Nagar Valley",
+    dates_to_travel: "March → November",
+    overview:
+      "Pakistan is a country full of diversity in every means whether you talk about landscape, food, culture or our traditions. Islamabad is the capital of Pakistan where our journey starts. Our Hunza landscape photography excursion will take you on a journey through some of the most stunning locations in the region. You will have the opportunity to capture breathtaking shots of the Hunza Valley, Passu Cones, and Attabad Lake, as well as explore traditional villages and cottage factories for carpets run by friendly women. You will also enjoy a village-to-village walk from Gulmit to Ghulkin, with beautiful scenery to capture along the way. The excursion will end with a detailed review session with your instructor, giving you the opportunity to receive valuable feedback on your work",
+    itinerary: [
+      {
+        title: "Arrival at Islamabad",
+        description:
+          "KhushAmdeed, Welcome to Islamabad, Pakistan's capital. Our representative will meet you at the airport and transfer you to your hotel, just 20-25 minutes away. Spend the day exploring or shopping, then join us for an arrival dinner where you'll meet your Instructor and Guide at a handpicked restaurant. After a pleasant evening, rest at the hotel for the next day",
+        activities: "Quick Tour Islamabad ",
+      },
+      {
+        title: "Gilgit & Minapin",
+        description:
+          "Early morning, depart for Gilgit via a 45-minute flight from Islamabad. The breathtaking flight offers views of high-altitude peaks and mountain ranges. Upon arrival, transfer to the Rakaposhi viewpoint for an afternoon photoshoot, followed by lunch. Later, we'll visit Minapin before returning to Rakaposhi for a spectacular sunset photoshoot. Afterward, return to Minapin for dinner and a review session with the instructor. Rest up for the next day's adventures.",
+        activities:
+          "Safari flight, afternoon, sunset & blue light shoot at Rakaposhi.",
+      },
+      {
+        title: "Rakaposhi",
+        description:
+          "Enjoy an early morning sunrise shoot at Rakaposhi with various locations for capturing the majestic view. After breakfast, depart for Bikchum Ghutum, a 40-minute jeep ride from Minapin, to capture stunning views of Rakaposhi and Pisan glacier. Return to Minapin for rest before heading back to the Rakaposhi viewpoint for a sunset and blue light photoshoot. Dinner and review session with the instructor, followed by a night photography session at Rakaposhi. Return to the hotel for overnight stay.",
+        activities:
+          "Sunrise at Rakaposhi, afternoon shoot at Bikchum Ghutum, sunset & blue light at Rakaposh",
+      },
+      {
+        title: "Duiker Point / Eagles Nest",
+        description:
+          "After a stunning sunrise shot at Rakaposhi from a different angle, we will have breakfast. Then we will embark on an excursion to Duiker/Eagles nest and transfer back to the hotel for some rest. In the afternoon, we will have a photoshoot at Eagles nest, which provides a panoramic view of Hunza and Nagar surrounded by 7000+m peaks. Lunch will be served leisurely at Duiker. We will cover sunset and blue light photography from Duiker/Eagles nest, followed by dinner and our daily review and brainstorming sessions. Overnight stay",
+        activities:
+          "Sunrise from Rehman Abad, afternoon, sunset and blue light shoot at Eagles Nest.",
+      },
+      {
+        title: "Baltit and Altit Fort",
+        description:
+          "We will start the day with a heritage walk from Karimabad bazaar to Baltit Fort, where we will learn about Hunza Valley's history, culture, and traditions. After the tour, we will walk back to Karimabad bazaar for an excursion to Altit Fort, followed by a stop at Khabasi Café, an all-female-operated cafe. Later, we will take an evening walk in Altit Royal Gardens and return to Karimabad bazaar for some free shopping time. Dinner will be served at the hotel with traditional dance and music",
+        activities:
+          "Karimabad heritage walk, Baltit and Altit fort tour, Altit royal gardens, khabasi Café and traditional music and dances.",
+      },
+      {
+        title: "Upper Hunza",
+        description:
+          "Early breakfast, depart to Passu Cathedral from Atabad lake. Check in at the resort. Afternoon photoshoot at Atabad lake, followed by a visit to Borith lake for a photoshoot of Ultar and Shispar Peak. Return for sunset and blue light photography at Passu cones, Passu peak and glacier. Dinner and review session with the instructor. Bonfire and traditional music by the lake. Overnight stay with the option for night photography at Atabad lake.",
+        activities:
+          "Sunset at Duiker, afternoon shoot at Atabad Lake & sunset at Passu Cones",
+      },
+      {
+        title: "Sost, Passu & Khunjerab Pass",
+        description:
+          "Our day will start with a majestic view of Atabad Lake and Passu Cones in the background, breakfast will be served with the lake view. Excursion to Sost with stopovers at different villages for photography. We will take a tour of the famous Hussaini suspension bridge. Lunch will be served in Sost. We will visit Sost Dry port. Excursion to Khunjerab pass which is situated at an elevation of 4,693m. Return to Atabad Lake, in between stop over at Glacier Breeze café for scrumptious organic Apricot cake and tea. Free time at Atabad. Dinner will be served. overnight stay",
+        activities: "Sost dry port, Khunjerab pass, Bonfire & musical night.",
+      },
+      {
+        title: "Rakaposhi Viewpoint Minapin & Bikchum Ghutum",
+        description:
+          "Today we will be heading to Gilgit via Minapin. Minapin is one of the oldest villages of Nagar valley. The drive to Minapin will be approximately one hour and upon arrival, we will have time to do a garden walk in Minapin. You may wish to pick some fresh fruits from the orchards. Tea will be served next to the water stream during the break. After the tea break, we will change to 4x4 Jeep for an exciting off-road drive to Bikchum Ghutum. The ride to Bikchum Ghutum will take approximately 45 minutes and it will lead us to a hidden pearl, a ground situated right on the footsteps of the mighty Rakaposhi known as the Mother of Mist. In Bikchum, you can take a short trek towards a glacier where you will have the opportunity to taste organic ice which is thousands of years old. Lunch is served at Bikchum Ghutum. After lunch, we will return to Minapin where we change our vehicle again to a coaster bus and continue our journey to Gilgit. At leisure for the rest of the day in Gilgit",
+        activities:
+          "Minapin garden walk, 4x4 ride, Bikchum Ghutum and glacier walk.",
+      },
+      {
+        title: "GLT-LHR",
+        description:
+          "Breakfast will be served at the hotel. Morning flight to Lahore. Transfer to Airport, depart to Lahore via flight. An hour air safari, flying over the mighty Karakorum and Kaghan region. Arrival at Lahore, transfer to hotel. Excursion to Wagah Border which is at a 45 minutes’ drive to witness the Border ritual/ceremony between India Pakistan. Return to hotel, buffet dinner at Bukhara restaurant. Overnight stay.",
+        activities: "Air Safari",
+      },
+      {
+        title: " Lahore city tour",
+        description:
+          "Breakfast will be served at the hotel. We will head towards the Walled city of Lahore. We will start our tour from Delhi gate Lahore, we will mostly walk through the ancient walled city, our first sight will be Shahi Hammam where we will take the tour of ancient royal baths. Excursion to the next sight which is Wazir Khan Mosque where beautiful paintings have been carved and engraved on walls, a true marvel of art which makes the mosque so unique. After the mosque we will direct ourselves to some local street food like smoked corn, Falooda and other unique food stalls which is a must try. We will move towards the beautiful ancient mosque,  Badshah-e-Masjid, Red Fort, Lahore Fort and Sheesh Mahal which is coated with beautiful glass which reflects making is one of a kind mahal in the world, ancient art can be explored in the Mahals Dinner will be served at the Haveli or Andaaz. Restaurant with a great view of Badshah-e-Masjid. Overnight stay in Lahore",
+        activities:
+          "Badshah-e-Masjid tour, Minar-e-Pakistan, Red fort and Lahore Food Street",
+      },
+      {
+        title: "Shopping and food Experiences",
+        description:
+          "Start your day with a healthy breakfast at the hotel. Day visit to shopping areas and some art galleries. For lunch we will visit a handpicked Lahore famous restaurant. visit the Pakistan army Museum. leisure for the evening. dinner at a fine restaurant or at the hotel. overnight stay",
+        activities: " shopping, art galleries visit and museum",
+      },
+      {
+        title: "Day of Departure",
+        description:
+          "Breakfast will be served at the hotel. Free time for leisure till your flight departure. transfer to the airport with lots of memories to cherish forever. departure to your respective country",
+        activities: "Departure to your country ",
+      },
+    ],
   },
   {
     id: 7,

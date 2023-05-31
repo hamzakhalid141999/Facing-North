@@ -1,7 +1,6 @@
 .hero_banner_container {
   height: 100vh;
   width: 100%;
-  background-image: url("../../../public/assets/package_tour_assets/banner.png");
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;

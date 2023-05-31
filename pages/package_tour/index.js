@@ -1,6 +1,6 @@
 import react, { useState, useRef } from "react";
 import FourthHomePageSection from "../../components/packageTourScreen/fourthHomePageSection";
-import HeroBanner from "../../components/packageTourScreen/heroBanner";
+import HeroBanner from "../../components/sharedComponents/heroBanner/index";
 import SecondHomePageSection from "../../components/packageTourScreen/secondHomePageSection";
 import BestPlacesSection from "../../components/packageTourScreen/bestPlacesSection";
 import PositiveImpacts from "../../components/packageTourScreen/positiveImpacts";
@@ -48,7 +48,14 @@ export default function PackageTour() {
   return (
     <div className={styles.container}>
       <div ref={homeBannerRef}>
-        <HeroBanner />
+        <HeroBanner
+          backgroundImg={"/assets/package_tour_assets/banner.png"}
+          heading={"Extraordinary Vision"}
+          heading2={"unparallel results"}
+          subheading1={
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean nisl libero, ornare non libero vitae, vestibulum egestas tellus. Curabitur sodales eleifend sem laoreet varius."
+          }
+        />
       </div>
       <Tooltip refArray={pageComponentsRef} />
       <div ref={overviewRef}>

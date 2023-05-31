@@ -7,8 +7,31 @@ import { Carousel } from "react-responsive-carousel";
 import right_arrow from "../../../public/assets/services_details_assets/right_arrow.svg";
 import left_arrow from "../../../public/assets/services_details_assets/left_arrow.svg";
 import { HOMEPAGE_FIRST_SLIDER } from "../../../data/homepage";
+import { motion } from "framer-motion";
 
 function SecondHomePageSection() {
+  const container = {
+    hidden: { opacity: 1, scale: 0 },
+    visible: {
+      opacity: 1,
+      scale: 1,
+      transition: {
+        delayChildren: 0.3,
+        staggerChildren: 0.2,
+      },
+    },
+  };
+
+  const item = {
+    hidden: { y: 20, opacity: 0 },
+    visible: {
+      y: 0,
+      opacity: 1,
+    },
+  };
+
+  
+
   return (
     <div className={classes.container}>
       <div className={classes.inner_container}>
@@ -54,20 +77,41 @@ function SecondHomePageSection() {
             showThumbs={false}
           >
             {HOMEPAGE_FIRST_SLIDER?.map((slide, index) => (
-              <div key={index} className={classes.single_row}>
-                <div className={classes.left_panel}>
-                  <h2>{slide.title}</h2>
-                  <p>{slide.detailed_description}</p>
-                </div>
-                <div className={classes.right_panel}>
+              <motion.ul
+                variants={container}
+                initial="hidden"
+                animate="visible"
+                key={index}
+                className={classes.single_row}
+              >
+                <motion.ul
+                  variants={container}
+                  initial="hidden"
+                  animate="visible"
+                  className={classes.left_panel}
+                >
+                  <motion.li
+                    variants={item}
+                    className={classes.left_panel_heading}
+                  >
+                    {slide.title}
+                  </motion.li>
+                  <motion.li
+                    variants={item}
+                    className={classes.left_panel_subheading}
+                  >
+                    {slide.detailed_description}
+                  </motion.li>
+                </motion.ul>
+                <motion.li variants={item} className={classes.right_panel}>
                   <div className={classes.img_container}>
                     <img
                       className={classes.img1}
                       src={second_section_pic1.src}
                     />
                   </div>
-                </div>
-              </div>
+                </motion.li>
+              </motion.ul>
             ))}
           </Carousel>
         </div>

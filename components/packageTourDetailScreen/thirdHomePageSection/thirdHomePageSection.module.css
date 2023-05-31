@@ -41,10 +41,38 @@
   align-items: center;
   justify-content: center;
   padding-right: 15px;
+  display: flex;
+  flex-direction: row;
+  column-gap: 10px;
+  transition: ease-out 200ms;
+  cursor: pointer;
+  position: relative;
 }
-.next_day_container {
+.next_day_container p {
   color: white;
   font-family: "b-ul";
+  transition: ease-out 200ms;
+  margin-right: 20px;
+}
+.next_day_container:hover p {
+  margin-right: 30px;
+  transition: ease-out 200ms;
+}
+.next_day_container img {
+  position: absolute;
+  top: 15px;
+  left: 0;
+  right: 0;
+  left: 50px;
+  margin: auto;
+  width: 20px;
+  height: 20px;
+  transition: ease-out 200ms;
+}
+.next_day_container:hover img {
+  opacity: 1;
+  left: 65px;
+  transition: ease-out 200ms;
 }
 .itinerary_heading_container {
   position: absolute;

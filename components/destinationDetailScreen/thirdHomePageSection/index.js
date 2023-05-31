@@ -24,7 +24,13 @@ import "react-multi-carousel/lib/styles.css";
 
 import { useAnimation, useAnimationFrame, motion } from "framer-motion";
 
-function TopPlacesToVisit({ places, places_stay }) {
+function TopPlacesToVisit({
+  placesRef,
+  toursRef,
+  bestPlaceRef,
+  places,
+  places_stay,
+}) {
   const [location, setLocation] = useState(1);
 
   const responsive = {
@@ -133,7 +139,7 @@ function TopPlacesToVisit({ places, places_stay }) {
 
   return (
     <div className={classes.container}>
-      <div className={classes.places_to_stay_container}>
+      <div ref={placesRef} className={classes.places_to_stay_container}>
         <h2 className={classes.title}>Top places to visit</h2>
         <p className={classes.description}>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras et
@@ -154,7 +160,7 @@ function TopPlacesToVisit({ places, places_stay }) {
         </div>
       </div>
 
-      <div className={classes.best_places_container}>
+      <div ref={bestPlaceRef} className={classes.best_places_container}>
         <div className={classes.best_places_text_container}>
           <h2 className={classes.best_places_title}>Best places to Stay</h2>
           <p className={classes.best_places_description}>
@@ -194,7 +200,7 @@ function TopPlacesToVisit({ places, places_stay }) {
         )}
       </div>
 
-      <div className={classes.sliding_cards_container}>
+      <div ref={toursRef} className={classes.sliding_cards_container}>
         <h2 className={classes.title}>
           Tours Featuring <br />
           Destination

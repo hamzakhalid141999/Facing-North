@@ -9,7 +9,7 @@ import PlacesCards from "../components/placesCards";
 import right_arrow from "../../../public/assets/services_details_assets/right_arrow.svg";
 import left_arrow from "../../../public/assets/services_details_assets/left_arrow.svg";
 
-import { ITINERARIES } from "../../../data/itienraries";
+import { ITINERARIES } from "../../../data/itineraries";
 
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";

@@ -21,6 +21,10 @@ a {
 .carousel .control-dots {
   display: none;
 }
+ul,
+ol {
+  list-style: none;
+}
 .carousel-root {
   width: 100%;
 }

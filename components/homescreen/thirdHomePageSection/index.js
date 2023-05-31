@@ -14,9 +14,30 @@ import right_arrow from "../../../public/assets/services_details_assets/right_ar
 import left_arrow from "../../../public/assets/services_details_assets/left_arrow.svg";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
+import { motion } from "framer-motion";
 
 function ThirdHomePageSection() {
   const [location, setLocation] = useState(1);
+
+  const container = {
+    hidden: { opacity: 1, scale: 0 },
+    visible: {
+      opacity: 1,
+      scale: 1,
+      transition: {
+        delayChildren: 0.3,
+        staggerChildren: 0.2,
+      },
+    },
+  };
+
+  const item = {
+    hidden: { y: 20, opacity: 0 },
+    visible: {
+      y: 0,
+      opacity: 1,
+    },
+  };
 
   const responsive = {
     superLargeDesktop: {

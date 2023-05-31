@@ -6,11 +6,11 @@ import service_3 from "../../../public/assets/services_assets/service_3.png";
 import Link from "next/link";
 import { SERVICE_DETAILS } from "../../../data/services-details";
 
-function FourthHomePageSection() {
+function FourthHomePageSection({ refs }) {
   return (
     <div className={classes.container}>
       {SERVICE_DETAILS?.map((service, index) => (
-        <div key={index} className={classes.feedback_section}>
+        <div ref={refs[index]} key={index} className={classes.feedback_section}>
           <div
             className={
               index % 2 === 0

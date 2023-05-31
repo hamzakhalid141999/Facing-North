@@ -36,7 +36,10 @@ function Tooltip({ refArray }) {
         {refArray?.map((singleRef, index) => (
           <div
             onClick={() => {
-              singleRef.ref.current.scrollIntoView({ behavior: "smooth" });
+              singleRef.ref.current.scrollIntoView({
+                behavior: "smooth",
+                top: top + 50,
+              });
             }}
             className={classes.single_icon_container}
           >

@@ -1,7 +1,7 @@
 import react, { useState, useRef } from "react";
 import FacingNorthDifference from "../../components/aboutScreen/facingNorthDifferenceSection";
 import FourthHomePageSection from "../../components/aboutScreen/fourthHomePageSection";
-import HeroBanner from "../../components/aboutScreen/heroBanner";
+import HeroBanner from "../../components/sharedComponents/heroBanner/index";
 import OurTeamSection from "../../components/aboutScreen/ourTeamSection";
 import TestimonialSection from "../../components/testimonialSection";
 import Tooltip from "../../components/tooltip";
@@ -57,7 +57,10 @@ export default function AboutUs() {
   return (
     <div className={styles.container}>
       <div ref={homeBannerRef}>
-        <HeroBanner />
+        <HeroBanner
+          backgroundImg={"/assets/about-page-assets/banner.png"}
+          heading={"About Us"}
+        />
       </div>
       <Tooltip refArray={pageComponentsRef} />
       <FourthHomePageSection
