@@ -1,9 +1,27 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import BlogCard from "../components/blogCard";
 import classes from "./blogsContainer.module.css";
 import bg from "../../../public/assets/blog_card_assets/bg.png";
+import { useRouter } from "next/router";
+import { blogs } from "../../../data/blogs";
 
 function BlogsContainer() {
+  const [blogsArr, setBlogsArr] = useState([]);
+  const router = useRouter();
+
+  useEffect(() => {
+    if (router.query.id) {
+    }
+  }, [router.query]);
+
+  useState(() => {
+    if (blogs?.length > 0) {
+      setBlogsArr(blogs);
+    }
+  }, [blogs]);
+
+  console.log(blogs);
+
   return (
     <div className={classes.container}>
       <div className={classes.content_container}>
@@ -13,13 +31,9 @@ function BlogsContainer() {
           can help in your styling efficiently
         </p>
         <div className={classes.cards_container}>
-          <BlogCard pic={bg} />
-          <BlogCard pic={bg} />
-          <BlogCard pic={bg} />
-          <BlogCard pic={bg} />
-          <BlogCard pic={bg} />
-          <BlogCard pic={bg} />
-          <BlogCard pic={bg} />
+          {blogsArr?.map((blog, index) => (
+            <BlogCard blogDetails={blog} key={index} pic={bg} />
+          ))}
         </div>
       </div>
     </div>

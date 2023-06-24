@@ -1,5 +1,5 @@
 .card_body {
-  width: 100%;
+  max-width: 545px;
   height: fit-content;
   transition: ease-out 200ms;
   position: relative;
@@ -47,9 +47,15 @@
   font-weight: 200 !important;
   font-size: 23px;
   margin-top: 10px;
-  width: 100%;
+  width: 90%;
   text-align: left;
   font-family: "b-ul";
+  text-align: left;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 1;
 }
 .description_container_inner h3 {
   font-weight: 200 !important;
@@ -70,6 +76,12 @@
   text-align: left;
   line-height: 20px;
   font-family: "f-l";
+  text-align: left;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 2;
 }
 .btn {
   margin-top: 20px;
