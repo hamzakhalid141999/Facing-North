@@ -14,7 +14,9 @@ a {
   --deepGreen: #181e1e;
   --medGreen: #176060;
 }
-
+ul{
+  padding-inline-start: 40px !important; 
+}
 .carousel .slider-wrapper.axis-horizontal .slider {
   column-gap: 0;
 }

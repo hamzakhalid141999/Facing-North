@@ -77,41 +77,41 @@ function SecondHomePageSection() {
             showThumbs={false}
           >
             {HOMEPAGE_FIRST_SLIDER?.map((slide, index) => (
-              <motion.ul
+              <div
                 variants={container}
                 initial="hidden"
                 animate="visible"
                 key={index}
                 className={classes.single_row}
               >
-                <motion.ul
+                <div
                   variants={container}
                   initial="hidden"
                   animate="visible"
                   className={classes.left_panel}
                 >
-                  <motion.li
+                  <div
                     variants={item}
                     className={classes.left_panel_heading}
                   >
                     {slide.title}
-                  </motion.li>
-                  <motion.li
+                  </div>
+                  <div
                     variants={item}
                     className={classes.left_panel_subheading}
                   >
                     {slide.detailed_description}
-                  </motion.li>
-                </motion.ul>
-                <motion.li variants={item} className={classes.right_panel}>
+                  </div>
+                </div>
+                <div variants={item} className={classes.right_panel}>
                   <div className={classes.img_container}>
                     <img
                       className={classes.img1}
                       src={second_section_pic1.src}
                     />
                   </div>
-                </motion.li>
-              </motion.ul>
+                </div>
+              </div>
             ))}
           </Carousel>
         </div>

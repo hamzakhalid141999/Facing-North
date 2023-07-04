@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import classes from "./ourTeamSection.module.css";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick-theme.css";
@@ -6,8 +6,17 @@ import "slick-carousel/slick/slick.css";
 import TeamCard from "./components/teamCard";
 import Next from "../../../components/reactSlickButtons/next";
 import Prev from "../../../components/reactSlickButtons/prev";
+import { team } from "../../../data/team";
 
 function OurTeamSection() {
+  const [ourTeam, setOurTeam] = useState([]);
+
+  useEffect(() => {
+    if (team?.length > 0) {
+      setOurTeam(team);
+    }
+  }, [team]);
+
   const settings = {
     dots: false,
     infinite: true,
@@ -34,11 +43,9 @@ function OurTeamSection() {
       <p className={classes.title}>Our Team</p>
       <div className="our_team_slider">
         <Slider arrows={true} {...settings}>
-          <TeamCard />
-          <TeamCard />
-          <TeamCard />
-          <TeamCard />
-          <TeamCard />
+          {ourTeam?.map((member, index) => (
+            <TeamCard key={index} member={member}/>
+          ))}
         </Slider>
       </div>
     </div>
