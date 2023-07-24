@@ -54,9 +54,9 @@
   row-gap: 0px;
   align-items: center;
 }
-.description_container_inner h2 {
+.heading {
   font-weight: 200 !important;
-  font-size: 30px;
+  font-size: 30px !important;
   margin-top: 10px;
   width: 100%;
   text-align: center;

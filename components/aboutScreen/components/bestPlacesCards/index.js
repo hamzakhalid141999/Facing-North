@@ -9,7 +9,7 @@ function BestPlacesCards({ pic }) {
       </div>
       <div className={classes.description_container}>
         <div className={classes.description_container_inner}>
-          <h2>Altit Fort</h2>
+          <h2 className={classes.heading}>Altit Fort</h2>
           <h3>Gilgit, Baltistan</h3>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras et

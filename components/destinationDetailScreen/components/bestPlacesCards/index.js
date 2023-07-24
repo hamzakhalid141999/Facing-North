@@ -23,7 +23,7 @@ function BestPlacesCards({
           style={{ alignItems: isLeftAligned && "flex-start" }}
           className={classes.description_container_inner}
         >
-          <h2 style={{ textAlign: isLeftAligned && "left" }}>{title}</h2>
+          <h2 className={classes.heading} style={{ textAlign: isLeftAligned && "left" }}>{title}</h2>
           <h3 style={{ textAlign: isLeftAligned && "left" }}>
             Gilgit, Baltistan
           </h3>
