@@ -1,4 +1,4 @@
-// import pic1 from "../public/assets/about_us_cards/1.JPG";
+import pic1 from "../public/assets/about_us_cards/1.jpg";
 import pic2 from "../public/assets/about_us_cards/2.jpg";
 import pic3 from "../public/assets/about_us_cards/3.jpeg";
 import pic4 from "../public/assets/about_us_cards/4.jpeg";
@@ -15,7 +15,7 @@ export const ABOUT_US_INFO = {
     "Facing North Travel & Tours envisions being the leader in sustainable, authentic travel experiences in Northern Pakistan, promoting cultural understanding, creating lasting memories, and positively impacting local communities.",
   why_choose: [
     {
-      // img: pic1,
+      img: pic1,
       title: "Expertise and Personalized Approach",
       description:
         "With over 7 years of experience in the industry and 1000+ satisfied groups of domestic and international tourists, we have the expertise to provide a personalized and unforgettable experience for each traveler.",
