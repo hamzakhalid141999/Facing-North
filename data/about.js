@@ -1,4 +1,4 @@
-import pic1 from "../public/assets/about_us_cards/1.jpg";
+import pic1 from "../public/assets/about_us_cards/one.jpeg";
 import pic2 from "../public/assets/about_us_cards/2.jpg";
 import pic3 from "../public/assets/about_us_cards/3.jpeg";
 import pic4 from "../public/assets/about_us_cards/4.jpeg";
