@@ -206,15 +206,6 @@ function FaqContent() {
       },
 
       {
-        title: `Is PDA ok in Pakistan?`,
-        content: (
-          <AnswerSection
-            content={`Be considerate of the local religion, traditions, customs, and practices. Men and women should refrain from making physical contact in public. During Ramadan, refrain from eating, drinking, or smoking in public during the day. (Muslim holy month of fasting).`}
-          />
-        ),
-      },
-
-      {
         title: `Are your excursions exclusively presented in English or Urdu, or are they also available in other languages?`,
         content: (
           <AnswerSection

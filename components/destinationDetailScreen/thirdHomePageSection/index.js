@@ -154,7 +154,7 @@ function TopPlacesToVisit({
               description={place.description}
               key={index}
               title={place.title}
-              pic={place_1}
+              pic={place?.img}
             />
           ))}
         </div>

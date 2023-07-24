@@ -13,8 +13,19 @@ import { ITINERARIES } from "../../../data/itineraries";
 
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 function TopPlacesToVisit() {
+  useEffect(() => {
+    AOS.init({
+      duration: 400, // Animation duration
+      easing: "ease-out", // Animation easing (ease, ease-in, ease-out, ease-in-out)
+      once: true, // Only trigger the animation once
+      // mirror: false, // Whether elements should animate out while scrolling past them
+    });
+  }, []);
+
   const [location, setLocation] = useState(1);
 
   const responsive = {
@@ -113,7 +124,9 @@ function TopPlacesToVisit() {
             customLeftArrow={<CustomLeftArrow />}
           >
             {ITINERARIES?.map((itinerary, index) => (
-              <PlacesCards itineraryDetails={itinerary} pic={explore_pic_3} />
+              <div data-aos="fade-up" data-aos-delay={`${index * 100}`}>
+                <PlacesCards itineraryDetails={itinerary} pic={explore_pic_3} />
+              </div>
             ))}
           </Carousel>
         </div>

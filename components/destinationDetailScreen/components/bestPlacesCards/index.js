@@ -16,7 +16,7 @@ function BestPlacesCards({
       }
     >
       <div className={classes.img_container}>
-        <img src={pic.src} className={classes.img} />
+        <img src={pic?.src ? pic?.src : null} className={classes.img} />
       </div>
       <div className={classes.description_container}>
         <div

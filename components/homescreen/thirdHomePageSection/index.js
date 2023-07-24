@@ -14,10 +14,20 @@ import right_arrow from "../../../public/assets/services_details_assets/right_ar
 import left_arrow from "../../../public/assets/services_details_assets/left_arrow.svg";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
-import { motion } from "framer-motion";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 function ThirdHomePageSection() {
   const [location, setLocation] = useState(1);
+
+  useEffect(() => {
+    AOS.init({
+      duration: 400, // Animation duration
+      easing: "ease-out", // Animation easing (ease, ease-in, ease-out, ease-in-out)
+      once: true, // Only trigger the animation once
+      // mirror: false, // Whether elements should animate out while scrolling past them
+    });
+  }, []);
 
   const container = {
     hidden: { opacity: 1, scale: 0 },
@@ -170,10 +180,19 @@ function ThirdHomePageSection() {
     );
   };
 
+  const placesData = [
+    explore_pic_3,
+    explore_pic_2,
+    explore_pic_1,
+    explore_pic_3,
+    explore_pic_2,
+    explore_pic_1,
+  ];
+
   return (
     <div className={classes.container}>
-      <img src={globe.src} className={classes.globe} />
-      <div className={classes.location_container}>
+      <img data-aos="fade-right" src={globe.src} className={classes.globe} />
+      <div data-aos="fade-left" className={classes.location_container}>
         <div className={classes.content_container}>
           <div className="homepage_location_pic_container">
             <Carousel
@@ -216,11 +235,11 @@ function ThirdHomePageSection() {
         </div>
       </div>
       <div className={classes.title_section}>
-        <h2 className={classes.title}>
+        <h2 data-aos="fade-down" className={classes.title}>
           Explore <br />
           our Worlds
         </h2>
-        <p className={classes.description}>
+        <p data-aos="fade-down" className={classes.description}>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras et
           finibus urna. In ut justo quis metus rhoncus cursus quis vitae magna.
           Ut nibh metus, accumsan viverra massa ac, sagittis pulvinar ipsum.
@@ -238,20 +257,23 @@ function ThirdHomePageSection() {
             customRightArrow={<CustomRightArrow />}
             customLeftArrow={<CustomLeftArrow />}
           >
-            <PlacesCards pic={explore_pic_3} />
-            <PlacesCards pic={explore_pic_2} />
-            <PlacesCards pic={explore_pic_1} />
-            <PlacesCards pic={explore_pic_3} />
-            <PlacesCards pic={explore_pic_2} />
-            <PlacesCards pic={explore_pic_1} />
+            {placesData.map((pic, index) => (
+              <div
+                key={index}
+                data-aos="fade-up"
+                data-aos-delay={`${index * 100}`}
+              >
+                <PlacesCards pic={pic} />
+              </div>
+            ))}
           </Carousel>
         </div>
 
-        <h2 className={classes.title}>
+        <h2 data-aos="fade-right" className={classes.title}>
           Lands of <br />
           Discovery
         </h2>
-        <p className={classes.description}>
+        <p data-aos="fade-right" className={classes.description}>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras et
           finibus urna. In ut justo quis metus rhoncus cursus quis vitae magna.
           Ut nibh metus, accumsan viverra massa ac, sagittis pulvinar ipsum.

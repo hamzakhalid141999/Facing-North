@@ -7,10 +7,20 @@ import BestPlacesCards from "../components/bestPlacesCards";
 
 import right_arrow from "../../../public/assets/services_details_assets/right_arrow.svg";
 import left_arrow from "../../../public/assets/services_details_assets/left_arrow.svg";
-
+import AOS from "aos";
+import "aos/dist/aos.css";
 import "react-multi-carousel/lib/styles.css";
 
 function ThirdHomePageSection() {
+  useEffect(() => {
+    AOS.init({
+      duration: 400, // Animation duration
+      easing: "ease-out", // Animation easing (ease, ease-in, ease-out, ease-in-out)
+      once: true, // Only trigger the animation once
+      // mirror: false, // Whether elements should animate out while scrolling past them
+    });
+  }, []);
+
   const [location, setLocation] = useState(1);
 
   const responsive = {
@@ -65,6 +75,21 @@ function ThirdHomePageSection() {
     );
   };
 
+  const placesData = [
+    {
+      id: 1,
+      pic: place_1,
+    },
+    {
+      id: 2,
+      pic: place_2,
+    },
+    {
+      id: 3,
+      pic: place_3,
+    },
+  ];
+
   return (
     <div className={classes.container}>
       <div className={classes.places_to_stay_container}>
@@ -80,6 +105,16 @@ function ThirdHomePageSection() {
           <BestPlacesCards pic={place_1} />
           <BestPlacesCards pic={place_2} />
           <BestPlacesCards pic={place_3} />
+
+          {placesData.map((place, index) => (
+            <div
+              key={index}
+              data-aos="fade-up"
+              data-aos-delay={`${index * 100}`}
+            >
+              <BestPlacesCards pic={place?.pic} />
+            </div>
+          ))}
         </div>
       </div>
     </div>

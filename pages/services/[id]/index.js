@@ -41,7 +41,7 @@ export default function ServicesDetails() {
       <TopDestinations places={serviceDetailData?.top_places} />
       <TopItineraries />
       {/* <ThirdHomePageSection /> */}
-      <FourthHomePageSection />
+      {/* <FourthHomePageSection /> */}
     </div>
   );
 }

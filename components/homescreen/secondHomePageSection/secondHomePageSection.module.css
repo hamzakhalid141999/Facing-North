@@ -49,13 +49,13 @@
   row-gap: 25px;
   text-align: left;
 }
-.left_panel_heading {
+.left_panel h2{
   font-size: 60px;
   font-weight: 200;
   font-family: "b-ul";
   width: 70%;
 }
-.left_panel_subheading {
+.left_panel p {
   font-size: 16px;
   font-weight: 200;
   line-height: 23px;
@@ -88,10 +88,10 @@
   .inner_container {
     max-width: initial;
   }
-  .left_panel_heading {
+  .left_panel h2 {
     font-size: 25px;
   }
-  .left_panel_subheading {
+  .left_panel p {
     font-size: 13px;
   }
 

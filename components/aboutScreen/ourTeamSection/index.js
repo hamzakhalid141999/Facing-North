@@ -7,6 +7,8 @@ import TeamCard from "./components/teamCard";
 import Next from "../../../components/reactSlickButtons/next";
 import Prev from "../../../components/reactSlickButtons/prev";
 import { team } from "../../../data/team";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 function OurTeamSection() {
   const [ourTeam, setOurTeam] = useState([]);
@@ -16,6 +18,15 @@ function OurTeamSection() {
       setOurTeam(team);
     }
   }, [team]);
+
+  useEffect(() => {
+    AOS.init({
+      duration: 400, // Animation duration
+      easing: "ease-out", // Animation easing (ease, ease-in, ease-out, ease-in-out)
+      once: true, // Only trigger the animation once
+      // mirror: false, // Whether elements should animate out while scrolling past them
+    });
+  }, []);
 
   const settings = {
     dots: false,
@@ -44,7 +55,9 @@ function OurTeamSection() {
       <div className="our_team_slider">
         <Slider arrows={true} {...settings}>
           {ourTeam?.map((member, index) => (
-            <TeamCard key={index} member={member}/>
+            <div data-aos="fade-up" data-aos-delay={`${index * 100}`}>
+              <TeamCard key={index} member={member} />
+            </div>
           ))}
         </Slider>
       </div>

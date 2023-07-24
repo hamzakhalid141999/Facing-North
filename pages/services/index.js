@@ -1,6 +1,6 @@
 import react, { useState, useRef } from "react";
 import FourthHomePageSection from "../../components/servicesScreen/fourthHomePageSection";
-import HeroBanner from "../../components/servicesScreen/heroBanner";
+import HeroBanner from "../../components/sharedComponents/heroBanner";
 import SecondHomePageSection from "../../components/servicesScreen/secondHomePageSection";
 import ThirdHomePageSection from "../../components/servicesScreen/thirdHomePageSection";
 import Tooltip from "../../components/tooltip";
@@ -51,7 +51,13 @@ export default function ServicesDetails() {
     <div className={styles.container}>
       <Tooltip refArray={pageComponentsRef} />
       <div ref={homeBannerRef}>
-        <HeroBanner />
+        <HeroBanner
+          heading={"Services"}
+          subheading1={
+            " Experience the ultimate adventure in Pakistan with our custom itineraries blending trekking, yoga retreats, and outdoor activities. Explore the Karakoram mountains and Neelum River for an unforgettable journey."
+          }
+          backgroundImg={"/assets/services_assets/banner.png"}
+        />
       </div>
       <div ref={introRef}>
         <SecondHomePageSection />

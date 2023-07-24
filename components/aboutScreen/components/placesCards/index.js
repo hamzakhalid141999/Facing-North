@@ -13,7 +13,7 @@ function PlacesCards({ title, description, pic }) {
         <p className={classes.description}>{description}</p>
       </div>
       <div className={classes.info_section}></div>
-      <img className={classes.bg_img} src={pic.src} />
+      <img className={classes.bg_img} src={pic?.src ? pic?.src : null} />
     </div>
   );
 }

@@ -1,3 +1,9 @@
+import pic1 from "../public/assets/about_us_cards/1.jpg";
+import pic2 from "../public/assets/about_us_cards/2.jpg";
+import pic3 from "../public/assets/about_us_cards/3.jpeg";
+import pic4 from "../public/assets/about_us_cards/4.jpeg";
+import pic5 from "../public/assets/about_us_cards/5.jpg";
+
 export const ABOUT_US_INFO = {
   statement:
     "Facing North offers sustainable tours showcasing natural beauty, cultural heritage, and unique lifestyle of northern Pakistan. Unforgettable experiences await.",
@@ -9,26 +15,34 @@ export const ABOUT_US_INFO = {
     "Facing North Travel & Tours envisions being the leader in sustainable, authentic travel experiences in Northern Pakistan, promoting cultural understanding, creating lasting memories, and positively impacting local communities.",
   why_choose: [
     {
+      img: pic1,
       title: "Expertise and Personalized Approach",
       description:
         "With over 7 years of experience in the industry and 1000+ satisfied groups of domestic and international tourists, we have the expertise to provide a personalized and unforgettable experience for each traveler.",
     },
     {
+      img: pic2,
       title: "Wide Range of Tours",
       description:
         "We offer a wide range of tours, from landscape photography excursions to wellness retreats, catering to the specific interests and needs of each traveler.",
     },
     {
+      img: pic3,
+
       title: "Experienced Guides and Support Staff",
       description:
         "Our team of experienced guides and support staff are dedicated to providing the best possible experience, ensuring that your visit to northern Pakistan is safe and memorable.",
     },
     {
+      img: pic4,
+
       title: "Sustainable Tourism",
       description:
         "We believe in sustainable tourism and strive to minimize our impact on the environment and support local communities.",
     },
     {
+      img: pic5,
+
       title: "Best Facilities and Services",
       description:
         "We are committed to providing the best facilities and services, ensuring that your visit to northern Pakistan is nothing short of amazing.",

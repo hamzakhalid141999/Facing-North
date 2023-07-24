@@ -1,6 +1,15 @@
+import nangaparbat from "../public/assets/places_card/nanga.jpg";
+import rakaposhi from "../public/assets/places_card/rakaposhi.jpg";
+import skardu from "../public/assets/destination_cards/skardu.jpg";
+import fairy from "../public/assets/destination_cards/fairy.jpeg";
+import hunza from "../public/assets/destination_cards/hunza.jpg";
+import swat from "../public/assets/destination_cards/swat.jpg";
+import chitral from "../public/assets/destination_cards/chitral.jpg";
+
 export const DESTIATIONS = [
   {
     id: 1,
+    img: hunza,
     title: "Hunza Valley",
     location: "Gilgit Baltistan",
     h1: "Unforgettable Hunza Valley Experience",
@@ -30,6 +39,7 @@ export const DESTIATIONS = [
           "Scenic valley in Nagar district, known for its fruit orchards and traditional villages.",
       },
       {
+        img: rakaposhi,
         title: "Rakaposhi Viewpoint",
         description:
           "A viewpoint offering stunning views of Rakaposhi peak in Nagar Valley.",
@@ -106,6 +116,7 @@ export const DESTIATIONS = [
   {
     id: 2,
     title: "Skardu Valley",
+    img: skardu,
     location: "Gilgit Baltistan",
     h1: "Discover Skardu, the Gateway to Baltistan",
     h2: "Experience the Natural Wonders and Cultural Richness of Skardu and its Surroundings",
@@ -189,6 +200,7 @@ export const DESTIATIONS = [
   {
     id: 3,
     title: "Chitral",
+    img: chitral,
     location: "Khyber Pakhtunkhwa",
     h1: "Luxury Tours of Exotic Chitral and Kalash Valleys",
     h2: "Immerse Yourself in Rich Culture and Adventure",
@@ -272,6 +284,7 @@ export const DESTIATIONS = [
   {
     id: 4,
     title: "Swat",
+    img: swat,
     location: "Khyber Pakhtunkhwa",
     h1: "Discover the Natural and Cultural Wonders of Swat and Kalam, Pakistan",
     h2: "Experience Adventure, Heritage, and Scenic Beauty in Two Must-Visit Destinations",
@@ -395,6 +408,8 @@ export const DESTIATIONS = [
   {
     id: 6,
     title: "Fairy Meadows",
+    img: fairy,
+
     location: "Gilgit Baltistant",
     h1: "Explore the Natural Wonders of Fairy Meadows and Nanga Parbat in Pakistan",
     h2: "Adventure, Natural Beauty, and Climbing at Fairy Meadows and Nanga Parbat",
@@ -415,6 +430,7 @@ export const DESTIATIONS = [
           "A remote and serene campsite located in the heart of the Himalayas, offering breathtaking views of the surrounding peaks and valleys.",
       },
       {
+        img: nangaparbat,
         title: "Nanga Parbat Basecamp",
         description:
           "A basecamp for climbers seeking to summit Nanga Parbat, also a popular trekking destination with awe-inspiring views.",

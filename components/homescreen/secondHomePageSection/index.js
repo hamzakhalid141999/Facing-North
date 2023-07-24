@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import classes from "./secondHomePageSection.module.css";
 import second_section_bg from "../../../public/assets/homepage/second_section_bg.png";
 import second_section_pic1 from "../../../public/assets/homepage/second_section_pic1.png";
@@ -7,30 +7,19 @@ import { Carousel } from "react-responsive-carousel";
 import right_arrow from "../../../public/assets/services_details_assets/right_arrow.svg";
 import left_arrow from "../../../public/assets/services_details_assets/left_arrow.svg";
 import { HOMEPAGE_FIRST_SLIDER } from "../../../data/homepage";
-import { motion } from "framer-motion";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 function SecondHomePageSection() {
-  const container = {
-    hidden: { opacity: 1, scale: 0 },
-    visible: {
-      opacity: 1,
-      scale: 1,
-      transition: {
-        delayChildren: 0.3,
-        staggerChildren: 0.2,
-      },
-    },
-  };
-
-  const item = {
-    hidden: { y: 20, opacity: 0 },
-    visible: {
-      y: 0,
-      opacity: 1,
-    },
-  };
-
-  
+  useEffect(() => {
+    AOS.init({
+      // Global settings for AOS, if required
+      duration: 400, // Animation duration
+      easing: "ease-out", // Animation easing (ease, ease-in, ease-out, ease-in-out)
+      // once: true, // Only trigger the animation once
+      // mirror: false, // Whether elements should animate out while scrolling past them
+    });
+  }, []);
 
   return (
     <div className={classes.container}>
@@ -39,6 +28,7 @@ function SecondHomePageSection() {
 
         <div className={classes.carousel_container}>
           <Carousel
+            autoPlay={false}
             renderArrowNext={(onClickHandler, hasPrev, label) =>
               hasPrev && (
                 <img
@@ -71,41 +61,20 @@ function SecondHomePageSection() {
                 />
               )
             }
-            autoPlay
             infiniteLoop
             showStatus={false}
             showThumbs={false}
           >
             {HOMEPAGE_FIRST_SLIDER?.map((slide, index) => (
-              <div
-                variants={container}
-                initial="hidden"
-                animate="visible"
-                key={index}
-                className={classes.single_row}
-              >
-                <div
-                  variants={container}
-                  initial="hidden"
-                  animate="visible"
-                  className={classes.left_panel}
-                >
-                  <div
-                    variants={item}
-                    className={classes.left_panel_heading}
-                  >
-                    {slide.title}
-                  </div>
-                  <div
-                    variants={item}
-                    className={classes.left_panel_subheading}
-                  >
-                    {slide.detailed_description}
-                  </div>
+              <div key={index} className={classes.single_row}>
+                <div className={classes.left_panel}>
+                  <h2 data-aos="fade-down">{slide.title}</h2>
+                  <p data-aos="fade-down">{slide.detailed_description}</p>
                 </div>
-                <div variants={item} className={classes.right_panel}>
+                <div className={classes.right_panel}>
                   <div className={classes.img_container}>
                     <img
+                      data-aos="zoom-in"
                       className={classes.img1}
                       src={second_section_pic1.src}
                     />

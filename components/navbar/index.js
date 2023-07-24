@@ -134,7 +134,7 @@ function Navbar() {
           </p>
           <p
             onClick={() => {
-              router.push("/contact");
+              router.push("/contact_form");
               setOpenPanel(false);
             }}
           >
@@ -180,7 +180,7 @@ function Navbar() {
         <Link href={"/blogs"}>
           <p>Blog</p>
         </Link>
-        <Link href={"/contact"}>
+        <Link href={"/contact_form"}>
           <p>Contact</p>
         </Link>
       </div>

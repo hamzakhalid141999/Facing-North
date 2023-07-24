@@ -11,9 +11,20 @@ import left_arrow from "../../../public/assets/services_details_assets/left_arro
 
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 function FacingNorthDifference({ info }) {
   const [location, setLocation] = useState(1);
+
+  useEffect(() => {
+    AOS.init({
+      duration: 400, // Animation duration
+      easing: "ease-out", // Animation easing (ease, ease-in, ease-out, ease-in-out)
+      once: true, // Only trigger the animation once
+      // mirror: false, // Whether elements should animate out while scrolling past them
+    });
+  }, []);
 
   console.log("ARR: ", info);
 
@@ -106,11 +117,13 @@ function FacingNorthDifference({ info }) {
             customLeftArrow={<CustomLeftArrow />}
           >
             {info?.map((info, index) => (
-              <PlacesCards
-                title={info.title}
-                description={info.description}
-                pic={explore_pic_3}
-              />
+              <div data-aos="fade-up" data-aos-delay={`${index * 100}`}>
+                <PlacesCards
+                  title={info.title}
+                  description={info.description}
+                  pic={info.img}
+                />
+              </div>
             ))}
           </Carousel>
         </div>
