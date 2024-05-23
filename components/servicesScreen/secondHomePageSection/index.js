@@ -27,7 +27,7 @@ function SecondHomePageSection() {
     <div className={classes.container}>
       <div className={classes.single_row}>
         <div className={classes.left_panel}>
-          <h2 data-aos="fade-left">Exclusive to your world</h2>
+          <h2 data-aos="fade-left">Embark on Opulent Pakistani Voyages</h2>
           <p data-aos="fade-left">
             Experience the ultimate adventure in Pakistan with our custom
             itineraries that combine trekking, yoga, and outdoor adventures.

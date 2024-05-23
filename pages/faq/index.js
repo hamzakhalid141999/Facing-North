@@ -11,7 +11,7 @@ export default function FAQ() {
         backgroundImg={"/assets/faq/banner.png"}
         heading={"Frequently Asked Questions"}
         subheading1={
-          "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean nisl libero, ornare non libero vitae, vestibulum egestas tellus. Curabitur sodales eleifend sem laoreet varius."
+          "Answers to Your Most Common Questions: Clearing Doubts and Providing Clarity"
         }
       />
       <FaqContent />

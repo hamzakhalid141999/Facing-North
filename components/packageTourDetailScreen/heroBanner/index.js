@@ -39,7 +39,7 @@ function HeroBanner() {
         >
           Extraordinary Vision
           <br />
-          unparallel results
+          Unparallel Results
         </motion.li>
         <motion.li className={classes.subheading} variants={item}>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean nisl

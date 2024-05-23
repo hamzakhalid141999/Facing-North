@@ -1,6 +1,10 @@
 export const SERVICE_DETAILS = [
   {
     id: 1,
+    first_section_heading: 'Sacred Spiritual Sojourns',
+    dest_heading: 'Top destinations for Outdoor Pursuits',
+    itinerary_heading: 'Top Itineraries For Wellness Retreats',
+    dest_para: 'Embark on revitalising wellness retreats amidst Pakistans breathtaking landscapes. Discover inner peace through transformative yoga excursions in this enchanting destination.',
     title: "Trekking and Camping",
     h1: "Trekking and Camping Adventures in Pakistan",
     h2: "Experience the Best of Pakistan's Wilderness with Expert Guides, Luxurious Accommodation, and Breathtaking Landscapes.",
@@ -31,9 +35,12 @@ export const SERVICE_DETAILS = [
 
   {
     id: 2,
+    first_section_heading: 'Sacred Spiritual Sojourns',
+    dest_heading: 'Top destinations for Outdoor Pursuits',
+    dest_para: 'Embark on revitalising wellness retreats amidst Pakistans breathtaking landscapes. Discover inner peace through transformative yoga excursions in this enchanting destination.',
     title: "The Pilgrims Journey to Pakistan",
-    h1: "Explore the Spiritual Heritage of Pakistan with our Religious Tourism Packages",
-    h2: "Discover the Sacred Sikh Pilgrimage Sites and Ancient Buddhist Monasteries of Pakistan",
+    itinerary_heading: 'Top Itineraries For Wellness Retreats',
+    h1: "Sacred Trails: Embarking on a Spiritual Journey",
     statement: [
       "Experience the spiritual beauty of Pakistan with our religious tourism packages. From Sikh pilgrimage sites to Buddhist monasteries, we have something for every faith.",
     ],
@@ -70,6 +77,10 @@ export const SERVICE_DETAILS = [
   {
     id: 3,
     title: "Wellness and Yoga Retreats",
+    first_section_heading: 'Tranquil Yoga Retreats amidst Pakistans Natural Beauty',
+    dest_para: 'Embark on revitalising wellness retreats amidst Pakistans breathtaking landscapes. Discover inner peace through transformative yoga excursions in this enchanting destination.',
+    dest_heading: 'Top destinations for Welness Retreat',
+    itinerary_heading: 'Top Itineraries For Wellness Retreats',
     h1: "Luxurious Wellness and Yoga Retreats in Northern Pakistan",
     h2: "Rejuvenate in the Breathtaking Landscapes of Gilgit-Baltistan and Karakoram with Our Expertly Guided Practices and Activities",
     statement: [
@@ -108,6 +119,10 @@ export const SERVICE_DETAILS = [
   {
     id: 4,
     title: "Culinary and Hospitality Experience",
+    first_section_heading: 'Culinary Escapades',
+    dest_heading: 'Top destinations for Outdoor Pursuits',
+    dest_para: 'Embark on revitalising wellness retreats amidst Pakistans breathtaking landscapes. Discover inner peace through transformative yoga excursions in this enchanting destination.',
+    itinerary_heading: 'Top Itineraries For Culinary Escapades',
     h1: "Explore the Flavors and Warmth of Pakistani Hospitality with our Exclusive Culinary Retreats",
     h2: "Aromatic Spices, Succulent Seafood, and Local Hospitality Await You",
     statement: [
@@ -152,7 +167,11 @@ export const SERVICE_DETAILS = [
   {
     id: 5,
     title: "Landscape Photography Excursions",
+    first_section_heading: 'Enchanting Frames',
+    dest_heading: 'Top destinations for Photography Excursions',
+    dest_para: 'Enchanting Frames: Capturing Pakistans Breathtaking Landscapes through Photography',
     h1: "Capturing the Beauty of Northern Pakistan: Landscape Photography Tours",
+    itinerary_heading: 'Top Itineraries For Photography Excursions',
     h2: "Immersive Experience with Expert Photographers",
     statement: [
       "Capture the breathtaking beauty of Pakistan's landscapes with our expert-led photography tours.",

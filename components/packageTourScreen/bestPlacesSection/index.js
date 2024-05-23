@@ -93,14 +93,14 @@ function ThirdHomePageSection() {
   return (
     <div className={classes.container}>
       <div className={classes.places_to_stay_container}>
-        <h2 className={classes.title}>Best Places to Stay</h2>
-        <p className={classes.description}>
+        <h2 className={classes.title}>Best Places to Visit</h2>
+        {/* <p className={classes.description}>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras et
           finibus urna. In ut justo quis metus rhoncus cursus quis vitae magna.
           Ut nibh metus, accumsan viverra massa ac, sagittis pulvinar ipsum.
           Aenean lacus augue, sollicitudin eu eros eleifend, luctus ultricies
           lectus. Nam elementum tempor arcu, ut faucibus ligula pharetra eu.
-        </p>
+        </p> */}
         <div className={classes.best_cards_container}>
           <BestPlacesCards pic={place_1} />
           <BestPlacesCards pic={place_2} />

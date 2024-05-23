@@ -12,7 +12,7 @@ import "react-multi-carousel/lib/styles.css";
 
 import { useRouter } from "next/router";
 
-function TopDestinations({ places }) {
+function TopDestinations({ places, data }) {
   const router = useRouter();
   const [location, setLocation] = useState(1);
   const [isPilgrim, setIsPilgrim] = useState(false);
@@ -85,18 +85,10 @@ function TopDestinations({ places }) {
     <div className={classes.container}>
       <div className={classes.places_to_stay_container}>
         <h2 className={classes.title}>
-          {isPilgrim
-            ? "Top Destinations for Religious Pilgrims"
-            : isCulinary
-            ? "Top Culinary Destinations in Pakistan"
-            : "Top destinations for Outdoor Pursuits"}
+          {data?.dest_heading}
         </h2>
         <p className={classes.description}>
-          {isPilgrim
-            ? "Pakistan is home to some of the most important religious sites in the world, attracting pilgrims from all over. From Nankana Sahib, the birthplace of Guru Nanak, to the historic city of Lahore and the holy shrine of Kartarpur, these destinations offer a unique spiritual experience."
-            : isCulinary
-            ? "Discover the flavors of Pakistan, a top culinary destination that boasts a vibrant and diverse cuisine. Indulge in delicious kebabs, curries, desserts, and more, and savor the country's unique blend of flavors and spices."
-            : "Looking for an adventure in Pakistan? Look no further than the country's stunning trekking and camping destinations. From Nanga Parbat Base Camp to the picturesque Patundas Trek, there's something for every nature enthusiast."}
+          {data?.dest_para}
         </p>
         <div className={classes.best_cards_container}>
           {places?.map((place, index) => (

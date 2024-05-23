@@ -38,8 +38,8 @@ export default function ServicesDetails() {
         title={serviceDetailData?.title}
       />
       <SecondHomePageSection data={serviceDetailData} />
-      <TopDestinations places={serviceDetailData?.top_places} />
-      <TopItineraries />
+      <TopDestinations data={serviceDetailData} places={serviceDetailData?.top_places} />
+      <TopItineraries data={serviceDetailData}/>
       {/* <ThirdHomePageSection /> */}
       {/* <FourthHomePageSection /> */}
     </div>

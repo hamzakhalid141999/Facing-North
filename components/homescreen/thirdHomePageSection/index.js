@@ -236,16 +236,15 @@ function ThirdHomePageSection() {
       </div>
       <div className={classes.title_section}>
         <h2 data-aos="fade-down" className={classes.title}>
-          Explore <br />
-          our Worlds
+        Embark on Opulent Pakistani Voyages 
         </h2>
-        <p data-aos="fade-down" className={classes.description}>
+        {/* <p data-aos="fade-down" className={classes.description}>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras et
           finibus urna. In ut justo quis metus rhoncus cursus quis vitae magna.
           Ut nibh metus, accumsan viverra massa ac, sagittis pulvinar ipsum.
           Aenean lacus augue, sollicitudin eu eros eleifend, luctus ultricies
           lectus.
-        </p>
+        </p> */}
         <div className="cards_container">
           <Carousel
             infinite={true}
@@ -273,13 +272,13 @@ function ThirdHomePageSection() {
           Lands of <br />
           Discovery
         </h2>
-        <p data-aos="fade-right" className={classes.description}>
+        {/* <p data-aos="fade-right" className={classes.description}>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras et
           finibus urna. In ut justo quis metus rhoncus cursus quis vitae magna.
           Ut nibh metus, accumsan viverra massa ac, sagittis pulvinar ipsum.
           Aenean lacus augue, sollicitudin eu eros eleifend, luctus ultricies
           lectus.
-        </p>
+        </p> */}
         <div className={classes.row}>
           <p
             onClick={() => {

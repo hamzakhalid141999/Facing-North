@@ -51,9 +51,9 @@ export default function PackageTour() {
         <HeroBanner
           backgroundImg={"/assets/package_tour_assets/banner.png"}
           heading={"Extraordinary Vision"}
-          heading2={"unparallel results"}
+          heading2={"Unparallel Results"}
           subheading1={
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean nisl libero, ornare non libero vitae, vestibulum egestas tellus. Curabitur sodales eleifend sem laoreet varius."
+            "Unveiling the Breathtaking Majesty of Pakistan's Northern Splendor: A Mesmerising Symphony of Enchanting Landscapes, Majestic Peaks, and Serene Beauty Awaits Your Exploration."
           }
         />
       </div>

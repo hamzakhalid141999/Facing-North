@@ -22,7 +22,7 @@ import left_arrow from "../../../public/assets/services_details_assets/left_arro
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 
-function TopItineraries() {
+function TopItineraries({data}) {
   const [location, setLocation] = useState(1);
 
   const responsive = {
@@ -102,17 +102,15 @@ function TopItineraries() {
       <div className={classes.bg_grey_banner} />
       <div className={classes.sliding_cards_container}>
         <h2 className={classes.title}>
-          Top Itineraries
-          <br />
-          For Outdoor Pursuits
+          {data?.itinerary_heading}
         </h2>
-        <p className={classes.description}>
+        {/* <p className={classes.description}>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras et
           finibus urna. In ut justo quis metus rhoncus cursus quis vitae magna.
           Ut nibh metus, accumsan viverra massa ac, sagittis pulvinar ipsum.
           Aenean lacus augue, sollicitudin eu eros eleifend, luctus ultricies
           lectus.
-        </p>
+        </p> */}
         <div className="cards_container">
           <Carousel
             infinite={true}

@@ -18,7 +18,7 @@ function SecondHomePageSection({ data }) {
       </div>
       <div className={classes.single_row}>
         <div className={classes.left_panel}>
-          <h2>Perfect recreation in an unmatched location</h2>
+          <h2>{data?.first_section_heading}</h2>
           <p>{data?.detailed_description}</p>
         </div>
         <div className={classes.right_panel}>

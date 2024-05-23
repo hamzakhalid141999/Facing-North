@@ -29,12 +29,7 @@ function SecondHomePageSection() {
           <h2 data-aos="fade-right">Overview of Pakistan</h2>
 
           <p data-aos="fade-right">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras et
-            finibus urna. In ut justo quis metus rhoncus cursus quis vitae
-            magna. Ut nibh metus, accumsan viverra massa ac, sagittis pulvinar
-            ipsum. Aenean lacus augue, sollicitudin eu eros eleifend, luctus
-            ultricies lectus. Nam elementum tempor arcu, ut faucibus ligula
-            pharetra eu.
+          Embark on an extraordinary adventure through Pakistan's diverse tapestry of treasures. Discover the majestic peaks of the Karakoram Range, immerse yourself in the architectural splendor of Islamabad, wander through ancient ruins in Taxila, delve into vibrant bazaars of Swat, and unwind on the serene views of Fairy Meadows.
           </p>
         </div>
         <div className={classes.right_panel}>

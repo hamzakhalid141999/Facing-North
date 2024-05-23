@@ -105,13 +105,13 @@ function TopPlacesToVisit() {
       <div className={classes.bg_grey_banner} />
       <div className={classes.sliding_cards_container}>
         <h2 className={classes.title}>Start Your Journey</h2>
-        <p className={classes.description}>
+        {/* <p className={classes.description}>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras et
           finibus urna. In ut justo quis metus rhoncus cursus quis vitae magna.
           Ut nibh metus, accumsan viverra massa ac, sagittis pulvinar ipsum.
           Aenean lacus augue, sollicitudin eu eros eleifend, luctus ultricies
           lectus.
-        </p>
+        </p> */}
         <div className="cards_container">
           <Carousel
             infinite={true}
